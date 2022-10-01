@@ -193,7 +193,7 @@ jQuery(document).ready(function(){
       autoclose: true
     });
   });
-  $('#showview').click(function(){
+  /*$('#showview').click(function(){
     
     window.location.replace("review.html");
   });
@@ -233,5 +233,5 @@ jQuery(document).ready(function(){
     
     window.location.replace("login.html");
   });
-
+*/
 })(jQuery);
