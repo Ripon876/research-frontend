@@ -3,6 +3,7 @@ import Slider from  '../components/slider/Slider';
 import OverView from  '../components/overview/OverView';
 import About from  '../components/about/About';
 import Awards from  '../components/awards/Awards';
+import Publication from  '../components/publication/Publication';
 
 function Home() {
 	return (
@@ -12,6 +13,7 @@ function Home() {
 			<OverView />
 			<About />
 			<Awards />
+			<Publication />
 		</>
 	)
 }
