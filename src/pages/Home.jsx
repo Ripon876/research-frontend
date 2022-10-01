@@ -6,6 +6,7 @@ import Awards from  '../components/awards/Awards';
 import Publication from  '../components/publication/Publication';
 import Departments from  '../components/departments/Departments';
 import FAQ from  '../components/faq/FAQ';
+import Contact from  '../components/contact/Contact';
 
 function Home() {
 	return (
@@ -18,6 +19,7 @@ function Home() {
 			<Publication />
 			<Departments />
 			<FAQ />
+			<Contact />
 		</>
 	)
 }
