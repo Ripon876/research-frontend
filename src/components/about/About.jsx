@@ -9,7 +9,7 @@ function About() {
         <div className="row">
           
           <div className="align-items-stretch col-lg-6 col-xl-5 d-flex justify-content-center p-0 video-box">
-            <img src="./assets/img/about.jpg" class="img-fluid" style={{ objectFit: 'cover'}} />
+            <img src="./assets/img/about.jpg" className="img-fluid" style={{ objectFit: 'cover'}} />
             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" className="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
           </div>
 

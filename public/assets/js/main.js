@@ -138,7 +138,9 @@ var $mobile_nav = $('.nav-menu').clone().prop({
   }
   // Back to top button
   $(window).scroll(function() {
+
     if ($(this).scrollTop() > 100) {
+      // alert('100 down')
       $('.back-to-top').fadeIn('slow');
     } else {
       $('.back-to-top').fadeOut('slow');
