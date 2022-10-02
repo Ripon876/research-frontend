@@ -79,3 +79,30 @@ section {
 .datepicker-dropdown {
   padding: 20px !important;
 }
+
+
+/*@media (max-width: 992px) {
+ 
+  .dashboard {
+   background:blue;
+  }
+  .col-sm{
+    height: 100px;
+    background-color: black;
+    
+  }
+  
+}*/
+
+ 
+.dashboard .col-sm{
+  height: 100vh;
+  color: black ;
+    
+}
+.dashboard .col-sm a{
+  font-weight: bold;
+  color: black ;
+    
+}
+  

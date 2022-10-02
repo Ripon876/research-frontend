@@ -1,0 +1,14 @@
+.footer{
+	box-shadow: 1px -7px 15px rgb(144 144 144 / 73%);
+    background: #212529;
+    color: white;
+}
+.footer ul li a {
+    color: white;
+}
+.footer ul.list-unstyled li a {
+    font-size: 20px;
+    border-radius: 50%;
+    color: white;
+    padding: 5px;
+}

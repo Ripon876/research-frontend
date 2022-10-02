@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import './Header.css';
 import TopBar from './TopBar';
 
@@ -9,26 +10,21 @@ function Header() {
     <header id="header" className="fixed-top">
         <div className="container-fluid px-5 d-flex align-items-center">
 
-        <h1 className="logo mr-auto"><a href="index.html">Reasearch</a></h1>
+        <h1 className="logo mr-auto"><Link to="/">Reasearch</Link></h1>
         <nav className="nav-menu d-none d-lg-block">
             <ul>
-              <li ><a href="index.html">Home</a></li>
-              <li className="active"><a href="awards.html">Awards</a></li>
-              <li className="drop-down"><a href="">PUBLISH REQUEST</a>
+              <li ><Link to="/">Home</Link></li>
+              <li className=""><Link to="/awards">Awards</Link></li>
+              <li className="drop-down"><Link to="/">Research REQUEST</Link>
                 <ul>
-                  <li><a href="research_request.html">Request to research my problem</a></li>
-                  <li><a href="published.html">Published</a></li>
+                  <li><Link to="/research-my-problem">Request to research my problem</Link></li>
+                  <li><Link to="/publication-request">Request to publish your research</Link></li>
                 </ul>
               </li>
-              
-              <li className="drop-down"><a href="">Research REQUEST</a>
-                <ul>
-                  <li><a href="request_to_research.html">Request to research my problem</a></li>
-                  <li><a href="publish_request.html">Request to be a researcher</a></li>
-                </ul>
-              </li>
-              <li><a href="login.html">LOGIN</a></li>
-
+              <li><Link to="/login">LOGIN</Link></li>
+              <li><Link to="/be-a-researcher" class="btn px-4 py-2 rounded-pill" style={{
+                  background: '#1977cc',
+                  color: 'white'}} >Be A Researcher</Link></li>
             </ul>
           </nav>
         </div>

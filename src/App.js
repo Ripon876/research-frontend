@@ -1,6 +1,14 @@
 import React from 'react';
 import { Routes,Route} from "react-router-dom";
 import Home from './pages/Home';
+import AwardsPage from './pages/AwardsPage';
+import ResearchMyProblemPage from './pages/ResearchMyProblemPage';
+import PublishAnArticlePage from './pages/PublishAnArticlePage';
+import BeAResearcherPage from './pages/BeAResearcherPage';
+import LoginPage from './pages/LoginPage';
+import ResearchPage from './pages/ResearchPage';
+import PublicationPage from './pages/PublicationPage';
+import DashBoard from './pages/DashBoard';
 
 
 
@@ -9,6 +17,15 @@ function App() {
     <>
     <Routes>
       <Route path='/' element={<Home />} />
+      <Route path='/awards' element={<AwardsPage />} />
+      <Route path='/research-my-problem' element={<ResearchMyProblemPage />} />
+      <Route path='/publication-request' element={<PublishAnArticlePage />} />
+      <Route path='/be-a-researcher' element={<BeAResearcherPage />} />
+      <Route path='/login' element={<LoginPage />} />
+      <Route path='/research' element={<ResearchPage />} />
+      <Route path='/publication' element={<PublicationPage />} />
+
+      <Route path='/dashboard/:page' element={<DashBoard />} />
     </Routes>
     </>
   )

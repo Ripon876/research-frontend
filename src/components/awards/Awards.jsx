@@ -5,9 +5,11 @@ function Awards() {
 		<>
 	    <section id="counts" className="counts">
 	      <div className="container">
-	        <h4 className="font-weight-bold py-5">OUR AWARD</h4>
+          <div className="section-title mb-5">
+            <h2>OUR AWARD</h2>
+            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          </div>
 	        <div className="row">
-
           <div className="col-lg-3 col-md-6">
             <div className="count-box">
               <i className="icofont-doctor-alt"></i>
