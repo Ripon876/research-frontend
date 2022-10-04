@@ -27,6 +27,7 @@
   color: #1977cc;
   padding-right: 4px;
   margin-left: 15px;
+  font-weight: bold;
 }
 
 #topbar .contact-info i:first-child {
@@ -39,6 +40,8 @@
   display: inline-block;
   line-height: 1px;
   transition: 0.3s;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 #topbar .social-links a:hover {
@@ -52,6 +55,7 @@
 
 
 /* header css */
+
 #header {
   background: #fff;
   transition: all 0.5s;
@@ -59,6 +63,11 @@
   padding: 15px 0;
   top: 40px;
   box-shadow: 0px 2px 15px rgba(25, 119, 204, 0.1);
+}
+
+#header{
+  background: #ffffff87;
+  backdrop-filter: blur(10px);
 }
 
 #header.header-scrolled {
@@ -76,7 +85,7 @@
 }
 
 #header .logo a {
-  color: #2c4964;
+  color: #212529;
 }
 
 #header .logo img {
@@ -115,12 +124,18 @@
 .nav-menu a {
   display: block;
   position: relative;
-  color: #2c4964;
+  color: #212529;
   transition: 0.3s;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
   padding: 5px 2px;
   border-bottom: 2px solid #fff;
+}
+
+.nav-menu a{
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: bold;
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {

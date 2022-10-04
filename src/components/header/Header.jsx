@@ -23,7 +23,7 @@ function Header() {
               </li>
               <li><Link to="/login">LOGIN</Link></li>
               <li><Link to="/be-a-researcher" class="btn px-4 py-2 rounded-pill" style={{
-                  background: '#1977cc',
+                  background: 'rgb(33 37 41)',
                   color: 'white'}} >Be A Researcher</Link></li>
             </ul>
           </nav>

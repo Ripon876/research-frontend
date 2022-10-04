@@ -8,11 +8,11 @@
 
 .contact .info i {
   font-size: 20px;
-  color: #1977cc;
+  color: #212529;
   float: left;
   width: 44px;
   height: 44px;
-  background: #d6e9fa;
+  background: #21252926;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,7 +118,7 @@
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #1977cc;
+  background: #212529;
   border: 0;
   padding: 10px 35px;
   color: #fff;

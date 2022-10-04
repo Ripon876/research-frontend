@@ -4,10 +4,17 @@
 .services .icon-box {
   text-align: center;
   border: 1px solid #d5e1ed;
-  padding: 80px 20px;
+  padding: 50px 20px;
   transition: all ease-in-out 0.3s;
+  border-radius: 10px;
+  box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
 }
-
+.services .icon-box:hover {
+    background: #212529;
+    border-color: #000000;
+    transform: translate(5px, -10px);
+    box-shadow: 5px 5px 15px rgb(0 0 0 / 65%);
+}
 .services .icon-box .icon {
   margin: 0 auto;
   width: 64px;
@@ -52,13 +59,19 @@
 
 .services .icon-box p {
   line-height: 24px;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 0;
 }
 
-.services .icon-box:hover {
-  background: #1977cc;
-  border-color: #1977cc;
+
+
+.services .icon-box span i {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.services .icon-box:hover span i {
+ color: white;
 }
 
 .services .icon-box:hover .icon {

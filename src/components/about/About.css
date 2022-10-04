@@ -1,6 +1,9 @@
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+section#about {
+    padding-bottom: 100px;
+}
 .about .icon-boxes h4 {
   font-size: 18px;
   color: #4b7dab;
@@ -10,7 +13,7 @@
 .about .icon-boxes h3 {
   font-size: 28px;
   font-weight: 700;
-  color: #2c4964;
+  color: #212529;
   margin-bottom: 15px;
 }
 
@@ -40,8 +43,8 @@
 }
 
 .about .icon-box:hover .icon {
-  background: #1977cc;
-  border-color: #1977cc;
+  background: #212529;
+  border-color: #000000;
 }
 
 .about .icon-box:hover .icon i {
@@ -78,7 +81,7 @@
 .about .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#1977cc 50%, rgba(25, 119, 204, 0.4) 52%);
+  background: radial-gradient(#212529 50%, rgb(8 8 8 / 40%) 52%);
   border-radius: 50%;
   display: block;
   position: absolute;
