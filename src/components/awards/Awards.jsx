@@ -1,4 +1,7 @@
+import Card from './Card';
+import InstitutionCard from './InstitutionCard';
 import './Awards.css';
+import {cardData,institutionData} from './smd';
 
 function Awards() {
 	return (
@@ -10,69 +13,17 @@ function Awards() {
             <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
           </div>
 	        <div className="row">
-          <div className="col-lg-3 col-md-6">
-            <div className="count-box">
-              <i className="icofont-doctor-alt"></i>
-              <h4 className="font-weight-bold" >Our Team</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-            </div>
+            {cardData?.map((item) =>
+               <Card  item={item} />
+            )}
           </div>
-
-          <div className="col-lg-3 col-md-6 mt-5 mt-md-0">
-            <div className="count-box">
-              <i className="icofont-patient-bed"></i>
-              <h4 className="font-weight-bold" >Our Vision</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-            </div>
-          </div>
-
-          <div className="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div className="count-box">
-              <i className="icofont-laboratory"></i>
-              <h4 className="font-weight-bold" >Research Labs</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-            </div>
-          </div>
-
-          <div className="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div className="count-box">
-              <i className="icofont-award"></i>
-              <h4 className="font-weight-bold" >Awards</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
+         </div>
       <div className="container mt-4">
-        <h4 className="font-weight-bold">Best Research institution</h4>
+        <h4 className="font-weight-bold my-4">Best Research institution</h4>
         <div className="row">
-          <div className="col-md-3 pb-4">
-            <div className="count-box">
-              <span><img src="assets/img/logo/a2.jpg" className="img-fluid" /></span>
-              <h5 className="font-weight-bold">Ignatius university</h5>
-            </div>
-          </div>
-          <div className="col-md-3 pb-4">
-            <div className="count-box">
-              <span><img src="assets/img/logo/a4.jpg" className="img-fluid" /></span>
-              <h5 className="font-weight-bold">FUTO university</h5>
-            </div>
-          </div>
-          <div className="col-md-3 pb-4">
-            <div className="count-box">
-              <span><img src="assets/img/logo/a3.jpg" className="img-fluid" /></span>
-              <h5 className="font-weight-bold">UNIBEN university</h5>
-            </div>
-          </div>
-          <div className="col-md-3 pb-4">
-            <div className="count-box">
-              <span><img src="assets/img/logo/a5.jpg" className="img-fluid" /></span>
-              <h5 className="font-weight-bold">UNIPORT university</h5>
-            </div>
-          </div>
-
+          {institutionData?.map((item) => 
+            <InstitutionCard item={item} />
+          )}
         </div>
       </div>
     </section>	
