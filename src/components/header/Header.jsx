@@ -21,10 +21,10 @@ function Header() {
                   <li><Link to="/publication-request">Request to publish your research</Link></li>
                 </ul>
               </li>
-              <li><Link to="/login">LOGIN</Link></li>
               <li><Link to="/be-a-researcher" class="btn px-4 py-2 rounded-pill" style={{
                   background: 'rgb(33 37 41)',
                   color: 'white'}} >Be A Researcher</Link></li>
+              <li><Link to="/login"><i class="icofont-ui-user"></i> {/*<i class="icofont-login"></i>*/}</Link></li>
             </ul>
           </nav>
         </div>
