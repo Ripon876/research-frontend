@@ -26,9 +26,14 @@
 }
 
 .departments .nav-link.active {
-  color: #1977cc;
   border-color: #212529;
   border-width: 5px;
+  background: #212529;
+  padding-left: 15px;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  letter-spacing: 1px;
 }
 
 .departments .tab-pane.active {
@@ -36,6 +41,9 @@
   animation: fadeIn 0.5s ease-out;
 }
 
+.departments .tab-content img{
+  border-radius: 2rem;
+}
 .departments .details h3 {
   font-size: 26px;
   font-weight: 600;
