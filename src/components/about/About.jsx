@@ -13,7 +13,7 @@ function About() {
         </div>
         <div className="row">
           <div className="align-items-stretch col-lg-6 col-xl-5 d-flex justify-content-center p-0 video-box">
-            <img src="./assets/img/about.jpg" className="img-fluid" style={{ objectFit: 'cover'}} />
+            <img src="./assets/img/about.jpg" className="img-fluid" style={{ objectFit: 'cover',borderRadius: '10rem !important'}} />
             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" className="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
           </div>
           <div className="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
