@@ -107,3 +107,17 @@ section {
     
 }
   
+
+
+/*========*/
+.subBtn {
+  background: #212529;
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+.subBtn:hover {
+    background: #000000;
+}

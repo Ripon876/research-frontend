@@ -31,3 +31,23 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
+
+.subBtn {
+  background: #212529 !important;
+  border: 0 !important;
+  padding: 10px 35px !important;
+  color: #fff !important;
+  transition: 0.4s !important;
+  border-radius: 50px !important;
+}
+.subBtn:hover {
+    background: #000000 !important;
+}
+.subBtn:active {
+    background: #000000 !important;
+    box-shadow: 0 0 0 0.2rem rgb(33 37 41) !important;
+}
+.subBtn:focus {
+    background: #000000 !important;
+    box-shadow: 0 0 0 0.2rem rgb(33 37 41) !important;
+}

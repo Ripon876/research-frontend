@@ -39,7 +39,7 @@ function ResearchMyProblem() {
               </div>
               
               <div className="form-group">
-                <input type="submit" name="submit" className="btn btn-primary btn-sm px-4 py-2 rounded-pill" />
+                <input type="submit" name="submit" className="subBtn btn btn-primary btn-sm px-4 py-2 rounded-pill" />
               </div>
             </form>
             </div>

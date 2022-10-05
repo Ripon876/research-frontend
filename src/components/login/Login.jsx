@@ -24,7 +24,7 @@ function Login() {
 	              </div>
 	              <div className="form-group">
 	                
-	                <input type="submit" name="submit" className="btn btn-primary btn-sm px-4 py-2 rounded-pill" placeholder="Password" />
+	                <input type="submit" name="submit" className="subBtn btn btn-primary btn-sm px-4 py-2 rounded-pill" placeholder="Password" />
 	              </div>
 	            </form>
 	            </div>

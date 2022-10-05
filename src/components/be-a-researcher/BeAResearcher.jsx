@@ -36,7 +36,7 @@ function BeAResearcher() {
                 <input type="text" name="institution_id" className="form-control" placeholder="Institution ID" />
               </div>
               <div className="form-group">
-                <input type="submit" name="Submit" className="btn btn-primary btn-sm px-4 py-2 rounded-pill" />
+                <input type="submit" name="Submit" className="subBtn btn btn-primary btn-sm px-4 py-2 rounded-pill" />
               </div>
             </form>
             </div>
