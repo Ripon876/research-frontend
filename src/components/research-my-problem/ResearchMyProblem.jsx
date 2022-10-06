@@ -38,8 +38,8 @@ function ResearchMyProblem() {
                 <textarea className="form-control" placeholder="Description" rows='6'></textarea>
               </div>
               
-              <div className="form-group">
-                <input type="submit" name="submit" className="subBtn btn btn-primary btn-sm px-4 py-2 rounded-pill" />
+              <div className="form-group mt-4 text-center">
+                <input type="submit" name="submit" className="btn btn-primary btn-sm px-5 py-2 rounded-pill subBtn" />
               </div>
             </form>
             </div>

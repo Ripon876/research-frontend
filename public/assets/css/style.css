@@ -109,7 +109,6 @@ section {
   
 
 
-/*========*/
 .subBtn {
   background: #212529;
   border: 0;
@@ -120,4 +119,10 @@ section {
 }
 .subBtn:hover {
     background: #000000;
+}
+
+.form label{
+  font-size: 17px;
+  color: #212529;
+  font-weight: 500;
 }

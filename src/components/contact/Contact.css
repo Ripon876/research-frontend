@@ -1,9 +1,12 @@
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact{
+  background: #F5F7FB;
+}
 .contact .info {
   width: 100%;
-  background: #fff;
+  background: none;
 }
 
 .contact .info i {
@@ -25,28 +28,41 @@
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #2c4964;
+  /*color: #2c4964;*/
+  color: #212529;
 }
 
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #4b7dab;
+  /*color: #4b7dab;*/
+  color: #212529;
 }
-
+input.form-control {
+    height: 40px !important;
+}
+.form-control {
+  box-shadow: 4px 2px 4px 0px #25292d2e !important;
+  color: #212529;
+  letter-spacing: 1px;
+  font-size: 17px !important;
+  font-weight: 500;
+  border-radius: 10px !important;
+}
 .contact .info .email, .contact .info .phone {
   margin-top: 40px;
 }
 
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #1977cc;
+  /*background: #1977cc;*/
+  background: #212529;
   color: #fff;
 }
 
 .contact .php-email-form {
   width: 100%;
-  background: #fff;
+  background: none;
 }
 
 .contact .php-email-form .form-group {

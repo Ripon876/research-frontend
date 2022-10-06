@@ -4,7 +4,9 @@
 .faq .faq-list {
   padding: 0 100px;
 }
-
+.faq{
+  background: none;
+}
 .faq .faq-list ul {
   padding: 0;
   list-style: none;

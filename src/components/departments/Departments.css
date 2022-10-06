@@ -4,6 +4,7 @@
 --------------------------------------------------------------*/
 .departments {
   overflow: hidden;
+  background: #F5F7FB;
 }
 
 .departments .nav-tabs {
