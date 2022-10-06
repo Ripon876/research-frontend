@@ -24,7 +24,6 @@ function App() {
       <Route path='/login' element={<LoginPage />} />
       <Route path='/research' element={<ResearchPage />} />
       <Route path='/publication' element={<PublicationPage />} />
-
       <Route path='/dashboard/:page' element={<DashBoard />} />
     </Routes>
     </>

@@ -56,8 +56,13 @@
 
 .why-us .icon-boxes .icon-box span {
   font-size: 40px;
-  color: #1977cc;
+  font-weight: 700;
+  /*color: #212529;*/
   margin-bottom: 30px !important;
+  transition: all .2s ease-out 0s;
+}
+.why-us .icon-boxes .icon-box:hover .why-us .icon-boxes .icon-box span {
+  color: white;
 }
 
 .why-us .icon-boxes .icon-box h4 {

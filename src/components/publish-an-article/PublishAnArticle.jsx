@@ -34,8 +34,8 @@ function PublishAnArticle() {
                 <label>File</label>
                 <input type="file" name="file" className="form-control" />
               </div>
-              <div className="form-group">
-                <input type="submit" name="submit" className="subBtn btn btn-primary btn-sm px-4 py-2 rounded-pill" />
+              <div className="form-group text-center mt-4">
+                <input type="submit" name="submit" className="btn btn-primary btn-sm px-5 py-2 rounded-pill subBtn" />
               </div>
             </form>
             </div>

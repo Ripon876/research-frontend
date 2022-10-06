@@ -57,8 +57,12 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
+  text-decoration: none;
+  border: none;
 }
-
+.back-to-top:hover {
+ text-decoration: none;
+}
 .back-to-top i {
   display: flex;
   align-items: center;
@@ -67,15 +71,15 @@ section {
   width: 40px;
   height: 40px;
   border-radius: 50px;
-  background: #1977cc;
+  background: #212529;
   color: #fff;
   transition: all 0.4s;
 }
-
+/*
 .back-to-top i:hover {
   background: #1c84e3;
   color: #fff;
-}
+}*/
 
 .datepicker-dropdown {
   padding: 20px !important;
