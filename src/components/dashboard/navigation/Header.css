@@ -1,0 +1,13 @@
+.nav-menu .drop-down ul a{
+    color: #212529;
+    font-weight: 600;
+    font-size: 15px;
+}
+.SideBar {
+    background: #0e141e;
+    height: 100vh;
+}
+
+.SideBar * {
+    color: #ffffffa6 !important;
+}
