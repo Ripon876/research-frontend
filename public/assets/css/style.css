@@ -130,3 +130,11 @@ section {
   color: #212529;
   font-weight: 500;
 }
+
+.dashboard{
+  padding-bottom: 0 !important;
+}
+
+.main-panel{
+  background: #F5F7FB;
+}
