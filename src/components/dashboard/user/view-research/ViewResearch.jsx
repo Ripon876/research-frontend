@@ -1,15 +1,8 @@
-import SideBar from '../navigation/SideBar';
-import Header from '../navigation/Header';
+
 
 function ViewResearch() {
 	return (
-		<>
-    <Header />
-    <section className="dashboard mt-4"  id="dashboard">
-        <div className="row">
-          <SideBar />
-          <div className="col-md-9 py-5">
-            <div className="container">
+	            <div className="container">
               <h4 className="font-weight-bold">History of Hindi</h4>
               <i>published: 23/04/2021</i>
               <p className="pt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -72,13 +65,6 @@ function ViewResearch() {
             </p>
 
         </div>
-
-      </div>
-        </div>
-
-   
-    </section>
-		</>
 	)
 }
 

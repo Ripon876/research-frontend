@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes,Route} from "react-router-dom";
+import { Routes,Route,useParams} from "react-router-dom";
 import Home from './pages/Home';
 import AwardsPage from './pages/AwardsPage';
 import ResearchMyProblemPage from './pages/ResearchMyProblemPage';
@@ -9,11 +9,13 @@ import LoginPage from './pages/LoginPage';
 import SignUpPage from './pages/SignUpPage';
 import ResearchPage from './pages/ResearchPage';
 import PublicationPage from './pages/PublicationPage';
-import DashBoard from './pages/DashBoard';
+import UserDashboard from './pages/UserDashboard';
+import ModeratorDashboard from './pages/ModeratorDashboard';
 
 
 
 function App() {
+
   return (
     <>
     <Routes>
@@ -26,7 +28,8 @@ function App() {
       <Route path='/login' element={<LoginPage />} />
       <Route path='/research' element={<ResearchPage />} />
       <Route path='/publication' element={<PublicationPage />} />
-      <Route path='/dashboard/:page' element={<DashBoard />} />
+      <Route path='/dashboard/user/:page' element={<UserDashboard />} />
+      <Route path='/dashboard/moderator/:page' element={<ModeratorDashboard />} />
     </Routes>
     </>
   )
