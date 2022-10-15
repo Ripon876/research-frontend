@@ -28,8 +28,11 @@ function App() {
       <Route path='/login' element={<LoginPage />} />
       <Route path='/research' element={<ResearchPage />} />
       <Route path='/publication' element={<PublicationPage />} />
+      <Route path='/dashboard/user/' element={<UserDashboard />} />
       <Route path='/dashboard/user/:page' element={<UserDashboard />} />
+      <Route path='/dashboard/moderator/' element={<ModeratorDashboard />} />
       <Route path='/dashboard/moderator/:page' element={<ModeratorDashboard />} />
+      <Route path='/dashboard/moderator/:page/:id' element={<ModeratorDashboard />} />
     </Routes>
     </>
   )
