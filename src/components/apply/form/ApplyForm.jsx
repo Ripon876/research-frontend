@@ -98,6 +98,15 @@ function ApplyForm({ formTitle }) {
 					<input
 						type="text"
 						className="form-control item"
+						name="educational_status"
+						placeholder="Educational Status"
+						onChange={handleChange}
+					/>
+				</div>
+				<div className="form-group">
+					<input
+						type="text"
+						className="form-control item"
 						name="designation"
 						placeholder="Designation"
 						onChange={handleChange}
@@ -115,7 +124,7 @@ function ApplyForm({ formTitle }) {
 				<div className="form-group">
 					<button
 						type="button"
-						className="btn btn-block create-account"
+						className="btn btn-block submit"
 						onClick={handleSubmit}
 					>
 						Apply
