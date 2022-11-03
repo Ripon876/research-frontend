@@ -11,9 +11,7 @@ import ResearchPage from './pages/ResearchPage';
 import PublicationPage from './pages/PublicationPage';
 import UserDashboard from './pages/UserDashboard';
 import ModeratorDashboard from './pages/ModeratorDashboard';
-import ApplyForInternship from './pages/ApplyForInternship';
-
-
+import {InternshipPage,WorkPage} from './pages/ApplyPage';
 
 function App() {
 
@@ -34,7 +32,8 @@ function App() {
       <Route path='/dashboard/moderator/' element={<ModeratorDashboard />} />
       <Route path='/dashboard/moderator/:page' element={<ModeratorDashboard />} />
       <Route path='/dashboard/moderator/:page/:id' element={<ModeratorDashboard />} />
-      <Route path='/apply/internship' element={<ApplyForInternship />} />
+      <Route path='/apply/internship' element={<InternshipPage />} />
+      <Route path='/apply/work' element={<WorkPage />} />
     </Routes>
     </>
   )
