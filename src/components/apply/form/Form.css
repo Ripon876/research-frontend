@@ -31,12 +31,12 @@
     padding: 10px 20px !important;
 }
 
-.registration-form .create-account {
+.registration-form .submit{
     border-radius: 30px;
     padding: 10px 20px;
     font-size: 18px;
     font-weight: bold;
-    background-color: #5791ff;
+    background-color: #212529;
     border: none;
     color: white;
     margin-top: 20px;
