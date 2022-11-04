@@ -13,6 +13,7 @@ import UserDashboard from './pages/UserDashboard';
 import ModeratorDashboard from './pages/ModeratorDashboard';
 import {InternshipPage,WorkPage} from './pages/ApplyPage';
 import SponsorPage from './pages/SponsorPage';
+import DonateUsPage from './pages/DonateUsPage';
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
       <Route path='/apply/internship' element={<InternshipPage />} />
       <Route path='/apply/work' element={<WorkPage />} />
       <Route path='/sponsor_our_program' element={<SponsorPage />} />
+      <Route path='/donate_us' element={<DonateUsPage />} />
     </Routes>
     </>
   )
