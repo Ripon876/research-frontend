@@ -21,11 +21,11 @@ function Header() {
                   <li><Link to="/publication-request">Request to publish your research</Link></li>
                 </ul>
               </li>
-              <li><Link to="/be-a-researcher" class="btn px-4 py-2 rounded-pill" style={{
+              <li><Link to="/be-a-researcher" className="btn px-4 py-2 rounded-pill" style={{
                   background: 'rgb(33 37 41)',
                   color: 'white'}} >Be A Researcher</Link></li>
               {/*<li><Link to="/login"><i class="icofont-ui-user"></i> </Link> </li>*/}
-              <li className="drop-down"><Link to="/"><i class="icofont-ui-user"></i></Link>
+              <li className="drop-down"><Link to="/"><i className="icofont-ui-user"></i></Link>
                 <ul>
                   <li><Link to="/signup">Sign Up</Link></li>
                   <li><Link to="/login">Login</Link></li>
