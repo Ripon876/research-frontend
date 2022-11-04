@@ -1,9 +1,13 @@
 import { useState } from "react";
+import { Fade } from "react-reveal";
 import Form from "./challenge_form/Form";
-import Challenge from "./Challenge";
+import Mathematics from "./mathematics/Mathematics";
+import It from "./it/It";
+import "./Challenges.css";
 
 function Challenges() {
 	const [showForm, setFormShow] = useState(false);
+	const [category, setCategory] = useState("Mathematics");
 
 	return (
 		<div>
@@ -30,13 +34,23 @@ function Challenges() {
 				>
 					<button
 						type="button"
-						className="btn btn-lg btn-dark border"
+						className={`btn btn-lg btn-dark border ${
+							category === "Mathematics" ? "activeCate" : ""
+						}`}
+						onClick={() => {
+							setCategory("Mathematics");
+						}}
 					>
 						Mathematics
 					</button>
 					<button
 						type="button"
-						className="btn btn-lg btn-dark border"
+						className={`btn btn-lg btn-dark border ${
+							category === "IT" ? "activeCate" : ""
+						}`}
+						onClick={() => {
+							setCategory("IT");
+						}}
 					>
 						IT
 					</button>
@@ -54,20 +68,19 @@ function Challenges() {
 					</strong>
 					your own
 				</h4>
-				<div>{!showForm && <Form />}</div>
+				<div>
+					{showForm && (
+						<Fade>
+							<Form category={category} />{" "}
+						</Fade>
+					)}
+				</div>
 			</div>
 			<div className="container">
 				<h4 className="font-weight-bold my-4 mt-5">
-					Challenges that you can participate
+					<strong>Challenges that you can participate</strong>
 				</h4>
-				<div className="container mb-5">
-					<h4 className="font-weight-bold my-4">Our Donors</h4>
-					<div className="justify-content-around row">
-						<Challenge />
-						<Challenge />
-						<Challenge />
-					</div>
-				</div>
+				{category === 'Mathematics' ? <Mathematics /> : <It />}
 			</div>
 		</div>
 	);

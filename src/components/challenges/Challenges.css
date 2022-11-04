@@ -1,0 +1,11 @@
+.activeCate::after {
+    content: '';
+    width: 9px;
+    height: 10px;
+    background: white;
+    display: block;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+}

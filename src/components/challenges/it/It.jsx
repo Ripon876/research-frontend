@@ -1,6 +1,6 @@
 import Challenge from "../Challenge";
 
-function Mathematics() {
+function It() {
 	return (
 		<div className="row">
 			<Challenge />
@@ -14,4 +14,4 @@ function Mathematics() {
 	);
 }
 
-export default Mathematics;
+export default It;

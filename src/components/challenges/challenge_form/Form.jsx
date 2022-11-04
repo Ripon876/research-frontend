@@ -1,50 +1,48 @@
 import { useEffect, useState } from "react";
 import CreatableSelect from "react-select/creatable";
 
-function Form() {
+function Form({category}) {
 	const initialData = {
 		name: "",
 		email: "",
 		challenge: "",
 		file: "",
-		tags : []
+		tags: [],
 	};
 
 	const [formData, updateFormData] = useState(initialData);
 
 	const handleChange = (event) => {
-		if(event === null){
+		if (event === null) {
 			updateFormData({
 				...formData,
-				tags: []
-			})
+				tags: [],
+			});
 			return;
 		}
-		if (event.value) {
+		if (Array.isArray(event)) {
 			updateFormData({
 				...formData,
-				tags: [...formData.tags,event.value]
-			})
+				tags: [...event],
+			});
 			return;
 		} else {
-			console.log(event)
 			updateFormData({
 				...formData,
 				[event.target.name]: event.target.value.trim(),
 			});
 			return;
 		}
-	}
+	};
 	const handleSubmit = () => {
 		console.log(formData);
 	};
 
 	const options = [
-		{ value: "work_1", label: "Work 1" },
-		{ value: "work_3", label: "Work 2" },
-		{ value: "work_3", label: "Work 3" },
+		{ value: "tag_1", label: "Tag 1" },
+		{ value: "tag_3", label: "Tag 2" },
+		{ value: "tag_3", label: "Tag 3" },
 	];
-
 
 	const selectStyles = {
 		control: (styles) => ({
@@ -53,8 +51,8 @@ function Form() {
 			borderRadius: "20px !important",
 			marginBottom: "25px !important",
 			padding: "2px 10px",
-			boxShadow: '4px 2px 4px 0px #25292d2e !important',
-			height: '45px'
+			boxShadow: "4px 2px 4px 0px #25292d2e !important",
+			minHeight: "45px",
 		}),
 	};
 
@@ -63,6 +61,7 @@ function Form() {
 			<div className="container">
 				<div className="form w-50">
 					<form>
+						<p className="mb-1 pl-1 text-muted">Challenge will submited in <strong>'{category}'</strong> Category</p>
 						<div className="form-group">
 							<input
 								type="text"
@@ -103,7 +102,7 @@ function Form() {
 								isClearable
 								options={options}
 								styles={selectStyles}
-								placeholder="Work as"
+								placeholder="Tags"
 								onChange={handleChange}
 								isMulti
 							/>
