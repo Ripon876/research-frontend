@@ -56,7 +56,7 @@ function Challenges() {
 					</button>
 				</div>
 				<h4 className="font-weight-bold my-4">
-					See existing challenges or{" "}
+					Explore existing challenges or{" "}
 					<strong
 						onClick={() => {
 							setFormShow(!showForm);
