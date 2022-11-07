@@ -28,7 +28,7 @@ function DonateUs() {
 					</div>
 					<div className="col-md-6 d-flex align-items-center">
 						<div>
-							<p style={{ fontSize: "20px" }}>
+							<p style={{ fontSize: "18px" }}>
 								Magnam dolores commodi suscipit. Necessitatibus
 								eius consequatur ex aliquid fuga eum quidem. Sit
 								sint consectetur velit. Quisquam quos quisquam
