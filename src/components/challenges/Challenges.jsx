@@ -3,6 +3,7 @@ import { Fade } from "react-reveal";
 import Form from "./challenge_form/Form";
 import Mathematics from "./mathematics/Mathematics";
 import It from "./it/It";
+import TopChallengers from "./top_challengers/TopChallengers";
 import "./Challenges.css";
 
 function Challenges() {
@@ -68,19 +69,32 @@ function Challenges() {
 					</strong>
 					your own
 				</h4>
-				<div>
-					{showForm && (
-						<Fade>
-							<Form category={category} />{" "}
-						</Fade>
-					)}
+				<div className="row">
+					<div className="col-md-6">
+						<div>
+							{showForm && (
+								<Fade>
+									<Form category={category} />
+								</Fade>
+							)}
+						</div>{" "}
+					</div>
+					<div className="col-md-6">
+						<div>
+							{showForm && (
+								<Fade>
+									<TopChallengers />
+								</Fade>
+							)}
+						</div>{" "}
+					</div>
 				</div>
 			</div>
 			<div className="container">
 				<h4 className="font-weight-bold my-4 mt-5">
 					<strong>Challenges that you can participate</strong>
 				</h4>
-				{category === 'Mathematics' ? <Mathematics /> : <It />}
+				{category === "Mathematics" ? <Mathematics /> : <It />}
 			</div>
 		</div>
 	);
