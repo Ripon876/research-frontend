@@ -1,6 +1,13 @@
 import Donors from "./Donors";
 
 function DonateUs() {
+	const options = [
+		"https://freelogopng.com/images/all_img/1656227518bkash-logo-png.png",
+		"https://www.freepnglogos.com/uploads/visa-card-logo-9.png",
+		"https://www.freepnglogos.com/uploads/discover-png-logo/mastercard-discover-logo-png-22.png",
+		"https://seeklogo.com/images/D/dutch-bangla-rocket-logo-B4D1CC458D-seeklogo.com.png",
+	];
+
 	return (
 		<div>
 			<div className="align-items-center d-flex hero justify-content-center mt-5 pt-5">
@@ -40,35 +47,19 @@ function DonateUs() {
 			<div className="container my-5">
 				<h4 className="font-weight-bold my-4">Donate us via</h4>
 				<div>
-					<div className='d-flex justify-content-around'>
-						<div style={{ height: "100px", width: "200px" ,cursor: 'pointer'}} className='rounded shadow p-2'>
-							<img
-								src="https://freelogopng.com/images/all_img/1656227518bkash-logo-png.png"
-								className="img-fluid rounded w-100 h-100"
-								style={{ objectFit: "contain" }}
-							/>
-						</div>
-						<div style={{ height: "100px", width: "200px" ,cursor: 'pointer'}} className='rounded shadow p-2'>
-							<img
-								src="https://www.freepnglogos.com/uploads/visa-card-logo-9.png"
-								className="img-fluid rounded w-100 h-100"
-								style={{ objectFit: "contain" }}
-							/>
-						</div>
-						<div style={{ height: "100px", width: "200px" ,cursor: 'pointer'}} className='rounded shadow p-2'>
-							<img
-								src="https://www.freepnglogos.com/uploads/discover-png-logo/mastercard-discover-logo-png-22.png"
-								className="img-fluid rounded w-100 h-100"
-								style={{ objectFit: "contain" }}
-							/>
-						</div>
-						<div style={{ height: "100px", width: "200px" ,cursor: 'pointer'}} className='rounded shadow p-2'>
-							<img
-								src="https://seeklogo.com/images/D/dutch-bangla-rocket-logo-B4D1CC458D-seeklogo.com.png"
-								className="img-fluid rounded w-100 h-100"
-								style={{ objectFit: "contain" }}
-							/>
-						</div>
+					<div className="d-flex justify-content-around">
+						{options?.map((gateway) => (
+							<div
+								style={{ height: "100px", width: " 200px", cursor: "pointer" }}
+								className="rounded shadow p-2"
+							>
+								<img
+									src={gateway}
+									className="img-fluid rounded w-100 h-100"
+									style={{ objectFit: "contain" }}
+								/>
+							</div>
+						))}
 					</div>
 				</div>
 			</div>
