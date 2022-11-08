@@ -79,24 +79,6 @@ function Form({ category }) {
 				<h4 className="font-weight-bold my-4">Make a Post</h4>
 				<div className="form">
 					<form>
-						{/*						<div className="form-group">
-							<input
-								type="text"
-								placeholder="Full name"
-								className="form-control"
-								name="name"
-								onChange={handleChange}
-							/>
-						</div>
-						<div className="form-group">
-							<input
-								type="email"
-								placeholder="Email"
-								className="form-control"
-								name="email"
-								onChange={handleChange}
-							/>
-						</div>*/}
 						<div className="form-outline">
 							<textarea
 								className="form-control"
@@ -125,7 +107,7 @@ function Form({ category }) {
 											/>
 										)}
 										{file.type === "video" && (
-											<div className='w-100 h-100 position-relative'>
+											<div className="w-100 h-100 position-relative">
 												<video
 													src={file.data}
 													className="img-fluid rounded w-100 h-100"
@@ -136,7 +118,6 @@ function Form({ category }) {
 												/>
 												<i class="icofont-play-alt-1 icofont-3x videoPlayBtn text-white-50"></i>
 											</div>
-
 										)}
 										{file.type === "application" && (
 											<i
