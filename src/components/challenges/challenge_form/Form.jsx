@@ -4,7 +4,7 @@ import CreatableSelect from "react-select/creatable";
 function Form({category}) {
 	const initialData = {
 		name: "",
-		email: "",
+		// email: "",
 		challenge: "",
 		file: "",
 		tags: [],
@@ -59,7 +59,7 @@ function Form({category}) {
 	return (
 		<div>
 			<div className="container">
-				<div className="form w-50">
+				<div className="form">
 					<form>
 						<p className="mb-1 pl-1 text-muted">Challenge will submited in <strong>'{category}'</strong> Category</p>
 						<div className="form-group">
@@ -70,7 +70,7 @@ function Form({category}) {
 								name="name"
 								onChange={handleChange}
 							/>
-						</div>
+						</div>{/*
 						<div className="form-group">
 							<input
 								type="email"
@@ -79,7 +79,7 @@ function Form({category}) {
 								name="email"
 								onChange={handleChange}
 							/>
-						</div>
+						</div>*/}
 						<div className="form-outline">
 							<textarea
 								className="form-control"
