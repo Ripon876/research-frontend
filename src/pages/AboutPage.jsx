@@ -6,6 +6,7 @@ import Awards from "../components/awards/Awards";
 import Publication from "../components/publication/Publication";
 import Departments from "../components/departments/Departments";
 import Moderators from "../components/moderators/Moderators";
+import Gallery from "../components/gallery/Gallery";
 import Sponsors from "../components/sponsors/Sponsors";
 import FAQ from "../components/faq/FAQ";
 import Contact from "../components/contact/Contact";
@@ -37,6 +38,7 @@ function AboutPage() {
 			{/*<Publication />*/}
 			<Moderators />
 			<Departments />
+			<Gallery />
 			<Sponsors />
 			<FAQ />
 			<Contact />
