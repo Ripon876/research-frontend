@@ -1,8 +1,11 @@
+import Modal from './Modal';
 import './About.css';
+
 
 function About() {
 	return (
 		<>
+    <Modal />
     <section id="about" className="about">
       <div className="container">
         <div className="container">
