@@ -57,8 +57,7 @@ function SolutionForm({ cb }) {
 									<strong>
 										'Lorem ipsum dolor sit amet,
 										consectetur'
-									</strong>{" "}
-									Category
+									</strong>
 								</p>
 								<div className="form-outline">
 									<textarea
