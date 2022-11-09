@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom';
 import { Fade } from "react-reveal";
 
 function Challenge() {
@@ -16,7 +17,7 @@ function Challenge() {
 							Some quick example text to build on the card title
 							and make up the bulk of the card's content.
 						</p>
-						<a href="#">See Details</a>
+						<Link to="/challenge/sdf34543df4/">See Details</Link>
 					</div>
 				</div>
 			</div>
