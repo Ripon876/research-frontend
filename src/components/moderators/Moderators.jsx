@@ -4,8 +4,8 @@ import "./Moderators.css";
 function Moderators() {
 	return (
 		<div>
-			<section id="moderators" className="moderators">
-				<div className="container">
+			<section id="moderators" className="moderators  mt-5 pt-5">
+				<div className="container  mt-5 pt-5">
 					<div className="section-title">
 						<h2>Moderators</h2>
 						<p>
@@ -18,11 +18,10 @@ function Moderators() {
 						</p>
 					</div>
 					<div className="justify-content-center row mt-4">
-						<Moderator />
-						<Moderator />
-						<Moderator />
-						<Moderator />
-						<Moderator />
+						
+						{new Array(12)?.fill(1).map(() => 
+							<Moderator />
+						)}
 					</div>
 				</div>
 			</section>
