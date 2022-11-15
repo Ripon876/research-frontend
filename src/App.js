@@ -18,6 +18,7 @@ import DonateUsPage from './pages/DonateUsPage';
 import ChallengesPage from './pages/ChallengesPage';
 import ChallengePage from './pages/ChallengePage';
 import AboutPage from './pages/AboutPage';
+import ModeratorsPage from './pages/ModeratorsPage';
 
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
       <Route path='/challenges' element={<ChallengesPage />} />
       <Route path='/challenge/:id' element={<ChallengePage />} />
       <Route path='/about_us' element={<AboutPage />} />
+      <Route path='/moderators' element={<ModeratorsPage />} />
     </Routes>
     </>
   )
