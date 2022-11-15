@@ -31,11 +31,8 @@ function AboutPage() {
 					</div>
 				</div>
 			</div>
-			{/*<Slider />*/}
 			<OverView />
-			{/*<About />*/}
 			<Awards />
-			{/*<Publication />*/}
 			<Moderators />
 			<Sponsors />
 			<Gallery />
