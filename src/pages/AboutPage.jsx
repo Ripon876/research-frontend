@@ -5,7 +5,7 @@ import About from "../components/about/About";
 import Awards from "../components/awards/Awards";
 import Publication from "../components/publication/Publication";
 import Departments from "../components/departments/Departments";
-import Moderators from "../components/moderators/Moderators";
+import Moderators from "../components/about/moderators/Moderators";
 import Gallery from "../components/gallery/Gallery";
 import Sponsors from "../components/sponsors/Sponsors";
 import FAQ from "../components/faq/FAQ";
@@ -33,13 +33,13 @@ function AboutPage() {
 			</div>
 			{/*<Slider />*/}
 			<OverView />
-			<About />
+			{/*<About />*/}
 			<Awards />
 			{/*<Publication />*/}
 			<Moderators />
-			<Departments />
-			<Gallery />
 			<Sponsors />
+			<Gallery />
+			<Departments />
 			<FAQ />
 			<Contact />
 			<Footer />
