@@ -19,6 +19,7 @@ import ChallengesPage from './pages/ChallengesPage';
 import ChallengePage from './pages/ChallengePage';
 import AboutPage from './pages/AboutPage';
 import ModeratorsPage from './pages/ModeratorsPage';
+import OurTeamPage from './pages/OurTeamPage';
 
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
       <Route path='/challenge/:id' element={<ChallengePage />} />
       <Route path='/about_us' element={<AboutPage />} />
       <Route path='/moderators' element={<ModeratorsPage />} />
+      <Route path='/our_team' element={<OurTeamPage />} />
     </Routes>
     </>
   )
