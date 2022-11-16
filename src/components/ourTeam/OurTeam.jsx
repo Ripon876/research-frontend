@@ -53,12 +53,9 @@ function OurTeam() {
 					</div>
 				</div>
 				<div className="row">
-					<Member />
-					<Member />
-					<Member />
-					<Member />
-					<Member />
-					<Member />
+					{new Array(6).fill(1)?.map(() => (
+						<Member />
+					))}
 				</div>
 			</div>
 		</section>
