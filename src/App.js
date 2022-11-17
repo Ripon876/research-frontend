@@ -21,6 +21,7 @@ import AboutPage from './pages/AboutPage';
 import ModeratorsPage from './pages/ModeratorsPage';
 import OurTeamPage from './pages/OurTeamPage';
 import OurVisionPage from './pages/OurVisionPage';
+import ResearchLabsPage from './pages/ResearchLabsPage';
 
 
 function App() {
@@ -53,6 +54,7 @@ function App() {
       <Route path='/moderators' element={<ModeratorsPage />} />
       <Route path='/our_team' element={<OurTeamPage />} />
       <Route path='/our_vision' element={<OurVisionPage />} />
+      <Route path='/research_labs' element={<ResearchLabsPage />} />
     </Routes>
     </>
   )
