@@ -1,0 +1,50 @@
+.counts {
+  background: #F5F7FB;
+  padding: 70px 0 70px;
+}
+
+.counts .count-box {
+  padding: 30px 30px 25px 30px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+  transition: all ease-in-out 0.3s;
+}
+.counts .count-box:hover {
+    transform: translate(5px, -10px);
+}
+.counts .count-box i {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  background: #212529;
+  padding: 15px;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.counts .count-box span {
+  font-size: 36px;
+  height: 150px;
+  width: 150px;
+  margin: auto;
+  display: block;
+  font-weight: 600;
+  color: #082744;
+}
+
+.counts .count-box span img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.counts .count-box p {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
