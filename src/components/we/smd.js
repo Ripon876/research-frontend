@@ -17,6 +17,7 @@ export const cardData = [
 	},{
 		icon: 'icofont-award',
 		title: 'Awards',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod'
+		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod',
+		route: '/awards'
 	}
 ]
