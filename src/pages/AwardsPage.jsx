@@ -1,5 +1,5 @@
 import Header from  '../components/header/Header';
-import Awards from  '../components/awards/Awards';
+// import Awards from  '../components/awards/Awards';
 import Institutions from  '../components/institutions/Institutions';
 import Footer from  '../components/footer/Footer';
 
@@ -7,11 +7,9 @@ import Footer from  '../components/footer/Footer';
 function AwardsPage() {
 	return (
 		<div>
-			<Header />
-			<div className='my-5 pt-4'></div>
+			{/*<Header />
 			<Awards />
-			<Institutions />
-			<Footer />
+			<Footer />*/}
 		</div>
 	)
 }
