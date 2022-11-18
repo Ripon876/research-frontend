@@ -6,6 +6,7 @@ import We from "../components/we/We";
 import Publication from "../components/publication/Publication";
 import Departments from "../components/departments/Departments";
 import Moderators from "../components/about/moderators/Moderators";
+import Modal from '../components/about/Modal';
 import Gallery from "../components/gallery/Gallery";
 import Sponsors from "../components/sponsors/Sponsors";
 import FAQ from "../components/faq/FAQ";
@@ -15,6 +16,7 @@ import Footer from "../components/footer/Footer";
 function AboutPage() {
 	return (
 		<div>
+		<Modal />
 			<Header />
 			<div className="align-items-center d-flex hero justify-content-center mt-5 pt-5">
 				<div>
