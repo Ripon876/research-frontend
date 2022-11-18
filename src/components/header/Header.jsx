@@ -14,7 +14,7 @@ function Header() {
         <nav className="nav-menu d-none d-lg-block">
             <ul>
               <li ><Link to="/">Home</Link></li>
-              <li className=""><Link to="/awards">Awards</Link></li>
+              <li className=""><Link to="/about_us">About Us</Link></li>
               <li className="drop-down"><Link to="/">Research REQUEST</Link>
                 <ul>
                   <li><Link to="/research-my-problem">Request to research my problem</Link></li>
