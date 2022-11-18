@@ -1,0 +1,9 @@
+.filterButton{
+	cursor: pointer;
+}
+.pagination a{
+	color: black;
+}
+.pagination .pageNum {
+	font-weight: bold;
+}
