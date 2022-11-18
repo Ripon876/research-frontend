@@ -48,6 +48,7 @@ function DonateUs() {
 				<h4 className="font-weight-bold my-4">Donate us via</h4>
 				<div>
 					<div className="d-flex justify-content-around">
+					   <button id="bKash_button" className='btn btn-dark' disabled="disabled">Pay With bKash</button>
 						{options?.map((gateway) => (
 							<div
 								style={{ height: "100px", width: " 200px", cursor: "pointer" }}
