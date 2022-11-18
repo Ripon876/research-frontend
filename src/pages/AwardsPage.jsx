@@ -1,15 +1,14 @@
 import Header from  '../components/header/Header';
-// import Awards from  '../components/awards/Awards';
-import Institutions from  '../components/institutions/Institutions';
+import Awards from  '../components/awards/Awards';
 import Footer from  '../components/footer/Footer';
 
 
 function AwardsPage() {
 	return (
 		<div>
-			{/*<Header />
+			<Header />
 			<Awards />
-			<Footer />*/}
+			<Footer />
 		</div>
 	)
 }
