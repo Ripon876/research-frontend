@@ -4,7 +4,7 @@ import { Navigation, Autoplay, EffectCube } from "swiper";
 function TopChallengers() {
 	return (
 		<div className="container mb-5">
-			<h4 className="font-weight-bold my-4">Top Challengers</h4>
+			<h4 className="font-weight-bold mb-0">Top Challengers</h4>
 			<div className="justify-content-around row">
 				<Swiper
 					navigation={true}
