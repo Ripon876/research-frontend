@@ -2,7 +2,7 @@ import React from "react";
 
 function Institution({institution}) {
 	return (
-		<div className="col-md-4 pb-4">
+		<div className="col-sm-6 col-md-4 pb-4">
 			<div class="card border-0 text-center">
 				<img
 					src={institution?.img}
