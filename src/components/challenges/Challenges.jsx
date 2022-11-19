@@ -28,34 +28,46 @@ function Challenges() {
 				</div>
 			</div>
 			<div className="container mb-5">
-				<div
-					className="btn-group"
-					role="group"
-					aria-label="Basic example"
-				>
-					<button
-						type="button"
-						className={`btn btn-lg btn-dark border ${
-							category === "Mathematics" ? "activeCate" : ""
-						}`}
-						onClick={() => {
-							setCategory("Mathematics");
-						}}
-					>
-						Mathematics
-					</button>
-					<button
-						type="button"
-						className={`btn btn-lg btn-dark border ${
-							category === "IT" ? "activeCate" : ""
-						}`}
-						onClick={() => {
-							setCategory("IT");
-						}}
-					>
-						IT
-					</button>
+				<div className="row align-items-center">
+					<div className="col-md-5 mb-5">
+						<div
+							className="btn-group"
+							role="group"
+							aria-label="Basic example"
+						>
+							<button
+								type="button"
+								className={`btn btn-lg btn-dark border ${
+									category === "Mathematics"
+										? "activeCate"
+										: ""
+								}`}
+								onClick={() => {
+									setCategory("Mathematics");
+								}}
+							>
+								Mathematics
+							</button>
+							<button
+								type="button"
+								className={`btn btn-lg btn-dark border ${
+									category === "IT" ? "activeCate" : ""
+								}`}
+								onClick={() => {
+									setCategory("IT");
+								}}
+							>
+								IT
+							</button>
+						</div>
+					</div>
+					<div className="col-md-7 px-5">
+						<Fade>
+							<TopChallengers />
+						</Fade>
+					</div>
 				</div>
+
 				<h4 className="font-weight-bold my-4">
 					Explore existing challenges or{" "}
 					<strong
@@ -70,27 +82,18 @@ function Challenges() {
 					your own
 				</h4>
 				<div className="row">
-					<div className="col-md-6">
+					<div className="col-md-7 m-auto">
 						<div>
-							{showForm && (
+							{!showForm && (
 								<Fade>
 									<Form category={category} />
 								</Fade>
 							)}
-						</div>{" "}
-					</div>
-					<div className="col-md-6">
-						<div>
-							{showForm && (
-								<Fade>
-									<TopChallengers />
-								</Fade>
-							)}
-						</div>{" "}
+						</div>
 					</div>
 				</div>
 			</div>
-			<div className="container">
+			<div className="container mb-5">
 				<h4 className="font-weight-bold my-4 mt-5">
 					<strong>Challenges that you can participate</strong>
 				</h4>
