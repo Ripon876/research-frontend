@@ -1,52 +1,103 @@
-import './PublishAnArticle.css';
+import { useEffect, useState } from "react";
+import "./PublishAnArticle.css";
 
 function PublishAnArticle() {
-	return (
-		<>
-<section className="inner-page">
-      <div className="container">
-       
-        <div className="row">
-          <div className="col-md-6 align-items-center d-flex">
-            <img src="assets/img/about.jpg" className="img-fluid rounded" />
-          </div>
-          <div className="col-md-6  pt-5">
-            <div className="box mx-2">
-              <form>
-              <h4 className="font-weight-bold">Publication Request</h4>
-              <div className="form-group">
-                <label>Fullname</label>
-                <input type="text" name="name" className="form-control" />
+  const initialData = {
+    name: "",
+    email: "",
+    title: "",
+    description: "",
+  };
+  const [formData, updateFormData] = useState(initialData);
+
+  const handleChange = (event) => {
+    if (event === null) {
+      updateFormData({
+        ...formData,
+        work_as: "",
+      });
+      return;
+    }
+    if (event.value) {
+      updateFormData({
+        ...formData,
+        work_as: event.value,
+      });
+    } else {
+      updateFormData({
+        ...formData,
+        [event.target.name]: event.target.value.trim(),
+      });
+    }
+  };
+
+  const handleSubmit = () => {
+    console.log(formData);
+  };
+
+  return (
+    <>
+      <section className="inner-page">
+        <div className="container">
+          <div className="box mx-2 registration-form mb-5">
+            <form>
+              <div className="d-flex justify-content-center align-items-baseline mb-4">
+                <h4>Publication Request</h4>
               </div>
               <div className="form-group">
-                <label>Email</label>
-                <input type="email" name="Email" className="form-control" />
+                <input
+                  type="text"
+                  className="form-control item"
+                  name="name"
+                  placeholder="Full name"
+                  onChange={handleChange}
+                />
               </div>
               <div className="form-group">
-                <label>Title of Publication Article</label>
-                <input type="text" name="title" className="form-control" />
+                <input
+                  type="text"
+                  className="form-control item"
+                  name="email"
+                  placeholder="Email"
+                  onChange={handleChange}
+                />
               </div>
               <div className="form-group">
-                <label>Description</label>
-                <textarea className="form-control" rows='6'></textarea>
+                <input
+                  type="text"
+                  className="form-control item"
+                  name="title"
+                  placeholder="Title of Publication Article"
+                  onChange={handleChange}
+                />
               </div>
               <div className="form-group">
-                <label>File</label>
-                <input type="file" name="file" className="form-control" />
+                <textarea
+                  className="form-control"
+                  placeholder="Description"
+                  rows="7"
+                  name="description"
+                  onChange={handleChange}
+                ></textarea>
               </div>
-              <div className="form-group text-center mt-4">
-                <input type="submit" name="submit" className="btn btn-primary btn-sm px-5 py-2 rounded-pill subBtn" />
+              <div className="form-group">
+                <input type="file" name="file" className="form-control item" />
+              </div>
+              <div className="form-group">
+                <button
+                  type="button"
+                  className="btn btn-block submit"
+                  onClick={handleSubmit}
+                >
+                  Submit
+                </button>
               </div>
             </form>
-            </div>
           </div>
-          
-          
         </div>
-      </div>
-    </section>
-		</>
-	)
+      </section>
+    </>
+  );
 }
 
 export default PublishAnArticle;
