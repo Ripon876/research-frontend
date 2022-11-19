@@ -52,7 +52,7 @@ function Moderators() {
 					</Swiper>
 				</div>
 				<div className='text-right'>
-					<Link to='/moderators' className='text-dark'>See more</Link>
+					<Link to='/moderators' className='text-dark'>See All</Link>
 				</div>
 			</div>
 		</section>
