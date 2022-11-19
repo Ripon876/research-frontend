@@ -1,59 +1,145 @@
-import './BeAResearcher.css';
+import { useEffect, useState } from "react";
+import CreatableSelect from "react-select/creatable";
+import "./BeAResearcher.css";
 
 function BeAResearcher() {
-	return (
-		<>
- 
-<section className="inner-page">
-      <div className="container">
-       
-        <div className="row">
-          <div className="col-md-5 align-items-center d-flex">
-            <img src="assets/img/about.jpg" className="img-fluid rounded" />
-          </div>
-          <div className="align-items-center col-md-7 d-flex pt-4 row ">
+  const initialData = {
+    name: "",
+    email: "",
+    institution: "",
+    department: "",
+    institution_id: "",
+    interestedOn: [],
+  };
+  const [formData, updateFormData] = useState(initialData);
+
+  const handleChange = (event) => {
+    if (event === null) {
+      updateFormData({
+        ...formData,
+        interestedOn: [],
+      });
+      return;
+    }
+    if (Array.isArray(event)) {
+      console.log(event);
+      updateFormData({
+        ...formData,
+        interestedOn: [...event],
+      });
+    } else {
+      updateFormData({
+        ...formData,
+        [event.target.name]: event.target.value.trim(),
+      });
+    }
+  };
+
+  const handleSubmit = () => {
+    console.log(formData);
+  };
+
+  const options = [
+    { value: "topic_1", label: "Topic 1" },
+    { value: "topic_2", label: "Topic 2" },
+    { value: "topic_3", label: "Topic 3" },
+  ];
+
+  const selectStyles = {
+    control: (styles) => ({
+      ...styles,
+      backgroundColor: "white",
+      borderRadius: "20px !important",
+      marginBottom: "25px !important",
+      padding: "2px 10px",
+      boxShadow: "4px 2px 4px 0px #25292d2e !important",
+      height: "45px",
+    }),
+  };
+
+  return (
+    <>
+      <section className="inner-page">
+        <div className="container">
+          <div className="row justify-content-center">
             <div className="col-md-8">
-              <form>
-              <h4 className="font-weight-bold py-3"> Request to be a Researcher</h4>
-              <div className="form-group ">
-                
-                <input type="text" name="name" className="form-control" placeholder="Fullname" />
-              </div>
-              <div className="form-group">
-                <input type="email" name="Email" className="form-control" placeholder="Email" />
-              </div>
-              <div className="form-group">
-                <input type="text" name="institution" className="form-control" placeholder="Institution" />
-              </div>
-              <div className="form-group">
-                <input type="text" name="dept" className="form-control" placeholder="Department" />
-              </div>
-              <div className="form-group">
-               
-                <input type="text" name="title" className="form-control" placeholder="Topic you are interested on" />
-              </div>
-              <div className="form-group">
-                <input type="text" name="institution_id" className="form-control" placeholder="Institution ID" />
-              </div>
-              <div className="form-group text-center mt-4">
-                <input type="submit" name="Submit" className="btn btn-primary btn-sm px-5 py-2 rounded-pill subBtn" />
-              </div>
-            </form>
-            </div>
-            <div className="col-md-4">
-              <div  style={{height: '180px', width: '200px', color: 'red'}} className="border my-3">
-                <img src="assets/img/john.png" className="img-fluid" />
-              </div>
-              <div className="form-group">
-                <input type="file" name="Passport" />
+              <div className="registration-form mb-5">
+                <form>
+                  <div className="d-flex justify-content-center align-items-baseline mb-4">
+                    <h4>Request to be a Researcher</h4>
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      className="form-control item"
+                      name="name"
+                      placeholder="Full name"
+                      onChange={handleChange}
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      className="form-control item"
+                      name="email"
+                      placeholder="Email"
+                      onChange={handleChange}
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      className="form-control item"
+                      name="institution"
+                      placeholder="Institution"
+                      onChange={handleChange}
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      className="form-control item"
+                      name="department"
+                      placeholder="Department"
+                      onChange={handleChange}
+                    />
+                  </div>
+                  <div className="form-group">
+                    <CreatableSelect
+                      isClearable
+                      options={options}
+                      styles={selectStyles}
+                      placeholder="Topic you are interested on"
+                      onChange={handleChange}
+                      isMulti
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      className="form-control item"
+                      name="institution_id"
+                      placeholder="Institution ID"
+                      onChange={handleChange}
+                    />
+                  </div>
+                  <div className="form-group">
+                    <button
+                      type="button"
+                      className="btn btn-block submit"
+                      onClick={handleSubmit}
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-		</>
-	)
+      </section>
+    </>
+  );
 }
 
 export default BeAResearcher;
