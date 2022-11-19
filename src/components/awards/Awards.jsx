@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Institutions from "../institutions/Institutions";
+import BResearchers from './bestResearchers/BResearchers';
+import BInstitutions from './bestInstitutions/BInstitutions';
 import { data } from "./smd";
 import "./Awards.css";
 
@@ -37,7 +39,11 @@ function Awards() {
 					</p>
 				</div>
 				<div className="container">
-					<div className="d-flex">
+					<BResearchers />
+					<BInstitutions />
+				</div>
+				<div className="container">
+					{/*<div className="d-flex">
 						<div class="form-outline mb-2 mr-3 w-100">
 							<input
 								type="search"
@@ -49,9 +55,9 @@ function Awards() {
 						<h2 className="align-items-center d-flex m-0 mr-3">
 							<i className="icofont-filter filterButton"></i>
 						</h2>
-					</div>
+					</div>*/}
 
-					<table
+					{/*<table
 						className="table table-bordered text-center"
 						style={{ fontSize: "18px" }}
 					>
@@ -73,8 +79,8 @@ function Awards() {
 								</tr>
 							))}
 						</tbody>
-					</table>
-					<nav>
+					</table>*/}
+					{/*<nav>
 						<ul className="pagination text-dark">
 							<li className="page-item">
 								<a className="page-link">
@@ -92,7 +98,7 @@ function Awards() {
 								</a>
 							</li>
 						</ul>
-					</nav>
+					</nav>*/}
 				</div>
 			</div>
 		</section>
