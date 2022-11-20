@@ -22,6 +22,7 @@ import ModeratorsPage from './pages/ModeratorsPage';
 import OurTeamPage from './pages/OurTeamPage';
 import OurVisionPage from './pages/OurVisionPage';
 import ResearchLabsPage from './pages/ResearchLabsPage';
+import TopChallengersPage from './pages/TopChallengersPage';
 
 
 function App() {
@@ -55,6 +56,7 @@ function App() {
       <Route path='/our_team' element={<OurTeamPage />} />
       <Route path='/our_vision' element={<OurVisionPage />} />
       <Route path='/research_labs' element={<ResearchLabsPage />} />
+      <Route path='/top_challengers' element={<TopChallengersPage />} />
     </Routes>
     </>
   )
