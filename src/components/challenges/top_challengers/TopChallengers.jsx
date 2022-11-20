@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, EffectCube } from "swiper";
+import { Link } from "react-router-dom";
 
 function TopChallengers() {
 	return (
@@ -8,7 +9,7 @@ function TopChallengers() {
 			<div className="justify-content-around row">
 				<Swiper
 					navigation={true}
-					modules={[Autoplay, Navigation,EffectCube]}
+					modules={[Autoplay, Navigation, EffectCube]}
 					loop={true}
 					className="mySwiper py-5"
 					slidesPerView={3}
@@ -45,6 +46,14 @@ function TopChallengers() {
 						</SwiperSlide>
 					))}
 				</Swiper>
+				<div
+					className="pr-4 text-right w-100"
+					style={{ marginTop: "-35px", zIndex: 9 }}
+				>
+					<Link to="/top_challengers" className="text-dark">
+						See All
+					</Link>
+				</div>
 			</div>
 		</div>
 	);
