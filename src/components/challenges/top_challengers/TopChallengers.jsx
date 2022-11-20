@@ -18,19 +18,7 @@ function TopChallengers() {
 						delay: 1500,
 						disableOnInteraction: false,
 					}}
-					// breakpoints={{
-					// 	// when window width is >= 640px
-					// 	640: {
-					// 		width: 640,
-					// 		slidesPerView: 1,
-					// 	},
-					// 	// when window width is >= 768px
-					// 	768: {
-					// 		width: 768,
-					// 		slidesPerView: 2,
-					// 		spaceBetween: 10,
-					// 	},
-					// }}
+					
 				>
 					{new Array(10).fill(undefined)?.map(() => (
 						<SwiperSlide>
