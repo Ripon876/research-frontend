@@ -23,7 +23,7 @@ import OurTeamPage from './pages/OurTeamPage';
 import OurVisionPage from './pages/OurVisionPage';
 import ResearchLabsPage from './pages/ResearchLabsPage';
 import TopChallengersPage from './pages/TopChallengersPage';
-
+import Dashboard from './components/dashboard_2/Dashboard';
 
 function App() {
 
@@ -40,11 +40,11 @@ function App() {
       <Route path='/login' element={<LoginPage />} />
       <Route path='/research' element={<ResearchPage />} />
       <Route path='/publication' element={<PublicationPage />} />
-      <Route path='/dashboard/user/' element={<UserDashboard />} />
+      {/*<Route path='/dashboard/user/' element={<UserDashboard />} />
       <Route path='/dashboard/user/:page' element={<UserDashboard />} />
       <Route path='/dashboard/moderator/' element={<ModeratorDashboard />} />
       <Route path='/dashboard/moderator/:page' element={<ModeratorDashboard />} />
-      <Route path='/dashboard/moderator/:page/:id' element={<ModeratorDashboard />} />
+      <Route path='/dashboard/moderator/:page/:id' element={<ModeratorDashboard />} />*/}
       <Route path='/apply/internship' element={<InternshipPage />} />
       <Route path='/apply/work' element={<WorkPage />} />
       <Route path='/sponsor_our_program' element={<SponsorPage />} />
@@ -57,6 +57,7 @@ function App() {
       <Route path='/our_vision' element={<OurVisionPage />} />
       <Route path='/research_labs' element={<ResearchLabsPage />} />
       <Route path='/top_challengers' element={<TopChallengersPage />} />
+      <Route path='/dashboard/:type' element={<Dashboard />} />
     </Routes>
     </>
   )
