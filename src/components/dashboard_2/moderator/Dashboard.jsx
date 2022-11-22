@@ -1,7 +1,8 @@
 import Header from '../header/Header';
 import Posts from '../posts/Posts';
 
-function M_Dashboard() {
+function MDashboard() {
+	console.log('moderator Dashboard')
 	return (
 		<div>
 			<Header />
@@ -10,4 +11,4 @@ function M_Dashboard() {
 	)
 }
 
-export default M_Dashboard
+export default MDashboard;

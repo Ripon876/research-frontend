@@ -1,7 +1,7 @@
 import Header from '../header/Header';
 import Posts from '../posts/Posts';
 
-function R_Dashboard() {
+function RDashboard() {
 	return (
 		<div>
 			<Header />
@@ -10,4 +10,4 @@ function R_Dashboard() {
 	);
 }
 
-export default R_Dashboard;
+export default RDashboard;
