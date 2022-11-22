@@ -57,7 +57,7 @@ function App() {
       <Route path='/our_vision' element={<OurVisionPage />} />
       <Route path='/research_labs' element={<ResearchLabsPage />} />
       <Route path='/top_challengers' element={<TopChallengersPage />} />
-      <Route path='/dashboard/moderator' element={<Dashboard />} />
+      <Route path='/dashboard/:type' element={<Dashboard />} />
     </Routes>
     </>
   )

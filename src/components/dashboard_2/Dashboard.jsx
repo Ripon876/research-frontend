@@ -1,20 +1,16 @@
 import {useParams} from 'react-router-dom';
-import MDashboard from './moderator/Dashboard';
-import RDashboard from './researcher/Dashboard';
+import M_Dashboard from './moderator/Dashboard';
+import R_Dashboard from './researcher/Dashboard';
 
 function Dashboard() {
 	const {type} = useParams();
-
-
-	console.log(type);
 	return (
 		<div>
-			{/*{type === 'moderator' ? 
-				
+			{type === 'moderator ' ? 
+				<M_Dashboard />
 				: 
-				<RDashboard />
-		    }*/}
-		<MDashboard />
+				<R_Dashboard />
+		    }
 		</div>
 	)
 }
