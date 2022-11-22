@@ -2,7 +2,7 @@ import { useState } from "react";
 import Post from "./Post";
 
 function Posts() {
-	const [category, setCategory] = useState("Mathematics");
+	const [category, setCategory] = useState("Posts");
 	return (
 		<div>
 			<div className="container text-center">
