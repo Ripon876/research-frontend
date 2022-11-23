@@ -51,3 +51,25 @@ h1, h2, h3, h4, h5, h6 {
     background: #000000 !important;
     box-shadow: 0 0 0 0.2rem rgb(33 37 41) !important;
 }
+
+.swal2-timer-progress-bar {
+    height: 0.3em !important;
+    background: rgb(52 58 64 / 62%) !important;
+}
+/*.swal2-error{
+  border-color: #dc3545 !important;
+}
+.swal2-error .swal2-x-mark-line-left{ 
+  background-color: #dc3545 !important; 
+}
+.swal2-error .swal2-x-mark-line-right{ 
+  background-color: #dc3545 !important; 
+}
+
+.swal2-error .swal2-timer-progress-bar { 
+     background: rgb(220 53 69) !important;
+}
+
+.swal2-success-ring {
+      border-color: #28a745 !important;
+}*/
