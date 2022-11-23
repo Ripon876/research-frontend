@@ -1,11 +1,11 @@
 import Header from '../header/Header';
-import Posts from '../posts/Posts';
+import Cards from '../cards/Cards';
 
 function R_Dashboard() {
 	return (
 		<div>
 			<Header />
-			<Posts />
+			<Cards />
 		</div>
 	);
 }
