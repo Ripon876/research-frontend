@@ -1,0 +1,20 @@
+.contentViewer {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background: #09090942;
+	backdrop-filter: blur(2px);
+	width: 100% !important;
+	height: 100% !important;
+}
+.contentViewer .container {
+	margin: 70px auto;
+	background: white;
+	height: 85% !important;
+	position: relative;
+}
+.denyBtn {
+	background: #dc3545 !important;
+}
