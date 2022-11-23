@@ -1,11 +1,13 @@
 import Header from '../header/Header';
-import Posts from '../posts/Posts';
+import Footer from '../footer/Footer';
+import Cards from '../cards/Cards';
 
 function M_Dashboard() {
 	return (
 		<div>
 			<Header />
-			<Posts />
+			<Cards />
+			<Footer />
 		</div>
 	)
 }
