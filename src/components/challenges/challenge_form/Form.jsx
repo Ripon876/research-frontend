@@ -58,7 +58,12 @@ function Form({category}) {
 
 	return (
 		<div>
-			<div className="container">
+			<div className="container p-0">
+			<h4 class="font-weight-bold mb-3">
+							<strong>
+								Add a challenge
+							</strong>
+						</h4>
 				<div className="form">
 					<form>
 						<p className="mb-1 pl-1 text-muted">Challenge will submited in <strong>'{category}'</strong> Category</p>

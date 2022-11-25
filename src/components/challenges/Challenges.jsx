@@ -4,6 +4,7 @@ import Form from "./challenge_form/Form";
 import Mathematics from "./mathematics/Mathematics";
 import It from "./it/It";
 import TopChallengers from "./top_challengers/TopChallengers";
+import Challenge from "./Challenge";
 import "./Challenges.css";
 
 function Challenges() {
@@ -29,7 +30,7 @@ function Challenges() {
 			</div>
 			<div className="container mb-5">
 				<div className="row align-items-center">
-					<div className="col-md-5 mb-5">
+					<div className="col-md-5 mt-5">
 						<div
 							className="btn-group"
 							role="group"
@@ -62,33 +63,45 @@ function Challenges() {
 						</div>
 					</div>
 					<div className="col-md-7 px-5">
-						<Fade>
-							<TopChallengers />
-						</Fade>
+						<div>
+							<Fade>
+								<TopChallengers />
+							</Fade>
+						</div>
 					</div>
 				</div>
 
-				<h4 className="font-weight-bold my-4">
+				{/*	<h4 className="font-weight-bold my-4">
 					Explore existing challenges or{" "}
 					<strong
-						onClick={() => {
-							setFormShow(!showForm);
-						}}
-						style={{ cursor: "pointer" }}
+						// onClick={() => {
+						// 	setFormShow(!showForm);
+						// }}
+						// style={{ cursor: "pointer" }}
 						className="pr-1"
 					>
 						<u>add</u>
 					</strong>
 					your own
-				</h4>
-				<div className="row">
-					<div className="col-md-7 m-auto">
+				</h4>*/}
+				<div className="row mt-5">
+					<div className="col-md-6">
+						<h4 class="font-weight-bold mb-3">
+							<strong>
+								Most Viewed / Most recent Challenges
+							</strong>
+						</h4>
+
+						<div className="row">
+							<Challenge nC />
+							<Challenge nC />
+						</div>
+					</div>
+					<div className="col-md-6">
 						<div>
-							{!showForm && (
-								<Fade>
-									<Form category={category} />
-								</Fade>
-							)}
+							<Fade>
+								<Form category={category} />
+							</Fade>
 						</div>
 					</div>
 				</div>

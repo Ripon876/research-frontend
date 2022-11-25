@@ -1,10 +1,10 @@
 import {Link} from 'react-router-dom';
 import { Fade } from "react-reveal";
 
-function Challenge() {
+function Challenge({nC}) {
 	return (
 		<Fade>
-			<div className="col-md-4 mb-4">
+			<div className={` ${nC ? 'col-md-6' : 'col-md-4'} col-sm-6 mb-4`}>
 				<div className="card">
 					<div className="card-body">
 						<h5 className="card-title">
