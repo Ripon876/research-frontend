@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function TopChallengers() {
 	return (
-		<div className="container mb-5">
+		<div className="container">
 			<h4 className="font-weight-bold mb-0 text-center">Top Challengers</h4>
 			<div className="justify-content-around row">
 				<Swiper
