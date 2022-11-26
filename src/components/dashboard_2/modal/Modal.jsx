@@ -32,9 +32,9 @@ function Modal({ data, view }) {
 						<div className="h-100">
 							<div>
 								<h4 className="mb-3">
-									Viewing : {data.data.title}
+									Viewing : {data?.data?.title}
 									<span className="bg-secondary mx-1 px-2 py-1 rounded small text-center text-white">
-										{data.type}
+										{data?.type}
 									</span>
 								</h4>
 								<span>
@@ -46,12 +46,12 @@ function Modal({ data, view }) {
 									></i>
 								</span>
 							</div>
-							{data.type === "Post" && <Post post={data.data} />}
+							{data?.type === "Post" && <Post post={data?.data} />}
 							<div
 								className="bg-dark pl-4 position-absolute py-4 w-100"
 								style={{ bottom: 0, left: 0 }}
 							>
-								{data.data.status === "Review" ? (
+								{data?.data?.status === "Review" ? (
 									<div>
 										<button
 											className="btn rounded subBtn"
@@ -68,7 +68,7 @@ function Modal({ data, view }) {
 									</div>
 								) : (
 									<div>
-										{data.data.status === "Approved" ? (
+										{data?.data?.status === "Approved" ? (
 											<button
 												disabled
 												className="btn rounded subBtn"
