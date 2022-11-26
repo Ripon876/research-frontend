@@ -3,12 +3,14 @@ import FilterButtons from "./FilterButtons";
 import Post from "./Post";
 import Research from "./Research";
 import Publication from "./Publication";
-import { postData, researchData, articleData } from "./smd";
+import Challenge from "./Challenge";
+import { postData, researchData, articleData ,challengeData} from "./smd";
 
 function Cards() {
 	const [posts, setPosts] = useState(postData);
 	const [researches, setResearches] = useState(researchData);
 	const [articles, setArticles] = useState(articleData);
+	const [challenges, setChallenges] = useState(challengeData);
 	const [category, setCategory] = useState("Posts");
 	const selectRef = useRef();
 
@@ -23,6 +25,10 @@ function Cards() {
 		}
 		if (category === "Publications") {
 			filterData(e, articleData, setArticles);
+			return;
+		}
+		if (category === "Challenges") {
+			filterData(e, challengeData, setChallenges);
 			return;
 		}
 	};
@@ -47,6 +53,9 @@ function Cards() {
 		}
 		if (category === "Publications") {
 			setArticles(articleData);
+		}
+		if (category === "Challenges") {
+			setArticles(challengeData);
 		}
 	}, [category]);
 
@@ -93,6 +102,16 @@ function Cards() {
 							<Publication article={article} />
 						))}
 						{articles.length === 0 && (
+							<p className="w-100 text-center">No data found</p>
+						)}
+					</div>
+				)}
+				{category === "Challenges" && (
+					<div className="row">
+						{challenges?.map((challenge) => (
+							<Challenge challenge={challenge} />
+						))}
+						{challenges.length === 0 && (
 							<p className="w-100 text-center">No data found</p>
 						)}
 					</div>
