@@ -1,0 +1,19 @@
+.notifications {
+    position: relative;
+}
+
+.seeAllNotiBtn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 65px;
+    width: 100%;
+    background: #f1f3f5;
+    bottom: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.seeAllNotiBtn h2{
+    font-size: 20px;
+}

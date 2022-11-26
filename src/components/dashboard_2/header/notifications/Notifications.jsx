@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Notification from "./Notification";
+import "./Notifications.css";
 
 function Notifications() {
 	return (
@@ -13,10 +14,16 @@ function Notifications() {
 						Notifications
 					</h4>
 				</div>
-				<Notification />
-				<Notification />
-				<Notification />
-				<Notification />
+
+				<div>
+					<Notification />
+					<Notification />
+					<Notification />
+					<Notification />
+				</div>
+				<div className='seeAllNotiBtn'>
+					<h2 className='text-center'>See All <i class="icofont-simple-down"></i></h2>
+				</div>
 			</div>
 		</div>
 	);
