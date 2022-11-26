@@ -120,6 +120,7 @@ export const challengeData = [
 	{
 		name: "Jhone Doe",
 		email: "jhonedoe@gmail.com",
+		title: "Lorem ipsum dolor sit amet, consectetur",
 		description:
 			"Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqMagnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqMagnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqaliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqMagnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliq",
 		date: "2022-11-20",
@@ -129,6 +130,7 @@ export const challengeData = [
 	{
 		name: "Jhone Doe",
 		email: "jhonedoe@gmail.com",
+		title: "Lorem ipsum dolor sit amet, consectetur",
 		description:
 			"Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqMagnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqMagnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqaliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqMagnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliq",
 		date: "2022-11-18",
@@ -138,6 +140,7 @@ export const challengeData = [
 	{
 		name: "Jhone Doe",
 		email: "jhonedoe@gmail.com",
+		title: "Lorem ipsum dolor sit amet, consectetur",
 		description:
 			"Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqMagnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqMagnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqaliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqMagnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliq",
 		date: "2022-11-18",
