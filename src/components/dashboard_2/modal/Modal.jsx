@@ -28,16 +28,6 @@ function Modal({ data, view }) {
 	};
 
 
-const closeModal = () => {
-	view(false);
-}
-
-useEffect(() => {
-	console.log(data?.data)
-	return () => {
-		data = {};
-	};
-}, [])
 
 	return (
 		<div>
@@ -55,7 +45,7 @@ useEffect(() => {
 								<span>
 									<i
 										className="icofont-close icofont-2x formClose"
-										onClick={closeModal}
+										onClick={()=> {view(false); }}
 									></i>
 								</span>
 							</div>

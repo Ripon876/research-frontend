@@ -93,7 +93,7 @@ export const researchData = [
 	},
 ];
 
-export const articleData = [
+export const publicationData = [
 	{	
 		id:"43kjjs3dsfew",
 		name: "Jhone Doe",

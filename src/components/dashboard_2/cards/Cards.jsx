@@ -4,12 +4,12 @@ import Post from "./Post";
 import Research from "./Research";
 import Publication from "./Publication";
 import Challenge from "./Challenge";
-import { postData, researchData, articleData ,challengeData} from "./smd";
+import { postData, researchData, publicationData ,challengeData} from "./smd";
 
 function Cards() {
 	const [posts, setPosts] = useState(postData);
 	const [researches, setResearches] = useState(researchData);
-	const [articles, setArticles] = useState(articleData);
+	const [articles, setArticles] = useState(publicationData);
 	const [challenges, setChallenges] = useState(challengeData);
 	const [category, setCategory] = useState("Posts");
 	const selectRef = useRef();
@@ -24,7 +24,7 @@ function Cards() {
 			return;
 		}
 		if (category === "Publications") {
-			filterData(e, articleData, setArticles);
+			filterData(e, publicationData, setArticles);
 			return;
 		}
 		if (category === "Challenges") {
@@ -52,7 +52,7 @@ function Cards() {
 			setResearches(researchData);
 		}
 		if (category === "Publications") {
-			setArticles(articleData);
+			setArticles(publicationData);
 		}
 		if (category === "Challenges") {
 			setChallenges(challengeData);
