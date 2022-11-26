@@ -1,5 +1,7 @@
 import { Fade } from "react-reveal";
 import Post from "./Post";
+import Research from "./Research";
+import Publication from "./Publication";
 import Notifications from "./Notifications";
 import Toast from "../../../utilities/Toast";
 import "./Modal.css";
@@ -50,6 +52,12 @@ function Modal({ data, view }) {
 							)}
 							{data?.type === "Post" && (
 								<Post post={data?.data} />
+							)}
+							{data?.type === "Research" && (
+								<Research research={data?.data} />
+							)}
+							{data?.type === "Publication" && (
+								<Publication publication={data?.data} />
 							)}
 
 							{data?.type !== "Notifications" && (
