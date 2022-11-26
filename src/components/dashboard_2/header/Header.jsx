@@ -15,7 +15,7 @@ function Header() {
 				</div>
 				<div class="dropdown position-absolute" style={{top: '5px',right: 0}}>
 					<button
-						className="bg-transparent border-0 btn btn-lg btn-secondary dropdown-toggle text-dark"
+						className="bg-transparent border-0 btn btn-lg btn-secondary dropdown-toggle text-dark shadow-none"
 						type="button"
 						id="dropdownMenuButton"
 						data-toggle="dropdown"

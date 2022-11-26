@@ -9,5 +9,10 @@
 }
 
 .dashboardHeader .dropdown-menu {
-	transform: translate3d(-160px, 46px, 0px) !important;
+	transform: translate3d(-100px, 40px, 0px) !important;
+}
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #343a40;
 }
