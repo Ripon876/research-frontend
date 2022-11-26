@@ -6,7 +6,7 @@ import Modal from "../modal/Modal";
 function Publication({article}) {
 	const [show, setShow] = useState(false);
 	const [data, setData] = useState({
-		type: "Articles",
+		type: "Publication",
 		id: article.id,
 		data: article,
 	});
