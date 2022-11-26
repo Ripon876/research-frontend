@@ -1,4 +1,5 @@
 import State from "./State";
+import {states} from "./smd";
 
 function States() {
 	return (
@@ -7,11 +8,9 @@ function States() {
 				<div className="states pl-4">
 					<h4 className="mb-0  text-secondary">States</h4>
 					<div className="row justify-content-center">
-						<State />
-						<State />
-						<State />
-						<State />
-						<State />
+						{ states?.map((state) =>  
+							<State data={state} />
+						)}
 					</div>
 				</div>
 			</div>

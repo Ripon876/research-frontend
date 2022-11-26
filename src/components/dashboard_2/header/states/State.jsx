@@ -1,6 +1,6 @@
 import React from "react";
 
-function State() {
+function State({data}) {
 	return (
 		<div className="col-4 px-1">
 			<div
@@ -13,8 +13,8 @@ function State() {
 				}}
 			>
 				<div className="card-body text-center p-2">
-					<h2 className="card-title mb-0">15</h2>
-					<h5 className="card-title">Card title</h5>
+					<h2 className="card-title mb-0">{data?.count}</h2>
+					<h5 className="card-title">{data?.title}</h5>
 				</div>
 			</div>
 		</div>
