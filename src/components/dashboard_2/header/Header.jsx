@@ -30,13 +30,12 @@ function Header() {
 						// style={{transform: 'translate3d(-160px, 46px, 0px)'}}
 					>
 						<a className="dropdown-item" href="#">
-							Action
+							<i class="icofont-gear pr-2"></i>
+							Settings
 						</a>
 						<a className="dropdown-item" href="#">
-							Another action
-						</a>
-						<a className="dropdown-item" href="#">
-							Something else here
+							<i class="icofont-logout pr-2"></i>
+							Logout
 						</a>
 					</div>
 				</div>
