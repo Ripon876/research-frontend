@@ -14,6 +14,7 @@
     align-items: center;
     justify-content: center;
 }
-.seeAllNotiBtn h2{
+.seeAllNotiBtn h2 {
     font-size: 20px;
+    cursor: pointer;
 }

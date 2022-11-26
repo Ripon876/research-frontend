@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import Notification from "./Notification";
+
 import "./Notifications.css";
 
 function Notifications() {
@@ -21,8 +21,10 @@ function Notifications() {
 					<Notification />
 					<Notification />
 				</div>
-				<div className='seeAllNotiBtn'>
-					<h2 className='text-center'>See All <i class="icofont-simple-down"></i></h2>
+				<div className="seeAllNotiBtn">
+					<h2 className="text-center">
+						See All <i class="icofont-simple-down"></i>
+					</h2>
 				</div>
 			</div>
 		</div>
