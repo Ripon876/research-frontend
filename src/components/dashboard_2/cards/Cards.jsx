@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import FilterButtons from "./FilterButtons";
 import Post from "./Post";
 import Research from "./Research";
-import Articles from "./Articles";
+import Publication from "./Publication";
 import { postData, researchData, articleData } from "./smd";
 
 function Cards() {
@@ -17,11 +17,11 @@ function Cards() {
 			filterData(e, postData, setPosts);
 			return;
 		}
-		if (category === "Research_Requests") {
+		if (category === "Researches") {
 			filterData(e, researchData, setResearches);
 			return;
 		}
-		if (category === "Publication_Requests") {
+		if (category === "Publications") {
 			filterData(e, articleData, setArticles);
 			return;
 		}
@@ -42,10 +42,10 @@ function Cards() {
 		if (category === "Posts") {
 			setPosts(postData);
 		}
-		if (category === "Research_Requests") {
+		if (category === "Researches") {
 			setResearches(researchData);
 		}
-		if (category === "Publication_Requests") {
+		if (category === "Publications") {
 			setArticles(articleData);
 		}
 	}, [category]);
@@ -76,7 +76,7 @@ function Cards() {
 						)}
 					</div>
 				)}
-				{category === "Research_Requests" && (
+				{category === "Researches" && (
 					<div className="row">
 						{researches?.map((research) => (
 							<Research research={research} />
@@ -87,10 +87,10 @@ function Cards() {
 					</div>
 				)}
 
-				{category === "Publication_Requests" && (
+				{category === "Publications" && (
 					<div className="row">
 						{articles?.map((article) => (
-							<Articles article={article} />
+							<Publication article={article} />
 						))}
 						{articles.length === 0 && (
 							<p className="w-100 text-center">No data found</p>

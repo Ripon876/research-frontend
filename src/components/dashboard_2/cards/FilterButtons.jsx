@@ -16,24 +16,24 @@ function FilterButtons({c, sc}) {
 				<button
 					type="button"
 					className={` mx-1 btn btn-lg btn-dark border ${
-						c === "Research_Requests" ? "activeCate" : ""
+						c === "Researches" ? "activeCate" : ""
 					}`}
 					onClick={() => {
-						sc("Research_Requests");
+						sc("Researches");
 					}}
 				>
-					Research Requests
+					Researches
 				</button>
 				<button
 					type="button"
 					className={` mx-1 btn btn-lg btn-dark border ${
-						c === "Publication_Requests" ? "activeCate" : ""
+						c === "Publications" ? "activeCate" : ""
 					}`}
 					onClick={() => {
-						sc("Publication_Requests");
+						sc("Publications");
 					}}
 				>
-					Publication Requests
+					Publications
 				</button>
 			</div>
 		</div>

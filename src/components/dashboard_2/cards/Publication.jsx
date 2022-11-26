@@ -3,7 +3,7 @@ import { Fade } from "react-reveal";
 import Moment from "react-moment";
 import Modal from "../modal/Modal";
 
-function Articles({article}) {
+function Publication({article}) {
 	const [show, setShow] = useState(false);
 	const [data, setData] = useState({
 		type: "Articles",
@@ -59,4 +59,4 @@ function Articles({article}) {
 	);
 }
 
-export default Articles;
+export default Publication;
