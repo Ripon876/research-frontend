@@ -26,6 +26,12 @@ function Modal({ data, view }) {
 		);
 	};
 
+
+const closeModal = () => {
+	data = {};
+	view(false);
+}
+
 	return (
 		<div>
 			<Fade duration={500}>
@@ -42,9 +48,7 @@ function Modal({ data, view }) {
 								<span>
 									<i
 										className="icofont-close icofont-2x formClose"
-										onClick={() => {
-											view(false);
-										}}
+										onClick={closeModal}
 									></i>
 								</span>
 							</div>
