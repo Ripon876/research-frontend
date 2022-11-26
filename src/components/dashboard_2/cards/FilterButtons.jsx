@@ -35,6 +35,17 @@ function FilterButtons({c, sc}) {
 				>
 					Publications
 				</button>
+				<button
+					type="button"
+					className={` mx-1 btn btn-lg btn-dark border ${
+						c === "Challenges" ? "activeCate" : ""
+					}`}
+					onClick={() => {
+						sc("Challenges");
+					}}
+				>
+					Challenges
+				</button>
 			</div>
 		</div>
 	);
