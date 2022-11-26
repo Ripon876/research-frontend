@@ -1,9 +1,9 @@
 import React from "react";
 import Moment from "react-moment";
 
-function Notification({ notification, dash }) {
+function Notification({ notification, dash , modal }) {
 	return (
-		<div className="toast mx-auto" style={{ opacity: 1 }}>
+		<div className={`toast ${!modal ?  'mx-auto' : ''}`} style={{ opacity: 1 }}>
 			<div className="toast-header">
 				<img
 					src="https://via.placeholder.com/20x20"

@@ -1,4 +1,5 @@
 export const notifications = [
+
 	{
 		name: "Mark",
 		type: "Post",
@@ -32,13 +33,49 @@ export const notifications = [
 		type: "Post",
 		description:
 			"Hello, world! This is a Notification.Hello, world! This is a Notification.Hello, world! This is a Notification.",
-		date: "2022-11-17",
+		date: "2022-11-16",
 	},
 	{
 		name: "Mark",
 		type: "Article",
 		description:
 			"Hello, world! This is a Notification.Hello, world! This is a Notification.Hello, world! This is a Notification.",
-		date: "2022-11-17",
+		date: "2022-11-16",
+	},
+	{
+		name: "Mark",
+		type: "Post",
+		description:
+			"Hello, world! This is a Notification.Hello, world! This is a Notification.Hello, world! This is a Notification.",
+		date: "2022-11-16",
+	},
+	{
+		name: "Mark",
+		type: "Article",
+		description:
+			"Hello, world! This is a Notification.Hello, world! This is a Notification.Hello, world! This is a Notification.",
+		date: "2022-11-15",
+	},
+	{
+		name: "Mark",
+		type: "Article",
+		description:
+			"Hello, world! This is a Notification.Hello, world! This is a Notification.Hello, world! This is a Notification.",
+		date: "2022-11-15",
+	},
+	{
+		name: "Mark",
+		type: "Article",
+		description:
+			"Hello, world! This is a Notification.Hello, world! This is a Notification.Hello, world! This is a Notification.",
+		date: "2022-11-15",
+	},
+	{
+		name: "Mark",
+		type: "Article",
+		description:
+			"Hello, world! This is a Notification.Hello, world! This is a Notification.Hello, world! This is a Notification.",
+		date: "2022-11-15",
 	},
 ];
+

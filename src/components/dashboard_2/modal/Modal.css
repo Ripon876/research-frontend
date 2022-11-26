@@ -18,3 +18,14 @@
 .denyBtn {
 	background: #dc3545 !important;
 }
+
+.notificationsInsideModal {
+	height: 95%;
+	width: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.notificationsInsideModal .row {
+	column-gap: 12px;
+}

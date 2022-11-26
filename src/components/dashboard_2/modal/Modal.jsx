@@ -1,11 +1,10 @@
 import { Fade } from "react-reveal";
 import Post from "./Post";
+import Notifications from "./Notifications";
 import Toast from "../../../utilities/Toast";
 import "./Modal.css";
 
 function Modal({ data, view }) {
-	console.log(data);
-
 	const approve = () => {
 		Toast(
 			{
@@ -46,46 +45,55 @@ function Modal({ data, view }) {
 									></i>
 								</span>
 							</div>
-							{data?.type === "Post" && <Post post={data?.data} />}
-							<div
-								className="bg-dark pl-4 position-absolute py-4 w-100"
-								style={{ bottom: 0, left: 0 }}
-							>
-								{data?.data?.status === "Review" ? (
-									<div>
-										<button
-											className="btn rounded subBtn"
-											onClick={approve}
-										>
-											Approve
-										</button>
-										<button
-											className="btn rounded subBtn denyBtn ml-2"
-											onClick={deny}
-										>
-											Deny
-										</button>
-									</div>
-								) : (
-									<div>
-										{data?.data?.status === "Approved" ? (
+							{data?.type === "Notifications" && (
+								<Notifications />
+							)}
+							{data?.type === "Post" && (
+								<Post post={data?.data} />
+							)}
+
+							{data?.type !== "Notifications" && (
+								<div
+									className="bg-dark pl-4 position-absolute py-4 w-100"
+									style={{ bottom: 0, left: 0 }}
+								>
+									{data?.data?.status === "Review" ? (
+										<div>
 											<button
-												disabled
 												className="btn rounded subBtn"
+												onClick={approve}
 											>
-												Approved
+												Approve
 											</button>
-										) : (
 											<button
-												disabled
 												className="btn rounded subBtn denyBtn ml-2"
+												onClick={deny}
 											>
-												Denied
+												Deny
 											</button>
-										)}
-									</div>
-								)}
-							</div>
+										</div>
+									) : (
+										<div>
+											{data?.data?.status ===
+											"Approved" ? (
+												<button
+													disabled
+													className="btn rounded subBtn"
+												>
+													Approved
+												</button>
+											) : (
+												<button
+													disabled
+													className="btn rounded subBtn denyBtn ml-2"
+												>
+													Denied
+												</button>
+											)}
+										</div>
+									)}
+								</div>
+							)}
 						</div>
 					</div>
 				</div>
