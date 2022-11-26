@@ -3,6 +3,7 @@ import Post from "./Post";
 import Research from "./Research";
 import Publication from "./Publication";
 import Notifications from "./Notifications";
+import Challenge from "./Challenge";
 import Toast from "../../../utilities/Toast";
 import "./Modal.css";
 
@@ -58,6 +59,9 @@ function Modal({ data, view }) {
 							)}
 							{data?.type === "Publication" && (
 								<Publication publication={data?.data} />
+							)}
+							{data?.type === "Challenge" && (
+								<Challenge challenge={data?.data} />
 							)}
 
 							{data?.type !== "Notifications" && (
