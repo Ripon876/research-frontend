@@ -7,3 +7,7 @@
 .notifications {
 	border-left: 5px solid #d5d7d8;
 }
+
+.dashboardHeader .dropdown-menu {
+	transform: translate3d(-160px, 46px, 0px) !important;
+}
