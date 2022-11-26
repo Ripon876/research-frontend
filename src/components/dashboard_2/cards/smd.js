@@ -115,3 +115,33 @@ export const articleData = [
 		reviewMessage: "",
 	},
 ];
+
+export const challengeData = [
+	{
+		name: "Jhone Doe",
+		email: "jhonedoe@gmail.com",
+		description:
+			"Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqMagnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqMagnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqaliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqMagnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliq",
+		date: "2022-11-20",
+		status: "Review",
+		reviewMessage: "",
+	},
+	{
+		name: "Jhone Doe",
+		email: "jhonedoe@gmail.com",
+		description:
+			"Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqMagnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqMagnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqaliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqMagnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliq",
+		date: "2022-11-18",
+		status: "Review",
+		reviewMessage: "",
+	},
+	{
+		name: "Jhone Doe",
+		email: "jhonedoe@gmail.com",
+		description:
+			"Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqMagnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqMagnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqaliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqMagnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliq",
+		date: "2022-11-18",
+		status: "Review",
+		reviewMessage: "",
+	},
+];
