@@ -55,7 +55,7 @@ function Cards() {
 			setArticles(articleData);
 		}
 		if (category === "Challenges") {
-			setArticles(challengeData);
+			setChallenges(challengeData);
 		}
 	}, [category]);
 

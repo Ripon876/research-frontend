@@ -1,3 +1,4 @@
+import {useEffect} from 'react';
 import { Fade } from "react-reveal";
 import Post from "./Post";
 import Research from "./Research";
@@ -28,9 +29,15 @@ function Modal({ data, view }) {
 
 
 const closeModal = () => {
-	data = {};
 	view(false);
 }
+
+useEffect(() => {
+	console.log(data?.data)
+	return () => {
+		data = {};
+	};
+}, [])
 
 	return (
 		<div>

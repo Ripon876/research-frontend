@@ -1,7 +1,7 @@
 export const postData = [
 	{
 		id: "43kjjs3dsfew",
-		title: "Lorem ipsum dolor sit amet, consectetur",
+		title: "Lorem ipsum dolor sit amet, (post)",
 		description:
 			"Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.",
 		date: "2022-11-17",
@@ -10,7 +10,7 @@ export const postData = [
 	},
 	{
 		id: "43kjjswedsre",
-		title: "Lorem ipsum dolor sit amet, consectetur",
+		title: "Lorem ipsum dolor sit amet, (post)",
 		description:
 			"Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.",
 		date: "2022-10-27",
@@ -19,7 +19,7 @@ export const postData = [
 	},
 	{
 		id: "43kjjdds4gs3",
-		title: "Lorem ipsum dolor sit amet, consectetur",
+		title: "Lorem ipsum dolor sit amet, (post)",
 		description:
 			"Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.",
 		date: "2022-10-25",
@@ -28,7 +28,7 @@ export const postData = [
 	},
 	{
 		id: "43kjjs936725",
-		title: "Lorem ipsum dolor sit amet, consectetur",
+		title: "Lorem ipsum dolor sit amet, (post)",
 		description:
 			"Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.",
 		date: "2022-11-15",
@@ -37,7 +37,7 @@ export const postData = [
 	},
 	{
 		id: "43kjjs3kdr89",
-		title: "Lorem ipsum dolor sit amet, consectetur",
+		title: "Lorem ipsum dolor sit amet, (post)",
 		description:
 			"Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.",
 		date: "2022-11-14",
@@ -46,7 +46,7 @@ export const postData = [
 	},
 	{
 		id: "43kjjs3l9g5e",
-		title: "Lorem ipsum dolor sit amet, consectetur",
+		title: "Lorem ipsum dolor sit amet, (post)",
 		description:
 			"Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.",
 		date: "2022-11-23",
@@ -55,7 +55,7 @@ export const postData = [
 	},
 	{
 		id: "43kjjs3p02v8",
-		title: "Lorem ipsum dolor sit amet, consectetur",
+		title: "Lorem ipsum dolor sit amet, (post)",
 		description:
 			"Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.",
 		date: "2022-11-07",
@@ -66,9 +66,10 @@ export const postData = [
 
 export const researchData = [
 	{
+		id:"43kjjs3dsfew",
 		name: "Jhone Doe",
 		email: "jhonedoe@gmail.com",
-		title: "Air Pollution",
+		title: "Air Pollution (research)",
 		topic: "Air",
 		reason: "Lorem ipsum dolor sit amet",
 		description:
@@ -78,9 +79,10 @@ export const researchData = [
 		reviewMessage: "",
 	},
 	{
+        id:"43kjjs3dsfew",
 		name: "Jhone Doe",
 		email: "jhonedoe@gmail.com",
-		title: "Air Pollution",
+		title: "Air Pollution (research)",
 		topic: "Air",
 		reason: "Lorem ipsum dolor sit amet",
 		description:
@@ -92,10 +94,11 @@ export const researchData = [
 ];
 
 export const articleData = [
-	{
+	{	
+		id:"43kjjs3dsfew",
 		name: "Jhone Doe",
 		email: "jhonedoe@gmail.com",
-		title: "Importance of Water ",
+		title: "Importance of Water (publication)",
 		reason: "Lorem ipsum dolor sit amet",
 		description:
 			"Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqMagnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqMagnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqaliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqMagnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliq",
@@ -103,10 +106,11 @@ export const articleData = [
 		status: "Denied",
 		reviewMessage: "",
 	},
-	{
+	{	
+		id:"43kjjs3dsfew",
 		name: "Jhone Doe",
 		email: "jhonedoe@gmail.com",
-		title: "Understanding the Flow of Water ",
+		title: "Understanding the Flow of Water (publication)",
 		reason: "Lorem ipsum dolor sit amet",
 		description:
 			"Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqMagnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqMagnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqaliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqMagnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliq",
@@ -117,30 +121,33 @@ export const articleData = [
 ];
 
 export const challengeData = [
-	{
+	{	
+		id:"43kjjs3dsfew",
 		name: "Jhone Doe",
 		email: "jhonedoe@gmail.com",
-		title: "Lorem ipsum dolor sit amet, consectetur",
+		title: "Lorem ipsum dolor sit amet, (challenge)",
 		description:
 			"Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqMagnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqMagnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqaliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqMagnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliq",
 		date: "2022-11-20",
 		status: "Review",
 		reviewMessage: "",
 	},
-	{
+	{ 	
+		id:"43kjjs3dsfew",
 		name: "Jhone Doe",
 		email: "jhonedoe@gmail.com",
-		title: "Lorem ipsum dolor sit amet, consectetur",
+		title: "Lorem ipsum dolor sit amet, (challenge)",
 		description:
 			"Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqMagnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqMagnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqaliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqMagnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliq",
 		date: "2022-11-18",
 		status: "Review",
 		reviewMessage: "",
 	},
-	{
+	{ 	
+		id:"43kjjs3dsfew",
 		name: "Jhone Doe",
 		email: "jhonedoe@gmail.com",
-		title: "Lorem ipsum dolor sit amet, consectetur",
+		title: "Lorem ipsum dolor sit amet, (challenge)",
 		description:
 			"Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqMagnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqMagnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqaliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliqMagnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliq",
 		date: "2022-11-18",
