@@ -23,7 +23,7 @@ function Challenge({challenge}) {
 						}}
 					>
 						<h5 className="card-title">
-							{challenge?.title}
+							{challenge?.title.substr(0,50)}. . . 
 							<span
 								className={`ml-2 badge ${
 									challenge.status === "Review"
@@ -46,7 +46,7 @@ function Challenge({challenge}) {
 									setShow(true);
 								}}
 							>
-								See Details
+								See More
 							</p>
 							<p>
 								<Moment fromNow>{challenge?.date}</Moment>
