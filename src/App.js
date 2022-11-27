@@ -1,6 +1,5 @@
 import React from 'react';
 import { Routes,Route,useParams} from "react-router-dom";
-import Home from './pages/Home';
 import Home_2 from './pages/Home_2';
 import AwardsPage from './pages/AwardsPage';
 import ResearchMyProblemPage from './pages/ResearchMyProblemPage';
@@ -28,7 +27,6 @@ function App() {
   return (
     <>
     <Routes>
-      {/*<Route path='/' element={<Home />} />*/}
       <Route path='/' element={<Home_2 />} />
       <Route path='/awards' element={<AwardsPage />} />
       <Route path='/research-my-problem' element={<ResearchMyProblemPage />} />
