@@ -86,6 +86,13 @@ function Challenges() {
 				</h4>*/}
 				<div className="row mt-5">
 					<div className="col-md-6">
+						<div>
+							<Fade>
+								<Form category={category} />
+							</Fade>
+						</div>
+					</div>
+					<div className="col-md-6">
 						<h4 class="font-weight-bold mb-3">
 							<strong>
 								Most Viewed / Most recent Challenges
@@ -95,13 +102,6 @@ function Challenges() {
 						<div className="row">
 							<Challenge nC />
 							<Challenge nC />
-						</div>
-					</div>
-					<div className="col-md-6">
-						<div>
-							<Fade>
-								<Form category={category} />
-							</Fade>
 						</div>
 					</div>
 				</div>

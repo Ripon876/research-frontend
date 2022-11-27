@@ -34,7 +34,7 @@ function App() {
       <Route path='/be-a-researcher' element={<BeAResearcherPage />} />
       <Route path='/signup' element={<SignUpPage />} />
       <Route path='/login' element={<LoginPage />} />
-      <Route path='/research' element={<ResearchPage />} />
+      <Route path='/research/:id' element={<ResearchPage />} />
       <Route path='/publication' element={<PublicationPage />} />
       <Route path='/apply/internship' element={<InternshipPage />} />
       <Route path='/apply/work' element={<WorkPage />} />
