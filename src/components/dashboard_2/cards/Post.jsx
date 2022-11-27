@@ -23,7 +23,7 @@ function Post({ post }) {
 						}}
 					>
 						<h5 className="card-title">
-							{post?.title} 
+							{post?.title.substr(0,50)}. . .
 							<span className={`ml-2 badge ${
 								post.status === 'Review' ? 'badge-warning' : post.status === 'Approved' ? 'badge-success' : 'badge-danger'
 							}`}>{post?.status}</span>
@@ -38,7 +38,7 @@ function Post({ post }) {
 									setShow(true);
 								}}
 							>
-								See Details
+								See More
 							</p>
 							<p>
 								<Moment fromNow>{post?.date}</Moment>
