@@ -1,18 +1,18 @@
 export const states = [
 	{
 		title: "Posts",
-		count: 23,
+		count: 7,
 	},
 	{
 		title: "Researches",
-		count: 14,
+		count: 2,
 	},
 	{
 		title: "Publications",
-		count: 6,
+		count: 2,
 	},
 	{
 		title: "Challenges",
-		count: 9,
+		count: 3,
 	},
 ];
