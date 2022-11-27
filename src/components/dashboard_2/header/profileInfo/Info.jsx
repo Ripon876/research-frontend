@@ -14,7 +14,7 @@ function Info() {
 					<div className="pNC">
 						<h2 className="mt-2 mb-0 text-center">Jhone Doe</h2>
 						<h4 className="text-center text-secondary">
-							Jhone Doe
+							Moderator
 						</h4>
 					</div>
 				</div>
