@@ -1,5 +1,6 @@
-import {useEffect} from 'react';
+import { useEffect } from "react";
 import { Fade } from "react-reveal";
+import { useSelector } from "react-redux";
 import Post from "./Post";
 import Research from "./Research";
 import Publication from "./Publication";
@@ -9,6 +10,8 @@ import Toast from "../../../utilities/Toast";
 import "./Modal.css";
 
 function Modal({ data, view }) {
+	const userType = useSelector((state) => state.user.type);
+
 	const approve = () => {
 		Toast(
 			{
@@ -22,12 +25,17 @@ function Modal({ data, view }) {
 
 	const deny = () => {
 		Toast(
-			{ type: "error", icon: "error", title: `${data.type} Denied` },
+			{ type: "success", icon: "success", title: `${data.type} Denied` },
 			view
 		);
 	};
 
-
+	const deleteItem = () => {
+		Toast(
+			{ type: "success", icon: "success", title: `${data.type} Deleted` },
+			view
+		);
+	};
 
 	return (
 		<div>
@@ -37,7 +45,7 @@ function Modal({ data, view }) {
 						<div className="h-100">
 							<div>
 								<h4 className="mb-3">
-									Viewing : {data?.data?.title}
+									Viewing :{" "}
 									<span className="bg-secondary mx-1 px-2 py-1 rounded small text-center text-white">
 										{data?.type}
 									</span>
@@ -45,7 +53,9 @@ function Modal({ data, view }) {
 								<span>
 									<i
 										className="icofont-close icofont-2x formClose"
-										onClick={()=> {view(false); }}
+										onClick={() => {
+											view(false);
+										}}
 									></i>
 								</span>
 							</div>
@@ -70,7 +80,8 @@ function Modal({ data, view }) {
 									className="bg-dark pl-4 position-absolute py-4 w-100"
 									style={{ bottom: 0, left: 0 }}
 								>
-									{data?.data?.status === "Review" ? (
+									{data?.data?.status === "Review" &&
+									userType !== "Researcher" ? (
 										<div>
 											<button
 												className="btn rounded subBtn"
@@ -91,17 +102,33 @@ function Modal({ data, view }) {
 											"Approved" ? (
 												<button
 													disabled
-													className="btn rounded subBtn"
+													className="btn rounded subBtn approvedBtn"
 												>
 													Approved
 												</button>
-											) : (
+											) : data?.data?.status ===
+											  "Denied" ? (
 												<button
 													disabled
 													className="btn rounded subBtn denyBtn ml-2"
 												>
 													Denied
 												</button>
+											) : (
+												<>
+													<button
+														disabled
+														className="btn rounded subBtn reviewBtn ml-2"
+													>
+														Reviewing
+													</button>
+													<button
+														className="btn rounded subBtn denyBtn ml-2"
+														onClick={deleteItem}
+													>
+														Delete <i class="icofont-ui-delete"></i>
+													</button>
+												</>
 											)}
 										</div>
 									)}
