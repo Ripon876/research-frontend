@@ -1,4 +1,5 @@
 import Header from '../header/Header';
+import Footer from '../footer/Footer';
 import Cards from '../cards/Cards';
 
 function R_Dashboard() {
@@ -6,6 +7,7 @@ function R_Dashboard() {
 		<div>
 			<Header />
 			<Cards />
+			<Footer />
 		</div>
 	);
 }
