@@ -23,7 +23,7 @@ function Research({research}) {
 						}}
 					>
 						<h5 className="card-title">
-							{research?.title}
+							{research?.title.substr(0,50)}. . .
 							<span
 								className={`ml-2 badge ${
 									research.status === "Review"
@@ -46,7 +46,7 @@ function Research({research}) {
 									setShow(true);
 								}}
 							>
-								See Details
+								See More
 							</p>
 							<p>
 								<Moment fromNow>{research?.date}</Moment>
