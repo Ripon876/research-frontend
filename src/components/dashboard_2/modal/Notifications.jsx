@@ -28,8 +28,8 @@ function Notifications() {
 
 		{ data?.map((date) => (
 		<div>
-			<h4 className='mt-3'>{date[0]}</h4>
-			<div className="justify-content-md-start justify-content-sm-center row">
+			<h4 className='mt-3 px-2'>{date[0]}</h4>
+			<div className="justify-content-md-start justify-content-sm-center row pl-3">
 				{date[1]?.map((notification) => (
 					<Notification notification={notification} modal />
 				))}
