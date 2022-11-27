@@ -23,7 +23,7 @@ function Publication({article}) {
 						}}
 					>
 						<h5 className="card-title">
-							{article?.title}
+							{article?.title.substr(0,50)}. . .
 							<span
 								className={`ml-2 badge ${
 									article.status === "Review"
@@ -46,7 +46,7 @@ function Publication({article}) {
 									setShow(true);
 								}}
 							>
-								See Details
+								See More
 							</p>
 							<p>
 								<Moment fromNow>{article?.date}</Moment>
