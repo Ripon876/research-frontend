@@ -60,7 +60,7 @@ function Cards() {
 	}, [category]);
 
 	return (
-		<div style={{ maxWidth: "1600px", margin: "auto" }}>
+		<div style={{ maxWidth: "1600px", margin: "auto" }} className='pb-5'>
 			<div className="bg-white container shadow-sm sticky-top">
 				<FilterButtons c={category} sc={setCategory} />
 				<select
