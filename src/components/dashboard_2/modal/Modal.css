@@ -15,17 +15,25 @@
 	height: 85% !important;
 	position: relative;
 }
-.denyBtn {
-	background: #dc3545 !important;
+.reviewBtn {
+	background: #000000 !important;
+	color: white !important;
 }
 
+.approvedBtn {
+	background: #000000 !important;
+	color: white !important;
+}
+.denyBtn {
+	background: #dc3545 !important;
+	color: white !important;
+}
 .notificationsInsideModal {
 	height: 95%;
 	width: 100%;
 	overflow-y: scroll;
 	overflow-x: hidden;
 }
-
 .notificationsInsideModal .row {
 	column-gap: 12px;
 }
