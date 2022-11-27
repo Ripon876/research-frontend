@@ -1,6 +1,9 @@
+import { useSelector } from "react-redux";
 import States from "../states/States";
 
 function Info() {
+	const user = useSelector((state) => state.user);
+
 	return (
 		<div className="col-md-8">
 			<div className="row mt-4">
@@ -12,9 +15,9 @@ function Info() {
 						/>
 					</div>
 					<div className="pNC">
-						<h2 className="mt-2 mb-0 text-center">Jhone Doe</h2>
+						<h2 className="mt-2 mb-0 text-center">{user?.name}</h2>
 						<h4 className="text-center text-secondary">
-							Moderator
+							{user?.type}
 						</h4>
 					</div>
 				</div>
