@@ -27,7 +27,7 @@ function Header() {
                 <Link to="/awards">Awards</Link>
               </li>
               <li className="drop-down">
-                <Link to="/">Research REQUEST</Link>
+                <Link to="">Research REQUEST</Link>
                 <ul>
                   <li>
                     <Link to="/research-my-problem">
@@ -54,10 +54,10 @@ function Header() {
                 </Link>
               </li>
               <li className="drop-down">
-                <Link to="/">
+                <Link to="">
                   <i className="icofont-ui-user"></i>
                 </Link>
-                <ul>
+                <ul style={{ transform: "translateX(-35px)", width: "100px" }}>
                   <li>
                     <Link to="/signup">Sign Up</Link>
                   </li>
