@@ -26,7 +26,7 @@ function Research({research}) {
 							{research?.title.substr(0,50)}. . .
 							<span
 								className={`ml-2 badge ${
-									research.status === "Review"
+									research.status === "Loading"
 										? "badge-warning"
 										: research.status === "Approved"
 										? "badge-success"
