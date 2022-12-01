@@ -14,6 +14,7 @@ function Dashboard() {
 				type: "SET_USER",
 				user: {
 					name: "Mark",
+					username: 'mark'
 					type: "Moderator",
 				},
 			});
@@ -22,6 +23,7 @@ function Dashboard() {
 				type: "SET_USER",
 				user: {
 					name: "Peter",
+					username: 'peter'
 					type: "Researcher",
 				},
 			});

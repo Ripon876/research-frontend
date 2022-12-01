@@ -9,6 +9,7 @@ const userReducer = (state = initialData, action) => {
       return {
         ...state,
         name: action.user.name,
+        username: action.user.username,
         type: action.user.type,
       };
 
