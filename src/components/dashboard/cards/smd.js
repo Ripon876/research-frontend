@@ -7,6 +7,10 @@ export const postData = [
 		date: "2022-11-17",
 		status: "New",
 		reviewMessage: "",
+		user: {
+			name: "Mark",
+			username: "mark",
+		},
 	},
 	{
 		id: "43kjjswedsre",
@@ -16,6 +20,10 @@ export const postData = [
 		date: "2022-10-27",
 		status: "New",
 		reviewMessage: "",
+		user: {
+			name: "Peter",
+			username: "peter",
+		},
 	},
 	{
 		id: "43kjjdds4gs3",
@@ -25,6 +33,10 @@ export const postData = [
 		date: "2022-10-25",
 		status: "New",
 		reviewMessage: "",
+		user: {
+			name: "Mark",
+			username: "mark",
+		},
 	},
 	{
 		id: "43kjjs936725",
@@ -34,6 +46,10 @@ export const postData = [
 		date: "2022-11-15",
 		status: "New",
 		reviewMessage: "",
+		user: {
+			name: "Peter",
+			username: "peter",
+		},
 	},
 	{
 		id: "43kjjs3kdr89",
@@ -43,6 +59,10 @@ export const postData = [
 		date: "2022-11-14",
 		status: "Reviewed",
 		reviewMessage: "",
+		user: {
+			name: "Peter",
+			username: "peter",
+		},
 	},
 	{
 		id: "43kjjs3l9g5e",
@@ -52,6 +72,10 @@ export const postData = [
 		date: "2022-11-23",
 		status: "Reviewed",
 		reviewMessage: "",
+		user: {
+			name: "Mark",
+			username: "mark",
+		},
 	},
 	{
 		id: "43kjjs3p02v8",
@@ -61,12 +85,16 @@ export const postData = [
 		date: "2022-11-07",
 		status: "Reviewed",
 		reviewMessage: "",
+		user: {
+			name: "Mark",
+			username: "mark",
+		},
 	},
 ];
 
 export const researchData = [
 	{
-		id:"43kjjs3dsfew",
+		id: "43kjjs3dsfew",
 		name: "Jhone Doe",
 		email: "jhonedoe@gmail.com",
 		title: "Air Pollution (research)",
@@ -79,7 +107,7 @@ export const researchData = [
 		reviewMessage: "",
 	},
 	{
-        id:"43kjjs3dsfew",
+		id: "43kjjs3dsfew",
 		name: "Jhone Doe",
 		email: "jhonedoe@gmail.com",
 		title: "Air Pollution (research)",
@@ -94,8 +122,8 @@ export const researchData = [
 ];
 
 export const publicationData = [
-	{	
-		id:"43kjjs3dsfew",
+	{
+		id: "43kjjs3dsfew",
 		name: "Jhone Doe",
 		email: "jhonedoe@gmail.com",
 		title: "Importance of Water (publication)",
@@ -106,8 +134,8 @@ export const publicationData = [
 		status: "Denied",
 		reviewMessage: "",
 	},
-	{	
-		id:"43kjjs3dsfew",
+	{
+		id: "43kjjs3dsfew",
 		name: "Jhone Doe",
 		email: "jhonedoe@gmail.com",
 		title: "Understanding the Flow of Water (publication)",
@@ -121,8 +149,8 @@ export const publicationData = [
 ];
 
 export const challengeData = [
-	{	
-		id:"43kjjs3dsfew",
+	{
+		id: "43kjjs3dsfew",
 		name: "Jhone Doe",
 		email: "jhonedoe@gmail.com",
 		title: "Lorem ipsum dolor sit amet, (challenge)",
@@ -132,8 +160,8 @@ export const challengeData = [
 		status: "Review",
 		reviewMessage: "",
 	},
-	{ 	
-		id:"43kjjs3dsfew",
+	{
+		id: "43kjjs3dsfew",
 		name: "Jhone Doe",
 		email: "jhonedoe@gmail.com",
 		title: "Lorem ipsum dolor sit amet, (challenge)",
@@ -143,8 +171,8 @@ export const challengeData = [
 		status: "Review",
 		reviewMessage: "",
 	},
-	{ 	
-		id:"43kjjs3dsfew",
+	{
+		id: "43kjjs3dsfew",
 		name: "Jhone Doe",
 		email: "jhonedoe@gmail.com",
 		title: "Lorem ipsum dolor sit amet, (challenge)",
