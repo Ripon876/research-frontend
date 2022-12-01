@@ -5,7 +5,7 @@ function FilterButtons({c, sc}) {
 				<button
 					type="button"
 					className={` mx-1 btn btn-lg btn-dark border ${
-						c === "Posts" ? "activeCate" : ""
+						c === "Posts" ? "selectedCat" : ""
 					}`}
 					onClick={() => {
 						sc("Posts");
@@ -16,7 +16,7 @@ function FilterButtons({c, sc}) {
 				<button
 					type="button"
 					className={` mx-1 btn btn-lg btn-dark border ${
-						c === "Researches" ? "activeCate" : ""
+						c === "Researches" ? "selectedCat" : ""
 					}`}
 					onClick={() => {
 						sc("Researches");
@@ -27,7 +27,7 @@ function FilterButtons({c, sc}) {
 				<button
 					type="button"
 					className={` mx-1 btn btn-lg btn-dark border ${
-						c === "Publications" ? "activeCate" : ""
+						c === "Publications" ? "selectedCat" : ""
 					}`}
 					onClick={() => {
 						sc("Publications");
@@ -38,7 +38,7 @@ function FilterButtons({c, sc}) {
 				<button
 					type="button"
 					className={` mx-1 btn btn-lg btn-dark border ${
-						c === "Challenges" ? "activeCate" : ""
+						c === "Challenges" ? "selectedCat" : ""
 					}`}
 					onClick={() => {
 						sc("Challenges");

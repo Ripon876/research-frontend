@@ -1,0 +1,23 @@
+.selectedCat::after {
+	font-family: FontAwesome;
+	content: "\f054";
+	font-weight: bolder;
+	font-size: 25px;
+	color: #343a40;
+	display: block;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%) rotate(90deg);
+}
+
+.newItemAvail::before {
+	content: "";
+	width: 15px;
+	height: 15px;
+	background: #19ff23;
+	display: block;
+	position: absolute;
+	top: -4px;
+	left: -4px;
+	border-radius: 50%;
+}
