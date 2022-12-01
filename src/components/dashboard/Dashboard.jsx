@@ -23,7 +23,7 @@ function Dashboard() {
 				type: "SET_USER",
 				user: {
 					name: "Peter",
-					username: 'peter'
+					username: 'peter',
 					type: "Researcher",
 				},
 			});
