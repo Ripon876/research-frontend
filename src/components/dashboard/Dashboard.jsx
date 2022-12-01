@@ -14,7 +14,7 @@ function Dashboard() {
 				type: "SET_USER",
 				user: {
 					name: "Mark",
-					username: 'mark'
+					username: 'mark',
 					type: "Moderator",
 				},
 			});
