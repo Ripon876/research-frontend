@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import { Fade } from "react-reveal";
 import { useSelector } from "react-redux";
-import Post from "./Post";
+// import Post from "./Post";
+import Post from './post/Post';
 import Research from "./Research";
 import Publication from "./Publication";
 import Notifications from "./Notifications";
