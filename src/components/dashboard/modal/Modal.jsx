@@ -81,7 +81,7 @@ function Modal({ data, view }) {
 									className="bg-dark pl-4 position-absolute py-4 w-100"
 									style={{ bottom: 0, left: 0 }}
 								>
-									{data?.data?.status === "Review" &&
+								{/*	{data?.data?.status === "Review" &&
 									userType !== "Researcher" ? (
 										<div>
 											<button
@@ -133,6 +133,28 @@ function Modal({ data, view }) {
 											)}
 										</div>
 									)}
+									*/}
+
+{data?.type == "Post" && (
+		<>
+		
+			<button
+				className="btn rounded subBtn denyBtn ml-2"
+				onClick={deleteItem}
+			>
+				Delete <i class="icofont-ui-delete"></i>
+			</button>
+		</>
+	)}
+
+
+
+
+
+
+
+
+
 								</div>
 							)}
 						</div>
