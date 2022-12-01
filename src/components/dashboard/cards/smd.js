@@ -5,7 +5,7 @@ export const postData = [
 		description:
 			"Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.",
 		date: "2022-11-17",
-		status: "Review",
+		status: "New",
 		reviewMessage: "",
 	},
 	{
@@ -14,7 +14,7 @@ export const postData = [
 		description:
 			"Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.",
 		date: "2022-10-27",
-		status: "Review",
+		status: "New",
 		reviewMessage: "",
 	},
 	{
@@ -23,7 +23,7 @@ export const postData = [
 		description:
 			"Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.",
 		date: "2022-10-25",
-		status: "Approved",
+		status: "New",
 		reviewMessage: "",
 	},
 	{
@@ -32,7 +32,7 @@ export const postData = [
 		description:
 			"Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.",
 		date: "2022-11-15",
-		status: "Review",
+		status: "New",
 		reviewMessage: "",
 	},
 	{
@@ -41,7 +41,7 @@ export const postData = [
 		description:
 			"Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.",
 		date: "2022-11-14",
-		status: "Denied",
+		status: "Reviewed",
 		reviewMessage: "",
 	},
 	{
@@ -50,7 +50,7 @@ export const postData = [
 		description:
 			"Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.",
 		date: "2022-11-23",
-		status: "Review",
+		status: "Reviewed",
 		reviewMessage: "",
 	},
 	{
@@ -59,7 +59,7 @@ export const postData = [
 		description:
 			"Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.Magnam dolores commodi suscipit. Necessitatibus eiusconsequatur ex aliquid fuga eum quidem. Sit sintconsectetur velit. Quisquam quos quisquam cupiditate.",
 		date: "2022-11-07",
-		status: "Approved",
+		status: "Reviewed",
 		reviewMessage: "",
 	},
 ];
