@@ -20,7 +20,7 @@ import OurTeamPage from './pages/OurTeamPage';
 import OurVisionPage from './pages/OurVisionPage';
 import ResearchLabsPage from './pages/ResearchLabsPage';
 import TopChallengersPage from './pages/TopChallengersPage';
-import Dashboard from './components/dashboard_2/Dashboard';
+import Dashboard from './components/dashboard/Dashboard';
 
 function App() {
 
