@@ -9,9 +9,15 @@ function Filter({ rf, func, cat }) {
 				<>
 					<option value="New">New</option>
 				</>
+			) : cat === "Researches" ? (
+				<>
+					<option value="Loading">Loading</option>
+					<option value="Approved">Approved</option>
+					<option value="Denied">Denied</option>
+				</>
 			) : (
 				<>
-					<option value="Review">Review</option>
+					<option value="Review">Reivew</option>
 					<option value="Approved">Approved</option>
 					<option value="Denied">Denied</option>
 				</>
