@@ -1,10 +1,11 @@
 import { useState, useEffect, useRef } from "react";
 import FilterButtons from "./FilterButtons";
+import Filter from "./Filter";
 import Post from "./Post";
 import Research from "./Research";
 import Publication from "./Publication";
 import Challenge from "./Challenge";
-import { postData, researchData, publicationData ,challengeData} from "./smd";
+import { postData, researchData, publicationData, challengeData } from "./smd";
 
 function Cards() {
 	const [posts, setPosts] = useState(postData);
@@ -60,19 +61,10 @@ function Cards() {
 	}, [category]);
 
 	return (
-		<div style={{ maxWidth: "1600px", margin: "auto" }} className='pb-5'>
+		<div style={{ maxWidth: "1600px", margin: "auto" }} className="pb-5">
 			<div className="bg-white container shadow-sm sticky-top">
 				<FilterButtons c={category} sc={setCategory} />
-				<select
-					ref={selectRef}
-					className="custom-select w-25 mb-3"
-					onChange={filter}
-				>
-					<option selected>All</option>
-					<option value="Review">Review</option>
-					<option value="Approved">Approved</option>
-					<option value="Denied">Denied</option>
-				</select>
+				<Filter rf={selectRef} func={filter} cat={category} />
 			</div>
 			<div className="container mt-4">
 				{category === "Posts" && (
