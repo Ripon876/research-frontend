@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Fade } from "react-reveal";
 import Moment from "react-moment";
 import Modal from "../modal/Modal";
+import "./Post.css";
 
 function Post({ post }) {
 	const [show, setShow] = useState(false);
