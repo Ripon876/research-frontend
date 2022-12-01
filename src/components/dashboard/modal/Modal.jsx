@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Fade } from "react-reveal";
 import { useSelector } from "react-redux";
 // import Post from "./Post";
-import Post from './post/Post';
+import Post from "./post/Post";
 import Research from "./Research";
 import Publication from "./Publication";
 import Notifications from "./Notifications";
@@ -81,7 +81,7 @@ function Modal({ data, view }) {
 									className="bg-dark pl-4 position-absolute py-4 w-100"
 									style={{ bottom: 0, left: 0 }}
 								>
-								{/*	{data?.data?.status === "Review" &&
+									{/*	{data?.data?.status === "Review" &&
 									userType !== "Researcher" ? (
 										<div>
 											<button
@@ -135,26 +135,75 @@ function Modal({ data, view }) {
 									)}
 									*/}
 
-{data?.type == "Post" && (
-		<>
-		
-			<button
-				className="btn rounded subBtn denyBtn ml-2"
-				onClick={deleteItem}
-			>
-				Delete <i class="icofont-ui-delete"></i>
-			</button>
-		</>
-	)}
-
-
-
-
-
-
-
-
-
+									{data?.type == "Post" ? (
+										<>
+											<button
+												className="btn rounded subBtn denyBtn ml-2"
+												onClick={deleteItem}
+											>
+												Delete{" "}
+												<i class="icofont-ui-delete"></i>
+											</button>
+										</>
+									) : (
+										<>
+											{(data?.data?.status === "Review" || data?.data?.status === "Loading") &&
+											userType !== "Researcher" ? (
+												<div>
+													<button
+														className="btn rounded subBtn"
+														onClick={approve}
+													>
+														Approve
+													</button>
+													<button
+														className="btn rounded subBtn denyBtn ml-2"
+														onClick={deny}
+													>
+														Deny
+													</button>
+												</div>
+											) : (
+												<div>
+													{data?.data?.status ===
+													"Approved" ? (
+														<button
+															disabled
+															className="btn rounded subBtn approvedBtn"
+														>
+															Approved
+														</button>
+													) : data?.data?.status ===
+													  "Denied" ? (
+														<button
+															disabled
+															className="btn rounded subBtn denyBtn ml-2"
+														>
+															Denied
+														</button>
+													) : (
+														<>
+															<button
+																disabled
+																className="btn rounded subBtn reviewBtn ml-2"
+															>
+																Reviewing
+															</button>
+															<button
+																className="btn rounded subBtn denyBtn ml-2"
+																onClick={
+																	deleteItem
+																}
+															>
+																Delete{" "}
+																<i class="icofont-ui-delete"></i>
+															</button>
+														</>
+													)}
+												</div>
+											)}
+										</>
+									)}
 								</div>
 							)}
 						</div>
