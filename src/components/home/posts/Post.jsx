@@ -59,6 +59,49 @@ function Post({ i }) {
 										text to build on the card title and make
 										up the bulk of the card's content.
 									</p>
+
+
+<div className="justify-content-center row">
+	{formData?.files?.map((file) => (
+		<div
+			className="m-2"
+			style={{
+				height: "100px",
+				width: "100 px",
+			}}
+		>
+			{file.type === "image" && (
+				<img
+					src={file.url}
+					className="img-fluid rounded w-100 h-100"
+					title={file.name}
+					style={{ objectFit: "cover" }}
+				/>
+			)}
+			{file.type === "video" && (
+				<div className="w-100 h-100 position-relative">
+					<video
+						src={file.url}
+						className="img-fluid rounded w-100 h-100"
+						title={file.name}
+						style={{
+							objectFit: "cover",
+						}}
+					/>
+					<i class="icofont-play-alt-1 icofont-3x videoPlayBtn text-white-50"></i>
+				</div>
+			)}
+			{file.type === "file" && (
+				<i
+					className="img-fluid rounded w-100 h-100 icofont-file-alt icofont-5x"
+					title={file.name}
+					style={{ objectFit: "cover" }}
+				></i>
+			)}
+		</div>
+	))}
+</div>
+
 								</div>
 							</div>
 						</div>
