@@ -5,7 +5,7 @@ import Comments from "./comments/Comments";
 function Post({ i }) {
 	return (
 		<Fade>
-			<div className="container my-5 rounded shadow p-3">
+			<div className="container my-5 rounded shadow p-3" >
 				<div className="row">
 					<div
 						className={`col-md-7 mb-4 ${

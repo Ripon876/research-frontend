@@ -1,8 +1,9 @@
 import Comment from './Comment';
+import './Comments.css';
 
 function Comments() {
 	return (
-		<div>
+		<div  className='comments'>
 			<Comment />
 			<Comment />
 			<Comment />
