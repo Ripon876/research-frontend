@@ -21,6 +21,7 @@ import OurVisionPage from './pages/OurVisionPage';
 import ResearchLabsPage from './pages/ResearchLabsPage';
 import TopChallengersPage from './pages/TopChallengersPage';
 import Dashboard from './components/dashboard/Dashboard';
+import ExpandedPost from './components/expandedPost/ExpandedPost';
 
 function App() {
 
@@ -49,6 +50,7 @@ function App() {
       <Route path='/research_labs' element={<ResearchLabsPage />} />
       <Route path='/top_challengers' element={<TopChallengersPage />} />
       <Route path='/dashboard/:type' element={<Dashboard />} />
+      <Route path='/view/post/:id' element={<ExpandedPost />} />
     </Routes>
     </>
   )
