@@ -1,14 +1,35 @@
-import Comment from './Comment';
-import './Comments.css';
+import Comment from "./Comment";
+import "./Comments.css";
 
 function Comments() {
 	return (
-		<div  className='comments'>
-			<Comment />
-			<Comment />
-			<Comment />
+		<div>
+			<h5 className="card-title mb-1">Comments (3)</h5>
+			<div className="comments">
+				<Comment />
+				<Comment />
+				<Comment />
+			</div>
+			<div className="pt-2">
+				<form className="d-flex newComment" role="search">
+					<input
+						className="form-control me-2 "
+						type="search"
+						placeholder="write your comment"
+						aria-label="Search"
+						 
+					/>
+					<button
+						className="btn btn-outline-success btn-sm subBtn"
+						type="submit"
+					>
+						Add
+					</button>
+				</form>
+			</div>
 		</div>
-	)
+	
+	);
 }
 
 export default Comments;

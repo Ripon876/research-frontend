@@ -96,7 +96,6 @@ function Post({ post, i }) {
 							</div>
 						</div>
 						<div className="col-md-5 mt-4">
-							<h5 className="card-title mb-1">Comments (3)</h5>
 							<Comments />
 						</div>
 					</div>
