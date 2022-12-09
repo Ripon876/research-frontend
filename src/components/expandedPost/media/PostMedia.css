@@ -6,6 +6,9 @@
     display: flex;
     justify-content: space-between;
 }
+.owl-nav-container.disabled {
+    display: none;
+}
 .owl-nav-container button {
     font-size: 96px;
     background: transparent;
@@ -18,3 +21,4 @@
 .owl-item .item img{
 	border-radius: 10px;
 }
+

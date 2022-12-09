@@ -3,13 +3,13 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import "./PostMedia.css";
 
-function PostMedia() {
+function PostMedia({data}) {
 	return (
 		<div>
 			<OwlCarousel className="owl-theme" 
 			items={1} 
 			loop margin={50}
-			nav
+			nav={data?.length > 1 ? true : false}
 			dots={false}
 			navContainerClass="owl-nav-container" 
 			navClass={['owl-prev','owl-next']}

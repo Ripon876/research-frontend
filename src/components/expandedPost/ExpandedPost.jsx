@@ -16,14 +16,14 @@ function ExpandedPost() {
 
 			<div className="container-fluid expandedPostContainer">
 		
-				<div className="row">
-					<div className="col-md-8 col-sm-12" style={{    background: '#0e0d0dd1', height: '100vh'}}>
+				<div className="row"  style={{  background: 'rgb(21 21 21)'}}>
+					<div className="col-md-8 col-sm-12" style={{   height: '100vh'}}>
 						<div className="closePostButtonContainer">
 				<i class="icofont-close"></i>
 			</div>
 						<PostMedia data={post[0]?.attachments} />
 					</div>
-					<div className="col-md-4 col-sm-12">
+					<div className="col-md-4 col-sm-12 bg-white">
 						<PostContent post={post[0]}/>
 					</div>
 				</div>
