@@ -1,13 +1,10 @@
 .attachment {
-	height: 50px !important;
-	object-fit: cover !important;
-	cursor: pointer !important;
+  height: 50px !important;
+  object-fit: cover !important;
+  cursor: pointer !important;
 }
 
-
-
 /* modal video player */
-
 
 @keyframes modal-video {
   from {
@@ -128,8 +125,9 @@
 .modal-video-close-btn:after {
   transform: rotate(-45deg);
 }
-.modal-video-close-btn:before, .modal-video-close-btn:after {
-  content: '';
+.modal-video-close-btn:before,
+.modal-video-close-btn:after {
+  content: "";
   position: absolute;
   height: 2px;
   width: 100%;
@@ -140,3 +138,4 @@
   border-radius: 5px;
   margin-top: -6px;
 }
+

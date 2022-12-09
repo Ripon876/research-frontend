@@ -6,15 +6,18 @@ import "react-medium-image-zoom/dist/styles.css";
 import ModalVideo from "react-modal-video";
 import ReactPlayer from "react-player";
 import Comments from "./comments/Comments";
+import Gallery from "./gallery/Gallery";
 import "./Post.css";
 
 function Post({ post, i }) {
 	const [showVideo, setShowVideo] = useState(false);
+	const [isExpanded, setIsExpanded] = useState(false);
 	const [url, setUrl] = useState("");
 
-	useEffect(() => {
-		console.log(url);
-	}, [url]);
+	const expandPost = () => {
+		setIsExpanded(true);
+	};
+
 	return (
 		<>
 			<ModalVideo
@@ -58,87 +61,36 @@ function Post({ post, i }) {
 											</h6>
 										</div>
 									</div>
-									<div>
-										<p className="card-text">
-											{post?.content}
-										</p>
-
-										{post?.attachments && (
-											<div className="justify-content-start row">
-												{post?.attachments?.map(
-													(file) => (
-														<div
-															className="m-2"
-															style={{
-																height: "50px",
-																width: "auto",
-															}}
-														>
-															{file.type ===
-																"image" && (
-																<Zoom>
-																	<img
-																		src={
-																			file.url
-																		}
-																		className="img-fluid rounded w-100 h-100 attachment"
-																		title={
-																			file.name
-																		}
-																		style={{
-																			objectFit:
-																				"cover",
-																			cursor: "pointer",
-																			height: "50px !important",
-																		}}
-																	/>
-																</Zoom>
-															)}
-															{file.type ===
-																"video" && (
-																<div className="w-100 h-100 position-relative">
-																	<video
-																		// src={file.url}
-																		className="img-fluid rounded w-100 h-100 attachment bg-dark"
-																		title={
-																			file.name
-																		}
-																		style={{
-																			objectFit:
-																				"cover",
-																			cursor: "pointer",
-																		}}
-																		onClick={() => {
-																			setUrl(
-																				file.url
-																			);
-																			setShowVideo(
-																				true
-																			);
-																		}}
-																	/>
-																	<i class="icofont-play-alt-1 icofont-2x videoPlayBtn text-white-50"></i>
-																</div>
-															)}
-															{file.type ===
-																"file" && (
-																<i
-																	className="img-fluid rounded w-100 h-100 icofont-file-alt icofont-3x attachment"
-																	title={
-																		file.name
+									<div className="postContent">
+										<div>
+											<p className="card-text">
+												{post?.content.length > 270 &&
+												!isExpanded ? (
+													<>
+														<p>
+															{post?.content.substr(
+																0,
+																270
+															)}{" "}
+															<span className="cp">
+																<strong
+																	onClick={
+																		expandPost
 																	}
-																	style={{
-																		objectFit:
-																			"cover",
-																		cursor: "pointer",
-																	}}
-																></i>
-															)}
-														</div>
-													)
+																>
+																	. . . See
+																	More
+																</strong>
+															</span>
+														</p>
+													</>
+												) : (
+													<p>{post?.content}</p>
 												)}
-											</div>
-										)}
+											</p>
+										</div>
+
+										<Gallery items={post?.attachments} />
 									</div>
 								</div>
 							</div>

@@ -1,0 +1,108 @@
+
+.profile {
+  border-radius: 10px !important;
+  overflow: hidden;
+}
+.profile .profile-img-list {
+  list-style-type: none;
+  margin: -0.0625rem -1.3125rem;
+  padding: 0;
+  overflow: hidden;
+}
+.profile .profile-img-list:after,
+.profile .profile-img-list:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+.profile .profile-img-list .profile-img-list-item {
+  float: left;
+  width: 116%;
+  padding: 0.0625rem;
+  cursor: pointer;
+}
+.profile .profile-img-list .profile-img-list-item.main {
+  width: 50%;
+}
+.profile .profile-img-list .profile-img-list-item .profile-img-list-link {
+  display: block;
+  padding-top: 75%;
+  overflow: hidden;
+  position: relative;
+}
+.profile
+  .profile-img-list
+  .profile-img-list-item
+  .profile-img-list-link
+  .profile-img-content,
+.profile .profile-img-list .profile-img-list-item .profile-img-list-link img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.profile
+  .profile-img-list
+  .profile-img-list-item
+  .profile-img-list-link
+  .profile-img-content:before,
+.profile
+  .profile-img-list
+  .profile-img-list-item
+  .profile-img-list-link
+  img:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid rgba(60, 78, 113, 0.15);
+}
+.profile
+  .profile-img-list
+  .profile-img-list-item.with-number
+  .profile-img-number {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  color: #fff;
+  font-size: 1.625rem;
+  font-weight: 500;
+  line-height: 1.625rem;
+  margin-top: -0.8125rem;
+  text-align: center;
+}
+.profile-img-list-item.main {
+  float: left !important;
+  max-height: 300px !important;
+  /*    background: red !important;*/
+  width: 70% !important;
+}
+.profile .sub {
+  width: 30% !important;
+  float: right !important;
+  margin: 0 !important;
+}
+
+
+
+
+
+.profile-img-number {
+  top: 62% !important;
+  left: -18px !important;
+  right: 0 !important;
+}
+.profile-img-number h2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: -20px;
+}
