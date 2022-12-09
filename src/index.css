@@ -77,3 +77,6 @@ h1, h2, h3, h4, h5, h6 {
 [data-rmiz-modal-overlay="visible"] {
     background-color: rgb(13 13 13 / 54%) !important;
 }
+.cp {
+  cursor: pointer !important;
+}
