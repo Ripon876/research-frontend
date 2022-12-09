@@ -5,8 +5,9 @@ import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 import ModalVideo from "react-modal-video";
 import ReactPlayer from "react-player";
-import Comments from "./comments/Comments";
 import Gallery from "./gallery/Gallery";
+import Options from "./options/Options";
+import Comments from "./comments/Comments";
 import "./Post.css";
 
 function Post({ post, i }) {
@@ -89,9 +90,9 @@ function Post({ post, i }) {
 												)}
 											</p>
 										</div>
-
-										<Gallery items={post?.attachments} />
+										<Gallery items={post?.attachments} />{" "}
 									</div>
+									<Options />
 								</div>
 							</div>
 						</div>
