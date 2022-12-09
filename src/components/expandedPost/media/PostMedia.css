@@ -1,0 +1,20 @@
+.owl-nav-container {
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.owl-nav-container button {
+    font-size: 96px;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+.owl-item .item {
+	padding: 80px;
+}
+.owl-item .item img{
+	border-radius: 10px;
+}

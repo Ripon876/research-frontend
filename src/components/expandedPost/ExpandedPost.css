@@ -1,0 +1,7 @@
+.expandedPostContainer{
+	max-width: 1600px;
+}
+.closePostButtonContainer i {
+	font-size: 40px;
+	cursor: pointer;
+}

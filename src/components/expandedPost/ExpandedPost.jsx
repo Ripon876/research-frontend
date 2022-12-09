@@ -1,13 +1,34 @@
-import {useState,useEffect} from 'react';
-import {useParams,useSearchParams} from 'react-router-dom';
-import './ExpandedPost.css';
+import { useState, useEffect } from "react";
+import { useParams, useSearchParams } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import PostMedia from "./media/PostMedia";
+import PostContent from "./content/PostContent";
+import "./ExpandedPost.css";
 
 function ExpandedPost() {
+	const post = useSelector((state) =>
+		state.posts.filter((post) => post.id === "we345sdfds34")
+	);
+
 	return (
 		<div>
 			<h1>this is expanded post component</h1>
+
+			<div className="container-fluid expandedPostContainer">
+			<div className="closePostButtonContainer">
+				<i class="icofont-close"></i>
+			</div>
+				<div className="row">
+					<div className="col-md-8 col-sm-12">
+						<PostMedia data={post[0]?.attachments} />
+					</div>
+					<div className="col-md-4 col-sm-12">
+						<PostContent post={post[0]}/>
+					</div>
+				</div>
+			</div>
 		</div>
-	)
+	);
 }
 
 export default ExpandedPost;
