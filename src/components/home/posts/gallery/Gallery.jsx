@@ -50,7 +50,7 @@ function Gallery({ items }) {
 
 			{/* for 3 or more images */}
 			{(media.length === 3 || media.length > 2) && (
-				<div style={{ maxHeight: "350px" }}>
+				<div style={{ maxHeight: "350px" }} className="mb-4">
 					<div className="container profile my-0">
 						<div className="profile-img-list">
 							{media[0]?.type === "image" ? (
