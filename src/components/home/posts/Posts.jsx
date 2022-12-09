@@ -5,7 +5,7 @@ function Posts() {
 	return (
 		<div>
 			{data?.map((post, i) => (
-				<Post post={post} i={i} />
+				<Post post={post} i={i+1} />
 			))}
 
 			{/*<Post i={1} />
@@ -18,3 +18,6 @@ function Posts() {
 }
 
 export default Posts;
+
+
+// Ripon01765233876@
