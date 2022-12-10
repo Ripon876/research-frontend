@@ -4,19 +4,22 @@ import Toast from "../../../../utilities/Toast";
 import "./Settings.css";
 
 function Settings() {
-	const [profilePic, setProfilePic] = useState("");
+
 	const user = useSelector((state) => state.user);
 	const dispatch = useDispatch();
 
 	const mdData = {
 		name: user?.name ? user.name : "",
 		email: user?.email ? user.email : "",
+		profilePic: user?.profilePic ? user.profilePic : "",
 	};
 	const reData = {
 		name: user?.name ? user.name : "",
 		email: user?.email ? user.email : "",
 		institution: user?.institution ? user.institution : "",
+		institutionId: user?.institutionId ? user.institutionId : "",
 		department: user?.department ? user.department : "",
+		profilePic: user?.profilePic ? user.profilePic : "",
 	};
 
 	const [data, setData] = useState(
@@ -32,7 +35,6 @@ function Settings() {
 				...data,
 				profilePic: reader.result
 			})
-			setProfilePic(reader.result);
 		};
 	};
 
@@ -105,6 +107,20 @@ const saveData = () => {
 										/>
 									</div>
 									<div className="form-group">
+										<label for="institution">
+											Institution ID
+										</label>
+										<input
+											type="text"
+											className="form-control"
+											id="institutionId"
+											name="institutionId"
+											value={data?.institutionId}
+											onChange={handleChange}
+											aria-describedby="emailHelp"
+										/>
+									</div>
+									<div className="form-group">
 										<label for="department">
 											Departments
 										</label>
@@ -136,12 +152,12 @@ const saveData = () => {
 								/>
 							</div>
 
-							{profilePic && (
+							{data?.profilePic && (
 								<div
 									style={{ width: "250px", height: "250px" }}
 								>
 									<img
-										src={profilePic}
+										src={data?.profilePic}
 										className="img-fluid rounded-circle h-100 w-100"
 										style={{ objectFit: "cover" }}
 									/>
