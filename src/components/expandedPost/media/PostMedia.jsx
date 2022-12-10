@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
@@ -5,6 +7,18 @@ import "./PostMedia.css";
 
 function PostMedia({ data }) {
 	let media = data?.filter((item) => item.type !== "file");
+
+	const [searchParams, setSearchParams] = useSearchParams();
+	const [startPosition, setStartPosition] = useState(0);
+
+	useEffect(() => {
+		let id = searchParams.get("mediaId");
+
+		if (id) {
+			let itemIndex = media.findIndex((item) => item.id === id);
+			setStartPosition(itemIndex);
+		}
+	}, []);
 
 	return (
 		<div>
@@ -17,6 +31,7 @@ function PostMedia({ data }) {
 				dots={false}
 				navContainerClass="owl-nav-container"
 				navClass={["owl-prev", "owl-next"]}
+				startPosition={startPosition}
 			>
 				{media?.map((item) => (
 					<>

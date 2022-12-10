@@ -126,11 +126,11 @@ function Gallery({ items, postId }) {
 export default Gallery;
 
 const Image = ({ data, cn, count ,postId}) => {
-	console.log(count ? data : '','image')
+	
 	return (
 		<div className={`profile-img-list-item ${cn}`}>
 			<div className="profile-img-list-link">
-				<Link to={`/view/post/${postId}`}>
+				<Link to={`/view/post/${postId + '?mediaId=' + data?.id}`}>
 					<span
 						className="profile-img-content"
 						style={{
@@ -150,16 +150,15 @@ const Image = ({ data, cn, count ,postId}) => {
 	);
 };
 const Video = ({ data, cn, count ,postId}) => {
-	console.log(count ? data : '','video')
+	
 	return (
 		<div className={`profile-img-list-item with-number ${cn}`}>
 			<div className="profile-img-list-link">
-				<Link to={`/view/post/${postId}`}>
+				<Link to={`/view/post/${postId + '?mediaId=' + data?.id}`}>
 					<span
 						className="profile-img-content"
 						style={{
-							// backgroundImage:
-							// 	`url(${data?.url})`,
+							
 								background: 'black'
 						}}
 					></span>
