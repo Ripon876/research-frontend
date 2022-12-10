@@ -10,7 +10,7 @@ import Challenge from "./Challenge";
 import Toast from "../../../utilities/Toast";
 import "./Modal.css";
 
-function Modal({ data, view }) {
+function Modal({ data, view ,settingsModal}) {
 	const userType = useSelector((state) => state.user.type);
 
 	const approve = () => {
@@ -76,7 +76,7 @@ function Modal({ data, view }) {
 								<Challenge challenge={data?.data} />
 							)}
 
-							{data?.type !== "Notifications" && (
+							{data?.type !== "Notifications" && !settingsModal && (
 								<div
 									className="bg-dark pl-4 position-absolute py-4 w-100"
 									style={{ bottom: 0, left: 0 }}

@@ -1,9 +1,16 @@
+import {useState} from 'react';
 import Info from "./profileInfo/Info";
 import Notifications from "./notifications/Notifications";
+import Modal from '../modal/Modal';
 import "./Header.css";
 
 function Header() {
+
+const [isOpen, setIsOpen] = useState(false);
+
 	return (
+		<>
+		{isOpen && <Modal view={setIsOpen} settingsModal/>}
 		<div className="dashboardHeader">
 			<div
 				className="container-fluid position-relative"
@@ -27,9 +34,10 @@ function Header() {
 					<div
 						className="dropdown-menu"
 						aria-labelledby="dropdownMenuButton"
-						// style={{transform: 'translate3d(-160px, 46px, 0px)'}}
 					>
-						<a className="dropdown-item" href="#">
+						<a className="dropdown-item" href="#" 
+						onClick={()=> { setIsOpen(true)}}
+						>
 							<i class="icofont-gear pr-2"></i>
 							Settings
 						</a>
@@ -41,6 +49,7 @@ function Header() {
 				</div>
 			</div>
 		</div>
+		</>
 	);
 }
 
