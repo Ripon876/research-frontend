@@ -1,9 +1,8 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Gallery.css";
 
-function Gallery({ items }) {
-
-	
+function Gallery({ items, postId }) {
 	const [media, setMedia] = useState(
 		items.filter((item) => item.type !== "file")
 	);
@@ -20,9 +19,9 @@ function Gallery({ items }) {
 					>
 						<div className="profile-img-list">
 							{media[0]?.type === "image" ? (
-								<Image data={media[0]} cn="w-100" />
+								<Image data={media[0]} cn="w-100" postId={postId}/>
 							) : (
-								<Video data={media[0]} cn="w-100" />
+								<Video data={media[0]} cn="w-100" postId={postId}/>
 							)}
 						</div>
 					</div>
@@ -37,9 +36,9 @@ function Gallery({ items }) {
 							{media?.map((item) => (
 								<>
 									{item?.type === "image" ? (
-										<Image data={media[0]} cn="w-50" />
+										<Image data={media[0]} cn="w-50" postId={postId}/>
 									) : (
-										<Video data={media[0]} cn="w-50" />
+										<Video data={media[0]} cn="w-50" postId={postId}/>
 									)}
 								</>
 							))}
@@ -54,9 +53,9 @@ function Gallery({ items }) {
 					<div className="container profile my-0">
 						<div className="profile-img-list">
 							{media[0]?.type === "image" ? (
-								<Image data={media[0]} cn="main" />
+								<Image data={media[0]} cn="main" postId={postId}/>
 							) : (
-								<Video data={media[0]} cn="main" />
+								<Video data={media[0]} cn="main" postId={postId}/>
 							)}
 
 							<div className="sub">
@@ -74,7 +73,7 @@ function Gallery({ items }) {
 																count={
 																	media.length -
 																	3
-																}
+																}postId={postId}
 															/>
 														) : (
 															<Video
@@ -83,7 +82,7 @@ function Gallery({ items }) {
 																count={
 																	media.length -
 																	3
-																}
+																}postId={postId}
 															/>
 														)}
 													</>
@@ -98,12 +97,12 @@ function Gallery({ items }) {
 												{item?.type === "image" ? (
 													<Image
 														data={media[0]}
-														cn=" "
+														cn=" "postId={postId}
 													/>
 												) : (
 													<Video
 														data={media[0]}
-														cn=" "
+														cn=" "postId={postId}
 													/>
 												)}
 											</>
@@ -121,41 +120,45 @@ function Gallery({ items }) {
 
 export default Gallery;
 
-const Image = ({ data, cn, count }) => {
+const Image = ({ data, cn, count ,postId}) => {
 	return (
 		<div className={`profile-img-list-item ${cn}`}>
 			<div className="profile-img-list-link">
-				<span
-					className="profile-img-content"
-					style={{
-						maxHeight: "350px",
-						backgroundImage:
-							"url(https://via.placeholder.com/350x280/6495ED/000000)",
-					}}
-				></span>
-				{count && (
-					<div className="profile-img-number">
-						<h2>+{count}</h2>
-					</div>
-				)}
+				<Link to={`/view/post/${postId}`}>
+					<span
+						className="profile-img-content"
+						style={{
+							maxHeight: "350px",
+							backgroundImage:
+								"url(https://via.placeholder.com/350x280/6495ED/000000)",
+						}}
+					></span>
+					{count && (
+						<div className="profile-img-number">
+							<h2>+{count}</h2>
+						</div>
+					)}
+				</Link>
 			</div>
 		</div>
 	);
 };
-const Video = ({ data, cn, count }) => {
+const Video = ({ data, cn, count ,postId}) => {
 	return (
 		<div className={`profile-img-list-item with-number ${cn}`}>
 			<div className="profile-img-list-link">
-				<span
-					className="profile-img-content"
-					style={{
-						backgroundImage:
-							"url(https://via.placeholder.com/350x280/1E90FF/000000)",
-					}}
-				></span>
-				<div className="profile-img-number">
-					<i className="icofont-play-alt-1 icofont-2x videoPlayBtn text-white-50"></i>
-				</div>
+				<Link to={`/view/post/${postId}`}>
+					<span
+						className="profile-img-content"
+						style={{
+							backgroundImage:
+								"url(https://via.placeholder.com/350x280/1E90FF/000000)",
+						}}
+					></span>
+					<div className="profile-img-number">
+						<i className="icofont-play-alt-1 icofont-2x videoPlayBtn text-white-50"></i>
+					</div>
+				</Link>
 			</div>
 		</div>
 	);
