@@ -6,14 +6,21 @@ import PostContent from "./content/PostContent";
 import "./ExpandedPost.css";
 
 function ExpandedPost() {
-	const post = useSelector((state) =>
-		state.posts.filter((post) => post.id === "we345sdfds34")
-	);
 
+	const {id} = useParams();
+	const post = useSelector((state) =>
+		state.posts.filter((post) => post.id === id)
+	);
+console.log(post[0])
 const navigate = useNavigate();
 const goBack = () =>{
 	 navigate(-1);
 }
+
+
+
+
+
 	return (
 		<div>
 			<div className="container-fluid expandedPostContainer">
