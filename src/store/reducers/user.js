@@ -14,6 +14,13 @@ const userReducer = (state = initialData, action) => {
       };
 
       break;
+    case "UPDATE_USER":
+      return {
+        ...state,
+        ...action.user
+      };
+
+      break;
     default:
       return state;
   }

@@ -7,10 +7,11 @@ import Research from "./Research";
 import Publication from "./Publication";
 import Notifications from "./Notifications";
 import Challenge from "./Challenge";
+import Settings from "./settings/Settings";
 import Toast from "../../../utilities/Toast";
 import "./Modal.css";
 
-function Modal({ data, view ,settingsModal}) {
+function Modal({ data, view, settingsModal }) {
 	const userType = useSelector((state) => state.user.type);
 
 	const approve = () => {
@@ -45,12 +46,14 @@ function Modal({ data, view ,settingsModal}) {
 					<div className="container p-4 rounded shadow">
 						<div className="h-100">
 							<div>
-								<h4 className="mb-3">
-									Viewing :{" "}
-									<span className="bg-secondary mx-1 px-2 py-1 rounded small text-center text-white">
-										{data?.type}
-									</span>
-								</h4>
+								{!settingsModal && (
+									<h4 className="mb-3">
+										Viewing :{" "}
+										<span className="bg-secondary mx-1 px-2 py-1 rounded small text-center text-white">
+											{data?.type}
+										</span>
+									</h4>
+								)}
 								<span>
 									<i
 										className="icofont-close icofont-2x formClose"
@@ -74,6 +77,9 @@ function Modal({ data, view ,settingsModal}) {
 							)}
 							{data?.type === "Challenge" && (
 								<Challenge challenge={data?.data} />
+							)}
+							{settingsModal && (
+								<Settings  />
 							)}
 
 							{data?.type !== "Notifications" && !settingsModal && (
@@ -147,7 +153,9 @@ function Modal({ data, view ,settingsModal}) {
 										</>
 									) : (
 										<>
-											{(data?.data?.status === "Review" || data?.data?.status === "Loading") &&
+											{(data?.data?.status === "Review" ||
+												data?.data?.status ===
+													"Loading") &&
 											userType !== "Researcher" ? (
 												<div>
 													<button

@@ -8,10 +8,11 @@ function Info() {
 		<div className="col-md-8">
 			<div className="row mt-4">
 				<div className="col-md-4">
-					<div className="pIC text-center">
+					<div className="pIC text-center" style={{ width: "250px", height: "250px" }}>
 						<img
-							src="https://via.placeholder.com/200x200"
-							className="img-fluid rounded-circle"
+							src={user?.profilePic ? user?.profilePic :   "https://via.placeholder.com/200x200"}
+							className="img-fluid rounded-circle w-100 h-100"
+							style={{ objectFit: "cover" }}
 						/>
 					</div>
 					<div className="pNC">

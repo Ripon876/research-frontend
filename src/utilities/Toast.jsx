@@ -3,8 +3,7 @@ import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 const MySwal = withReactContent(Swal);
 
-function Toast({ type, icon, title },cb) {
-	
+function Toast({ type, icon, title }, cb) {
 	const Toast = MySwal.mixin({
 		toast: true,
 		position: "top-end",
@@ -22,7 +21,12 @@ function Toast({ type, icon, title },cb) {
 		type: type,
 		icon: icon,
 		title: title,
-	}).then(()=> cb(false))
+	}).then(() => {
+		console.log("fired");
+		if (cb) {
+			cb(false);
+		}
+	});
 }
 
 export { MySwal };
