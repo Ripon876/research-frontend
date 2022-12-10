@@ -18,22 +18,22 @@ function Options() {
 						<i class="icofont-share pr-1"></i>
 						<p className="small m-0">Share</p>
 					</div>
-					{/*	<div class="dropdown-menu">
+					 <div class="dropdown-menu">
 						<a class="dropdown-item" href="#">
-							<i class="icofont-facebook"></i> Facebook
+							<i class="icofont-facebook"></i> <span className='small text-muted pl-1'>Facebook</span>
 						</a>
 						<a class="dropdown-item" href="#">
-							<i class="icofont-twitter"></i> Twitter
+							<i class="icofont-twitter"></i> <span className='small text-muted pl-1'>Twitter</span>
 						</a>
 						<a class="dropdown-item" href="#">
-							<i class="icofont-linkedin"></i> LinkedIn
+							<i class="icofont-linkedin"></i> <span className='small text-muted pl-1'>LinkedIn</span>
 						</a>
 					
 						<a class="dropdown-item" href="#">
-							<i class="icofont-link"></i> Copy Link
+							<i class="icofont-link"></i> <span className='small text-muted pl-1'>Copy Link</span>
 						</a>
-					</div>*/}
-					<div class="dropdown-menu dpMenu2">
+					</div> 
+				{/*	<div class="dropdown-menu dpMenu2">
 						<a class="dropdown-item" href="#">
 							<i class="icofont-facebook"></i>
 						</a>
@@ -47,7 +47,7 @@ function Options() {
 						<a class="dropdown-item" href="#">
 							<i class="icofont-link"></i>
 						</a>
-					</div>
+					</div>*/}
 				</div>
 			</div>
 		</div>

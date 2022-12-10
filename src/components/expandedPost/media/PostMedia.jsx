@@ -5,7 +5,7 @@ import "./PostMedia.css";
 
 function PostMedia({ data }) {
 	let media = data?.filter((item) => item.type !== "file");
-	console.log(media);
+
 	return (
 		<div>
 			<OwlCarousel

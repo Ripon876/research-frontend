@@ -61,7 +61,7 @@ function PostContent({post}) {
 				</div>
 			</div>
 
-			<div className='pt-2'>
+			<div className='pt-2 pb-4'>
 				<Comments expandedPost/>
 			</div>
 		</div>

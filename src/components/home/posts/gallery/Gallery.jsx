@@ -6,7 +6,7 @@ function Gallery({ items, postId }) {
 	const [media, setMedia] = useState(
 		items.filter((item) => item.type !== "file")
 	);
-
+// console.log(items[2])
 	return (
 		<div>
 			{/* for 1 images */}
@@ -33,12 +33,12 @@ function Gallery({ items, postId }) {
 				<div style={{ maxHeight: "350px" }} className="mb-4">
 					<div className="container profile my-0">
 						<div className="profile-img-list">
-							{media?.map((item) => (
+							{media?.map((item,i) => (
 								<>
 									{item?.type === "image" ? (
-										<Image data={media[0]} cn="w-50" postId={postId}/>
+										<Image data={media[i]} cn="w-50" postId={postId}/>
 									) : (
-										<Video data={media[0]} cn="w-50" postId={postId}/>
+										<Video data={media[i]} cn="w-50" postId={postId}/>
 									)}
 								</>
 							))}
@@ -68,21 +68,23 @@ function Gallery({ items, postId }) {
 														{item?.type ===
 														"image" ? (
 															<Image
-																data={media[0]}
+																data={media[i]}
 																cn="with-number"
 																count={
 																	media.length -
 																	3
-																}postId={postId}
+																}
+																postId={postId}
 															/>
 														) : (
 															<Video
-																data={media[0]}
+																data={media[i]}
 																cn="with-number"
 																count={
 																	media.length -
 																	3
-																}postId={postId}
+																}
+																postId={postId}
 															/>
 														)}
 													</>
@@ -94,15 +96,18 @@ function Gallery({ items, postId }) {
 									<>
 										{media?.map((item, i) => (
 											<>
-												{item?.type === "image" ? (
-													<Image
-														data={media[0]}
-														cn=" "postId={postId}
-													/>
-												) : (
+												{item?.type === "video" ? (
 													<Video
-														data={media[0]}
-														cn=" "postId={postId}
+														data={media[i]}
+														cn=" "
+														postId={postId}
+													/>
+
+												) : (
+													<Image
+														data={media[i]}
+														cn=" "
+														postId={postId}
 													/>
 												)}
 											</>
@@ -121,6 +126,7 @@ function Gallery({ items, postId }) {
 export default Gallery;
 
 const Image = ({ data, cn, count ,postId}) => {
+	console.log(count ? data : '','image')
 	return (
 		<div className={`profile-img-list-item ${cn}`}>
 			<div className="profile-img-list-link">
@@ -130,7 +136,7 @@ const Image = ({ data, cn, count ,postId}) => {
 						style={{
 							maxHeight: "350px",
 							backgroundImage:
-								"url(https://via.placeholder.com/350x280/6495ED/000000)",
+								`url(${data?.url})`,
 						}}
 					></span>
 					{count && (
@@ -144,6 +150,7 @@ const Image = ({ data, cn, count ,postId}) => {
 	);
 };
 const Video = ({ data, cn, count ,postId}) => {
+	console.log(count ? data : '','video')
 	return (
 		<div className={`profile-img-list-item with-number ${cn}`}>
 			<div className="profile-img-list-link">
@@ -151,8 +158,9 @@ const Video = ({ data, cn, count ,postId}) => {
 					<span
 						className="profile-img-content"
 						style={{
-							backgroundImage:
-								"url(https://via.placeholder.com/350x280/1E90FF/000000)",
+							// backgroundImage:
+							// 	`url(${data?.url})`,
+								background: 'black'
 						}}
 					></span>
 					<div className="profile-img-number">

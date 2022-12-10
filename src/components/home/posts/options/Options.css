@@ -11,3 +11,7 @@
     border-radius: 10px;
     padding: 0px 10px;
 }
+.dropup .dropdown-toggle::after{
+    content: none !important;
+    display: none !important;
+}

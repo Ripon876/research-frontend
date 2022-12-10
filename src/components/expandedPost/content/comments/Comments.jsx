@@ -6,7 +6,7 @@ function Comments({expandedPost}) {
 		<div>
 			<h5 className="card-title mb-1">Comments (3)</h5>
 			<div className="comments" style={{
-				maxHeight : expandedPost ? '300px' : null
+				maxHeight : expandedPost ? '370px' : null
 			}}>
 				<Comment />
 				<Comment />

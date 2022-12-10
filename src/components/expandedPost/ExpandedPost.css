@@ -5,11 +5,13 @@
 	font-size: 40px;
 	cursor: pointer;
 	color: #000000a1;
+	background: #1e1e1e;
+	border-radius: 15%;
 }
 .expandedPostContainer .dpMenu2.show {
-    display: flex !important;
+	display: flex !important;
 }
-.expandedPostContainer .dropdown-item{
+.expandedPostContainer .dropdown-item {
 	font-size: 19px !important;
-    padding: 0 20px !important;
+	padding: 0 20px !important;
 }
