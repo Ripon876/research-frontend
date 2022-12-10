@@ -11,7 +11,6 @@ function PostContent({post}) {
 		setIsExpanded(true);
 	};
 
-
 	return (
 		<div>
 			<div className="card">
@@ -20,20 +19,20 @@ function PostContent({post}) {
 						<div className="align-items-center d-flex">
 							<div className="mr-3">
 								<img
-									src="https://via.placeholder.com/50x50"
+									src={post?.creator.image}
 									className="img-fluid rounded-circle"
 								/>
 							</div>
 							<div>
-								<h4 className="card-title mb-1">Jhone</h4>
+								<h4 className="card-title mb-1">{post?.creator.full_name}</h4>
 								<h6 className="card-subtitle mb-2 text-muted">
-									Civil Engineer
+									{post?.creator.designation}
 								</h6>
 							</div>
 						</div>
 						<div className="p-1">
 							<h6 className="card-subtitle mb-2 text-muted">
-								<Moment fromNow>2022-10-27</Moment>
+								<Moment fromNow>{post?.creation_date}</Moment>
 							</h6>
 						</div>
 					</div>
