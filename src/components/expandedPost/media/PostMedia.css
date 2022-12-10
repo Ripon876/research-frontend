@@ -21,6 +21,7 @@
     padding: 80px;
     max-height: 700px;
     max-width: 765px;
+    margin: auto;
 }
 .owl-item .item img {
     border-radius: 10px;
