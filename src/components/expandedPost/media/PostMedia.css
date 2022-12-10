@@ -1,5 +1,5 @@
 .owl-nav-container {
-	position: absolute;
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
@@ -16,9 +16,14 @@
     border: none;
 }
 .owl-item .item {
-	padding: 80px;
+    padding: 80px;
 }
-.owl-item .item img{
-	border-radius: 10px;
+.owl-item .item img {
+    border-radius: 10px;
 }
 
+.owl-item .item.video {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+}
