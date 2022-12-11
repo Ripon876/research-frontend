@@ -42,7 +42,8 @@ function Post({ post, i }) {
 											<div className="mr-3">
 												<img
 													src={post?.creator?.image}
-													className="img-fluid rounded-circle"
+													className="img-fluid rounded-circle h-100 w-100"
+													alt={post?.creator.full_name}
 												/>
 											</div>
 											<div>

@@ -9,7 +9,8 @@ function Comment() {
 						<div className="mr-3">
 							<img
 								src="https://via.placeholder.com/40x40"
-								className="img-fluid rounded-circle"
+								className="img-fluid rounded-circle w-100 h-100"
+								alt='Jhone'
 							/>
 						</div>
 						<div className='pt-1'>
