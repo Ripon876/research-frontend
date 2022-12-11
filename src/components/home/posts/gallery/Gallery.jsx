@@ -1,12 +1,9 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Gallery.css";
 
 function Gallery({ items, postId }) {
-	const [media, setMedia] = useState(
-		items.filter((item) => item.type !== "file")
-	);
-// console.log(items[2])
+	let media = items?.filter((item) => item.type !== "file");
+
 	return (
 		<div>
 			{/* for 1 images */}
@@ -19,9 +16,17 @@ function Gallery({ items, postId }) {
 					>
 						<div className="profile-img-list">
 							{media[0]?.type === "image" ? (
-								<Image data={media[0]} cn="w-100" postId={postId}/>
+								<Image
+									data={media[0]}
+									cn="w-100"
+									postId={postId}
+								/>
 							) : (
-								<Video data={media[0]} cn="w-100" postId={postId}/>
+								<Video
+									data={media[0]}
+									cn="w-100"
+									postId={postId}
+								/>
 							)}
 						</div>
 					</div>
@@ -33,12 +38,20 @@ function Gallery({ items, postId }) {
 				<div style={{ maxHeight: "350px" }} className="mb-4">
 					<div className="container profile my-0">
 						<div className="profile-img-list">
-							{media?.map((item,i) => (
+							{media?.map((item, i) => (
 								<>
 									{item?.type === "image" ? (
-										<Image data={media[i]} cn="w-50" postId={postId}/>
+										<Image
+											data={media[i]}
+											cn="w-50"
+											postId={postId}
+										/>
 									) : (
-										<Video data={media[i]} cn="w-50" postId={postId}/>
+										<Video
+											data={media[i]}
+											cn="w-50"
+											postId={postId}
+										/>
 									)}
 								</>
 							))}
@@ -53,9 +66,17 @@ function Gallery({ items, postId }) {
 					<div className="container profile my-0">
 						<div className="profile-img-list">
 							{media[0]?.type === "image" ? (
-								<Image data={media[0]} cn="main" postId={postId}/>
+								<Image
+									data={media[0]}
+									cn="main"
+									postId={postId}
+								/>
 							) : (
-								<Video data={media[0]} cn="main" postId={postId}/>
+								<Video
+									data={media[0]}
+									cn="main"
+									postId={postId}
+								/>
 							)}
 
 							<div className="sub">
@@ -102,7 +123,6 @@ function Gallery({ items, postId }) {
 														cn=" "
 														postId={postId}
 													/>
-
 												) : (
 													<Image
 														data={media[i]}
@@ -125,18 +145,16 @@ function Gallery({ items, postId }) {
 
 export default Gallery;
 
-const Image = ({ data, cn, count ,postId}) => {
-	
+const Image = ({ data, cn, count, postId }) => {
 	return (
 		<div className={`profile-img-list-item ${cn}`}>
 			<div className="profile-img-list-link">
-				<Link to={`/view/post/${postId + '?mediaId=' + data?.id}`}>
+				<Link to={`/view/post/${postId + "?mediaId=" + data?.id}`}>
 					<span
 						className="profile-img-content"
 						style={{
 							maxHeight: "350px",
-							backgroundImage:
-								`url(${data?.url})`,
+							backgroundImage: `url(${data?.url})`,
 						}}
 					></span>
 					{count && (
@@ -149,17 +167,15 @@ const Image = ({ data, cn, count ,postId}) => {
 		</div>
 	);
 };
-const Video = ({ data, cn, count ,postId}) => {
-	
+const Video = ({ data, cn, count, postId }) => {
 	return (
 		<div className={`profile-img-list-item with-number ${cn}`}>
 			<div className="profile-img-list-link">
-				<Link to={`/view/post/${postId + '?mediaId=' + data?.id}`}>
+				<Link to={`/view/post/${postId + "?mediaId=" + data?.id}`}>
 					<span
 						className="profile-img-content"
 						style={{
-							
-								background: 'black'
+							background: "black",
 						}}
 					></span>
 					<div className="profile-img-number">

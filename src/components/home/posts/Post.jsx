@@ -72,7 +72,7 @@ function Post({ post, i }) {
 															{post?.content.substr(
 																0,
 																270
-															)}{" "}
+															)}
 															<span className="cp">
 																<strong
 																	onClick={
@@ -90,7 +90,10 @@ function Post({ post, i }) {
 												)}
 											</p>
 										</div>
-										<Gallery items={post?.attachments} postId={post?.id} /> 
+										<Gallery
+											items={post?.attachments}
+											postId={post?.id}
+										/>
 									</div>
 									<Options />
 								</div>
