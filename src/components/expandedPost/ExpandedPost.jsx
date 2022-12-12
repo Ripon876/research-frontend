@@ -20,7 +20,7 @@ function ExpandedPost() {
 	return (
 		<>
 			<Helmet>
-				<title>{post[0]?.content.substr(0,50)}. . . </title>
+				<title>{`${post[0]?.content.substr(0,50)} . . . `}</title>
 				<meta
 					property="og:url"
 					content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html"

@@ -5,13 +5,22 @@
     display: flex;
     align-items: center;
 }
-.liked ,.shared {
+.liked,
+.shared {
     font-weight: bold;
     background: #ececec;
     border-radius: 10px;
     padding: 0px 10px;
 }
-.dropup .dropdown-toggle::after{
+.dropup .dropdown-toggle::after {
     content: none !important;
     display: none !important;
+}
+.options .dropdown-item {
+    cursor: pointer !important;
+}
+
+.options .dropdown-item a {
+    text-decoration: none;
+    color: #212529 !important ;
 }

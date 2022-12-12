@@ -56,7 +56,7 @@ function PostContent({post}) {
 							</p>
 						</div>
 					</div>
-					<Options />
+					<Options id={post?.id}/>
 				</div>
 			</div>
 

@@ -96,7 +96,7 @@ function Post({ post, i }) {
 											postId={post?.id}
 										/>
 									</div>
-									<Options />
+									<Options id={post?.id} />
 								</div>
 							</div>
 						</div>

@@ -15,7 +15,7 @@ function PostMedia({ data }) {
 		let id = searchParams.get("mediaId");
 
 		if (id) {
-			let itemIndex = media.findIndex((item) => item.id === id);
+			let itemIndex = media?.findIndex((item) => item.id === id);
 			setStartPosition(itemIndex);
 		}
 	}, []);
