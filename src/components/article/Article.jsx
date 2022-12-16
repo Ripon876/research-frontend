@@ -1,4 +1,5 @@
 import ArticleContent from "./content/ArticleContent";
+import SideBar from "./sidebar/SideBar";
 import "./Article.css";
 import { article } from "./smd";
 
@@ -23,6 +24,7 @@ function Article() {
 
 					<div className="row">
 						<ArticleContent />
+						<SideBar />
 					</div>
 				</div>
 			</div>
