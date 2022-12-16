@@ -36,7 +36,7 @@ function App() {
       <Route path='/signup' element={<SignUpPage />} />
       <Route path='/login' element={<LoginPage />} />
       <Route path='/research/:id' element={<ResearchPage />} />
-      <Route path='/publication' element={<PublicationPage />} />
+      <Route path='/publications' element={<PublicationPage />} />
       <Route path='/apply/internship' element={<InternshipPage />} />
       <Route path='/apply/work' element={<WorkPage />} />
       <Route path='/sponsor_our_program' element={<SponsorPage />} />
