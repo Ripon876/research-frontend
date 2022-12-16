@@ -3,11 +3,14 @@ import React from "react";
 function Filter() {
 	return (
 		<div className='researchesFilter'>
+		<h2 className='mx-4'>
+            <strong>Researches</strong>
+          </h2>
 			<div
-				className="p-4 shadow-4 rounded-3 row mb-4"
+				className="p-4 shadow-4 rounded-3 row mb-4 mx-4"
 				style={{ backgroundColor: "#f0f0f0b3" }}
 			>
-				<div className="col-6 d-flex">
+				<div className="col-md-6 col-sm-10 d-flex">
 					<div className="w-50">
 						<h6>
 							<strong>Article Type</strong>
