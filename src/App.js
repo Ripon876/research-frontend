@@ -9,6 +9,7 @@ import LoginPage from './pages/LoginPage';
 import SignUpPage from './pages/SignUpPage';
 import ResearchPage from './pages/ResearchPage';
 import PublicationPage from './pages/PublicationPage';
+import ArticlePage from './pages/ArticlePage';
 import {InternshipPage,WorkPage} from './pages/ApplyPage';
 import SponsorPage from './pages/SponsorPage';
 import DonateUsPage from './pages/DonateUsPage';
@@ -37,6 +38,7 @@ function App() {
       <Route path='/login' element={<LoginPage />} />
       <Route path='/research/:id' element={<ResearchPage />} />
       <Route path='/publications' element={<PublicationPage />} />
+      <Route path='/article/:id' element={<ArticlePage />} />
       <Route path='/apply/internship' element={<InternshipPage />} />
       <Route path='/apply/work' element={<WorkPage />} />
       <Route path='/sponsor_our_program' element={<SponsorPage />} />

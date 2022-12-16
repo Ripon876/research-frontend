@@ -1,0 +1,16 @@
+.articleTitle h2 {
+	font-size: 1.875rem;
+	line-height: 1.2;
+}
+.articleAuthors a {
+	border-bottom: 3px solid transparent;
+}
+/*.articleAuthors a:hover{
+	border-bottom: 3px solid black;
+}
+*/
+.seeMoreAuthor {
+	background: #ebf1f5;
+	color: black;
+	border: none;
+}
