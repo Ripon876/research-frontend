@@ -1,6 +1,6 @@
-import './Publication.css';
+import './Publications.css';
 
-function Publication() {
+function Publications() {
 	return (
 		<>
 	<section id="services" className="services">
@@ -74,4 +74,4 @@ function Publication() {
 	)
 }
 
-export default Publication;
+export default Publications;

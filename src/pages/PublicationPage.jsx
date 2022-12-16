@@ -1,5 +1,5 @@
 import Header from  '../components/header/Header';
-import Publication from  '../components/publication/Publication';
+import Publications from  '../components/publications/Publications';
 import Footer from  '../components/footer/Footer';
 
 
@@ -8,7 +8,7 @@ function PublicationPage() {
 		<div>
 			<Header />
 			<div className='my-4 pt-5'></div>
-			<Publication />
+			<Publications />
 			<Footer />
 		</div>
 	)
