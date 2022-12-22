@@ -9,13 +9,23 @@ function PublishAnArticle2() {
 		title: "",
 		description: "",
 	};
-// uAN = uploaded Article Name
-
+	// uAN = uploaded Article Name
 
 	const [formData, updateFormData] = useState(initialData);
 	const articleUploadRef = useRef(null);
-const [uAN, setUAN] = useState('');
+	const [uAN, setUAN] = useState("");
+	const [sections, setSections] = useState([]);
 
+	const initialFigData = {
+		figTitle: "",
+		figImg: "",
+		figDescription: "",
+	};
+
+	const [figData, setFigData] = useState(initialFigData);
+	const [figParentId, setFigParentId] = useState('');
+
+	const [showFigure, setShowFigure] = useState(false);
 
 	const handleChange = (event) => {
 		if (event === null) {
@@ -46,13 +56,129 @@ const [uAN, setUAN] = useState('');
 		articleUploadRef.current.click();
 	};
 
-const uploadArticleFile = (e) => {
-	setUAN(e.target.files[0].name);
-}
+	const uploadArticleFile = (e) => {
+		setUAN(e.target.files[0].name);
+	};
 
+	const addFigure = (e) => {
+		
+
+		setFigParentId( e.target.previousSibling.id);
+		setShowFigure(true);
+		// 		elem.innerHTML = `<div class='figureContainer w-100'>
+		// <div class='position-relative' >
+		// <div contentEditable="true" class="p-3 figure" placeholder="write something"  >
+		// 							Title
+		// 					  </div>
+		// 					<div
+		// 											class="figureOptions"
+
+		// 										>
+		// 											Add Img
+		// 											<i class="icofont-plus"></i>
+		// 										</div>
+		// 										</div>
+
+		// 					  </div>`;
+
+		
+	};
+
+	const handleFigSubmit = () => {
+
+		console.log(figData);
+setShowFigure(false);
+
+		let elem = document.createElement("div");
+elem.innerHTML = `<div class="card pt-4 px-3 mb-4 " contenteditable="false">
+									<h6>
+										<strong>
+											Fig 1:
+											${figData.figTitle}
+										</strong>
+									</h6>
+									<img
+										src='${figData.figImg}'
+										class="img-fluid card-img-top mb-2"
+									/>
+									<p>'${figData.figDescription}'</p>
+								</div>
+
+								<div><br></div><div><br></div>`;
+
+document.querySelector("#" + figParentId).appendChild(elem);
+	};
+
+	const handleFig = (e) => {
+			setFigData({
+				...figData,
+				[e.target.name]: e.target.value.trim(),
+			});
+	
+	};
+
+
+	const upFigImg = (e) => {
+		let photo = e.target.files[0];
+			const reader = new FileReader();
+			reader.readAsDataURL(e.target.files[0]);
+			reader.onload = () => {
+				setFigData({
+					...figData,
+					figImg: reader.result,
+				});
+			};
+	}
 
 	return (
 		<>
+			{showFigure && (
+				<div className="figureModal">
+					<div className="container p-5">
+						<form>
+							<div className="d-flex justify-content-center align-items-baseline mb-4">
+								<h4>Publication Request</h4>
+							</div>
+							<div className="form-group">
+								<input
+									type="text"
+									className="form-control item"
+									name="figTitle"
+									placeholder="Title"
+									onChange={handleFig}
+								/>
+							</div>
+							<div className="form-group">
+								<input
+									type="file"
+									name="figImg"
+									className="form-control item"
+									onChange={upFigImg}
+								/>
+							</div>
+							<div className="form-group">
+								<textarea
+									className="form-control"
+									placeholder="Description"
+									rows="7"
+									name="figDescription"
+									onChange={handleFig}
+								></textarea>
+							</div>
+
+							<div className="form-group">
+								<button
+									type="button"
+									className="btn btn-block submit"
+									onClick={handleFigSubmit}
+								>
+									Submit
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			)}
 			<section className="inner-page">
 				<div className="container">
 					<div className="box mx-2 registration-form mb-5">
@@ -63,11 +189,16 @@ const uploadArticleFile = (e) => {
 							<div className="mb-3">
 								<h4>
 									Write it down or
-									<u className="uploadText ml-2" onClick={uploadArticle}>
-										Upload 
+									<u
+										className="uploadText ml-2"
+										onClick={uploadArticle}
+									>
+										Upload
 										<i class="icofont-upload-alt ml-2"></i>
 									</u>
-									<span className='ml-3 text-success'>{uAN}</span>
+									<span className="ml-3 text-success">
+										{uAN}
+									</span>
 								</h4>
 								<input
 									type="file"
@@ -77,48 +208,39 @@ const uploadArticleFile = (e) => {
 									onChange={uploadArticleFile}
 								/>
 							</div>
-							<div className="form-group">
-								<input
-									type="text"
-									className="form-control item"
-									name="name"
-									placeholder="Full name"
-									onChange={handleChange}
-								/>
-							</div>
-							<div className="form-group">
-								<input
-									type="text"
-									className="form-control item"
-									name="email"
-									placeholder="Email"
-									onChange={handleChange}
-								/>
-							</div>
-							<div className="form-group">
-								<input
-									type="text"
-									className="form-control item"
-									name="title"
-									placeholder="Title of Publication Article"
-									onChange={handleChange}
-								/>
-							</div>
-							<div className="form-group">
-								<textarea
-									className="form-control"
-									placeholder="Description"
-									rows="7"
-									name="description"
-									onChange={handleChange}
-								></textarea>
-							</div>
-							<div className="form-group">
-								<input
-									type="file"
-									name="file"
-									className="form-control item"
-								/>
+							<div className={uAN ? "articleUploaded" : ""}>
+								<div className="form-group">
+									<input
+										type="text"
+										className="form-control item"
+										name="title"
+										placeholder="title"
+										onChange={handleChange}
+									/>
+								</div>
+
+								<div className="form-group">
+									<div className="position-relative">
+										<div
+											contentEditable="true"
+											className="p-3 section"
+											placeholder="write something"
+											id="dsfsd4"
+										>
+											Type here. You can insert images too
+											<img src="http://t2.gstatic.com/images?q=tbn:ANd9GcQCze-mfukcuvzKk7Ilj2zQ0CS6PbOkq7ZhRInnNd1Yz3TQzU4e&t=1" />
+										</div>
+										<div
+											className="editorOptions"
+											onClick={(e) => {
+												addFigure(e);
+											}}
+										>
+											Add figure{" "}
+											<i class="icofont-plus"></i>
+										</div>
+									</div>
+								</div>
 							</div>
 							<div className="form-group">
 								<button

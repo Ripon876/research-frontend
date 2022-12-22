@@ -1,6 +1,85 @@
-.uploadText{
+.uploadText {
 	cursor: pointer;
 }
-.articleUpload{
+.articleUpload {
 	display: none;
+}
+.articleUploaded {
+	filter: blur(5px);
+	user-select: none;
+	pointer-events: none;
+	cursor: not-allowed;
+}
+
+.section {
+	box-shadow: 4px 2px 4px 0px #25292d2e !important;
+	color: #212529;
+	letter-spacing: 1px;
+	font-size: 17px;
+	font-weight: 500;
+	border-radius: 10px !important;
+	outline: none;
+	min-height: 100px;
+	position: relative;
+}
+
+.figure {
+	box-shadow: 4px 2px 4px 0px #25292d2e !important;
+    color: #212529;
+    letter-spacing: 1px;
+    font-size: 17px;
+    font-weight: 500;
+    width: 80%;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 10px !important;
+    outline: none;
+    min-height: 100px;
+    position: relative;
+}
+
+.figureOptions {
+	position: absolute;
+	background: #eeeeee;
+	padding: 7px 15px;
+	right: 0;
+	top: 0;
+	cursor: pointer;
+
+	border-radius: 10px;
+}
+.editorOptions {
+	position: absolute;
+	background: #eeeeee;
+	padding: 7px 15px;
+	right: 0;
+	top: 0;
+	cursor: pointer;
+
+	border-radius: 10px;
+}
+[contenteditable="true"]:empty:before {
+	content: attr(placeholder);
+	pointer-events: none;
+	display: block; /* For Firefox */
+}
+
+
+.figureModal {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background: #09090942;
+	backdrop-filter: blur(2px);
+	width: 100% !important;
+	height: 100% !important;
+}
+.figureModal .container {
+	margin: 70px auto;
+	background: white;
+	height: 85% !important;
+	width: 60%;
+	position: relative;
 }
