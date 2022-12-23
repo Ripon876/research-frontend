@@ -25,17 +25,17 @@
 
 .figure {
 	box-shadow: 4px 2px 4px 0px #25292d2e !important;
-    color: #212529;
-    letter-spacing: 1px;
-    font-size: 17px;
-    font-weight: 500;
-    width: 80%;
-    padding: 10px;
-    margin: 20px auto;
-    border-radius: 10px !important;
-    outline: none;
-    min-height: 100px;
-    position: relative;
+	color: #212529;
+	letter-spacing: 1px;
+	font-size: 17px;
+	font-weight: 500;
+	width: 80%;
+	padding: 10px;
+	margin: 20px auto;
+	border-radius: 10px !important;
+	outline: none;
+	min-height: 100px;
+	position: relative;
 }
 
 .figureOptions {
@@ -48,7 +48,7 @@
 
 	border-radius: 10px;
 }
-.editorOptions {
+.addFigure {
 	position: absolute;
 	background: #eeeeee;
 	padding: 7px 15px;
@@ -58,12 +58,28 @@
 
 	border-radius: 10px;
 }
+.removeSection {
+	position: absolute;
+	background: #eeeeee;
+	padding: 7px 15px;
+	right: 0;
+	top: 40px;
+	cursor: pointer;
+
+	border-radius: 10px;
+}
+.closeModal {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+
 [contenteditable="true"]:empty:before {
 	content: attr(placeholder);
 	pointer-events: none;
 	display: block; /* For Firefox */
 }
-
 
 .figureModal {
 	display: block;
@@ -79,7 +95,7 @@
 .figureModal .container {
 	margin: 70px auto;
 	background: white;
-	height: 62% !important;
+	height: 65% !important;
 	width: 60%;
 	position: relative;
 }
