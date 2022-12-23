@@ -22,3 +22,4 @@
 22. Login => '/login'
 23. Moderator Dashboard => '/dashboard/moderator'
 24. Researcher Dashboard => '/dashboard/researcher'
+25. Article => '/article/iddsfsd44'

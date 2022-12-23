@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 
-function Reference({serial}) {
+function Reference() {
 	const initialRefData = {
 		title: "",
 		articleLink: "",
@@ -101,7 +101,7 @@ function Reference({serial}) {
 				<div className="card  mb-3" ref={referenceRef}>
 					<div className="card-body">
 						<p className="mb-0">
-						{serial}. {refData?.title}
+						{refData?.title}
 						{/*	1. Patch, A.-M. et al. Whole-genome characterization
 							of chemoresistant ovarian cancer. Nature 521,
 							489–494 (2015).*/}
