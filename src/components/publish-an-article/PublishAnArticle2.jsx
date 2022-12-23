@@ -133,11 +133,11 @@ document.querySelector("#" + figParentId).appendChild(elem);
 	return (
 		<>
 			{showFigure && (
-				<div className="figureModal">
+				<div className="align-items-center d-flex figureModal">
 					<div className="container p-5">
 						<form>
 							<div className="d-flex justify-content-center align-items-baseline mb-4">
-								<h4>Publication Request</h4>
+								<h4>Add Figure</h4>
 							</div>
 							<div className="form-group">
 								<input
@@ -154,6 +154,7 @@ document.querySelector("#" + figParentId).appendChild(elem);
 									name="figImg"
 									className="form-control item"
 									onChange={upFigImg}
+									accept='.png,.jpg,.jpeg,.gif'
 								/>
 							</div>
 							<div className="form-group">
@@ -169,10 +170,10 @@ document.querySelector("#" + figParentId).appendChild(elem);
 							<div className="form-group">
 								<button
 									type="button"
-									className="btn btn-block submit"
+									className="btn btn-block subBtn submit"
 									onClick={handleFigSubmit}
 								>
-									Submit
+									Add
 								</button>
 							</div>
 						</form>
@@ -227,7 +228,8 @@ document.querySelector("#" + figParentId).appendChild(elem);
 											placeholder="write something"
 											id="dsfsd4"
 										>
-											Type here. You can insert images too
+										<h4 className="border-bottom pb-2 mb-2">Section Title</h4>
+										<p>section details</p>
 											<img src="http://t2.gstatic.com/images?q=tbn:ANd9GcQCze-mfukcuvzKk7Ilj2zQ0CS6PbOkq7ZhRInnNd1Yz3TQzU4e&t=1" />
 										</div>
 										<div
