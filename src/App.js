@@ -22,6 +22,7 @@ import OurVisionPage from './pages/OurVisionPage';
 import ResearchLabsPage from './pages/ResearchLabsPage';
 import TopChallengersPage from './pages/TopChallengersPage';
 import BlogsPage from './pages/BlogsPage';
+import BlogPage from './pages/BlogPage';
 import Dashboard from './components/dashboard/Dashboard';
 import ExpandedPost from './components/expandedPost/ExpandedPost';
 
@@ -55,6 +56,7 @@ function App() {
       <Route path='/dashboard/:type' element={<Dashboard />} />
       <Route path='/view/post/:id' element={<ExpandedPost />} />
       <Route path='/blogs' element={<BlogsPage />} />
+      <Route path='/view/blog/:id' element={<BlogPage />} />
     </Routes>
     </>
   )
