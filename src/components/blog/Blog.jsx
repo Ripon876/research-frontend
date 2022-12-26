@@ -7,7 +7,7 @@ function Blog() {
 				className="container-fluid px-4"
 				style={{ naxWidth: "1600px" }}
 			>
-				<div>
+				<div className="row">
 					<div className="col-md-9">
 						<div className="blogHeader mb-3 border-bottom">
 							<h1>Lorem ipsum dolor 1</h1>
@@ -247,8 +247,8 @@ function Blog() {
 													<div className="flex-grow-1 flex-shrink-1 ml-3">
 														<div>
 															<div className="d-flex justify-content-between align-items-center">
-																<p className="mb-1">
-																	Simona Disa{" "}
+																<p className="font-weight-bold mb-1">
+																	Simona Disa
 																	<span className="small">
 																		- 3
 																		hours
@@ -290,8 +290,8 @@ function Blog() {
 													<div className="flex-grow-1 flex-shrink-1 ml-3">
 														<div>
 															<div className="d-flex justify-content-between align-items-center">
-																<p className="mb-1">
-																	Simona Disa{" "}
+																<p className="font-weight-bold mb-1">
+																	Simona Disa
 																	<span className="small">
 																		- 3
 																		hours
@@ -324,6 +324,33 @@ function Blog() {
 									</div>
 								</div>
 							</div>
+						</div>
+					</div>
+					<div className="col-md-3 mt-5 pt-5 px-4">
+						<div className="sticky-top" style={{top: '120px'}}>
+							<h3>Related Blogs</h3>
+							<a href="" class="text-dark">
+								<div class="row mb-4 border-bottom pb-2">
+									<div class="col-4 p-0">
+										<img
+											src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp"
+											class="relatedPostImg shadow-1-strong rounded"
+											alt="Hollywood Sign on The Hill"
+										/>
+									</div>
+
+									<div class="col-8">
+										<p class="mb-2">
+											<strong>
+												Lorem ipsum dolor sit amet
+											</strong>
+										</p>
+										<p>
+											<u> 15.07.2020</u>
+										</p>
+									</div>
+								</div>
+							</a>
 						</div>
 					</div>
 				</div>
