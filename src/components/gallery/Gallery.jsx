@@ -1,8 +1,14 @@
-// import "./Gallery.css";
+import {useEffect} from 'react';
+
 
 function Gallery() {
+
+
+
+
+
 	return (
-		<div>
+		<div className='gallery'>
 			<div className="container mt-5 pt-3">
 				<div className="section-title">
 					<h2>Gallery</h2>

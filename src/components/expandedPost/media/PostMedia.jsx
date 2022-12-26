@@ -3,7 +3,6 @@ import { useSearchParams } from "react-router-dom";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import mediumZoom from "medium-zoom";
 import "./PostMedia.css";
 
 function PostMedia({ data }) {
@@ -13,7 +12,6 @@ function PostMedia({ data }) {
 	const [startPosition, setStartPosition] = useState(0);
 
 	useEffect(() => {
-		const zoom = mediumZoom(".owl-theme img");
 
 		let id = searchParams.get("mediaId");
 
@@ -21,9 +19,7 @@ function PostMedia({ data }) {
 			let itemIndex = media?.findIndex((item) => item.id === id);
 			setStartPosition(itemIndex);
 		}
-		return () => {
-			zoom.detach();
-		};
+	
 	}, []);
 
 	return (
