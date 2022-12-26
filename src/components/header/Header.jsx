@@ -26,6 +26,9 @@ function Header() {
               <li className="">
                 <Link to="/awards">Awards</Link>
               </li>
+              <li className="">
+                <Link to="/blogs">Blogs</Link>
+              </li>
               <li className="drop-down">
                 <Link to="">Research REQUEST</Link>
                 <ul>

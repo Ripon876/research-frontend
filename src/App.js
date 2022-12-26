@@ -21,6 +21,7 @@ import OurTeamPage from './pages/OurTeamPage';
 import OurVisionPage from './pages/OurVisionPage';
 import ResearchLabsPage from './pages/ResearchLabsPage';
 import TopChallengersPage from './pages/TopChallengersPage';
+import BlogsPage from './pages/BlogsPage';
 import Dashboard from './components/dashboard/Dashboard';
 import ExpandedPost from './components/expandedPost/ExpandedPost';
 
@@ -53,6 +54,7 @@ function App() {
       <Route path='/top_challengers' element={<TopChallengersPage />} />
       <Route path='/dashboard/:type' element={<Dashboard />} />
       <Route path='/view/post/:id' element={<ExpandedPost />} />
+      <Route path='/blogs' element={<BlogsPage />} />
     </Routes>
     </>
   )
