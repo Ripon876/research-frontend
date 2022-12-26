@@ -1,6 +1,8 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 
-function Blog({ i }) {
+
+function Blog({ post, i }) {
 	return (
 		<div className="row my-5 pb-4">
 			<div
@@ -10,8 +12,8 @@ function Blog({ i }) {
 			>
 				<div>
 					<img
-						src="https://via.placeholder.com/400x400"
-						className="card-img-top w-75 img-fluid "
+						src={post?.image}
+						className="card-img-top img-fluid "
 						alt="Sunset Over the Sea"
 					/>
 				</div>
@@ -19,23 +21,81 @@ function Blog({ i }) {
 			<div className="align-items-center col-md-6 d-flex mb-4">
 				<div className="card border-0">
 					<div className="card-body">
-						<h3 className="card-title">Lorem ipsum dolor</h3>
+						<h3 className="card-title">{post?.title}</h3>
 						<h6 className="card-subtitle mb-2 text-muted">
-							Lorem ipsum dolor
+							{post?.creation_date}
 						</h6>
 						<p className="card-text">
-							Lorem ipsum dolor sit amet, consectetur adipiscing
-							elit, sed do eiusmod tempor incididunt ut labore et
-							dolore magna aliqua. Viverra suspendisse potenti
-							nullam ac tortor vitae. Lorem donec massa sapien
-							faucibus et. Lorem donec massa sapien faucibus et
-							molestie ac feugiat. Aliquam ut porttitor leo a
-							diam. Sit amet cursus sit amet. Sit amet cursus sit
-							amet. Rutrum tellus pellentesque eu tincidunt tortor
-							aliquam nulla. Porttitor rhoncus dolor purus non
-							enim praesent elementum facilisis. Ullamcorper morbi
-							tincidunt ornare massa eget egestas purus.
+							{post?.content.substr(0, 400)} . . .{" "}
+							<Link to={"/view/blog/" + post?.id}>Read More</Link>
 						</p>
+						<div className="d-flex blogOptions">
+							<p className="card-subtitle mt-0">16 comments</p>
+							<div className="dropup">
+								<div
+									className="share dropdown-toggle ml-4"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+								>
+									<i class="icofont-share pr-1"> Share</i>
+								</div>
+								<div class="dropdown-menu">
+									<div class="dropdown-item">
+										<a
+											href={`https://www.facebook.com/sharer/sharer.php?u=${
+												window.location.host +
+												"/view/blog/" +
+												post?.id
+											}`}
+											target="_blank"
+										>
+											<i class="icofont-facebook"></i>
+											<span className="small text-muted pl-1">
+												Facebook
+											</span>
+										</a>
+									</div>
+									<div class="dropdown-item">
+										<a
+											href={`https://twitter.com/intent/tweet?url=${
+												window.location.host +
+												"/view/blog/" +
+												post?.id
+											}`}
+											target="_blank"
+										>
+											<i class="icofont-twitter"></i>
+											<span className="small text-muted pl-1">
+												Twitter
+											</span>
+										</a>
+									</div>
+									<div class="dropdown-item">
+										<a
+											href={`https://www.linkedin.com/sharing/share-offsite/?url=${
+												window.location.host +
+												"/view/blog/" +
+												post?.id
+											}`}
+											target="_blank"
+										>
+											<i class="icofont-linkedin"></i>
+											<span className="small text-muted pl-1">
+												LinkedIn
+											</span>
+										</a>
+									</div>
+
+									<div class="dropdown-item">
+										<i class="icofont-link"></i>
+										<span className="small text-muted pl-1">
+											Copy Link
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

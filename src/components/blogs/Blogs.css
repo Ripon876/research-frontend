@@ -1,0 +1,12 @@
+.blog-card a {
+	text-decoration: none;
+	cursor: pointer;
+	color: black;
+	font-weight: bold;
+	font-size: 18px;
+}
+.blogOptions{
+	cursor: pointer;
+	color: #2f2f2f;
+    font-size: 17px;
+}

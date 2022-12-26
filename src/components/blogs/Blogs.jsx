@@ -1,8 +1,11 @@
 import Blog from "./blog/Blog";
+import {posts} from './smd';
+import './Blogs.css';
+
 
 function Blogs() {
 	return (
-		<div>
+		<div className='blog-card'>
 			<div className="container">
 				<div className="section-title">
 					<h2>Blogs</h2>
@@ -16,8 +19,8 @@ function Blogs() {
 				</div>
 			</div>
 			<div className="container">
-				{new Array(5).fill(1)?.map((item, i) => (
-					<Blog i={i} />
+				{posts?.map((post, i) => (
+					<Blog i={i} post={post} />
 				))}
 			</div>
 			<div className='text-center'>
