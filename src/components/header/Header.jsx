@@ -20,9 +20,9 @@ function Header() {
               <li className="">
                 <Link to="/about_us">About Us</Link>
               </li>
-              <li className="">
+              {/*<li className="">
                 <Link to="/challenges">Challenges</Link>
-              </li>
+              </li>*/}
               <li className="">
                 <Link to="/awards">Awards</Link>
               </li>

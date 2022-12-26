@@ -13,8 +13,8 @@ import ArticlePage from './pages/ArticlePage';
 import {InternshipPage,WorkPage} from './pages/ApplyPage';
 import SponsorPage from './pages/SponsorPage';
 import DonateUsPage from './pages/DonateUsPage';
-import ChallengesPage from './pages/ChallengesPage';
-import ChallengePage from './pages/ChallengePage';
+// import ChallengesPage from './pages/ChallengesPage';
+// import ChallengePage from './pages/ChallengePage';
 import AboutPage from './pages/AboutPage';
 import ModeratorsPage from './pages/ModeratorsPage';
 import OurTeamPage from './pages/OurTeamPage';
@@ -43,8 +43,8 @@ function App() {
       <Route path='/apply/work' element={<WorkPage />} />
       <Route path='/sponsor_our_program' element={<SponsorPage />} />
       <Route path='/donate_us' element={<DonateUsPage />} />
-      <Route path='/challenges' element={<ChallengesPage />} />
-      <Route path='/challenge/:id' element={<ChallengePage />} />
+      {/*<Route path='/challenges' element={<ChallengesPage />} />
+      <Route path='/challenge/:id' element={<ChallengePage />} />*/}
       <Route path='/about_us' element={<AboutPage />} />
       <Route path='/moderators' element={<ModeratorsPage />} />
       <Route path='/our_team' element={<OurTeamPage />} />
