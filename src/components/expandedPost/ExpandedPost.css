@@ -7,6 +7,8 @@
 	color: #000000a1;
 	background: #1e1e1e;
 	border-radius: 15%;
+	top: 20px;
+	position: relative;
 }
 .expandedPostContainer .dpMenu2.show {
 	display: flex !important;

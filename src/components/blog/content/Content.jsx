@@ -108,7 +108,7 @@ function Content() {
 						<video
 							width="auto"
 							height="auto"
-							autoplay="false"
+							
 							controls
 						>
 							<source

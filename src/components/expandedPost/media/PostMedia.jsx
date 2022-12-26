@@ -21,7 +21,7 @@ function PostMedia({ data }) {
 	}, []);
 
 	return (
-		<div>
+		<div className='postMedia'>
 			<OwlCarousel
 				className="owl-theme"
 				items={1}
