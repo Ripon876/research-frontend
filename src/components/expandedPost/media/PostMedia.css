@@ -22,7 +22,12 @@
     background: #ffffff0a;
     border-radius: 10px;
 }
-
+/*.owl-stage-outer{
+    z-index: 9;
+}
+.owl-nav-container{
+    z-index: 1;
+}*/
 .owl-item .item {
     padding: 80px;
     max-height: 700px;
