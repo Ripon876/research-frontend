@@ -6,7 +6,7 @@ import We from "../components/we/We";
 import Departments from "../components/departments/Departments";
 import Moderators from "../components/about/moderators/Moderators";
 import Modal from '../components/about/Modal';
-import Gallery from "../components/gallery/Gallery";
+import Gallery from "../components/about/gallery/Gallery";
 import Sponsors from "../components/sponsors/Sponsors";
 import FAQ from "../components/faq/FAQ";
 import Contact from "../components/contact/Contact";
