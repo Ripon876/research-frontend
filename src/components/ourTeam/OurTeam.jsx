@@ -52,6 +52,7 @@ function OurTeam() {
 						</div>
 					</div>
 				</div>
+				<h3 className='mb-4 ml-md-5 ml-sm-0 pl-md-4 pl-sm-0'><strong>Moderators</strong></h3>
 				<div className="row">
 					{new Array(6).fill(1)?.map(() => (
 						<Member />
