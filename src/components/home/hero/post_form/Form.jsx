@@ -82,7 +82,7 @@ function Form({ category }) {
 						<div className="form-outline">
 							<textarea
 								className="form-control"
-								placeholder="What is on your mind"
+								placeholder="Post your project here"
 								rows="7"
 								name="challenge"
 								onChange={handleChange}
