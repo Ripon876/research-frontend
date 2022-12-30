@@ -8,7 +8,7 @@ function Moderators() {
 		<section id="moderators" className="moderators">
 			<div className="container">
 				<div className="section-title">
-					<h2>Moderators</h2>
+					<h2>Advisers</h2>
 					<p>
 						Magnam dolores commodi suscipit. Necessitatibus eius
 						consequatur ex aliquid fuga eum quidem. Sit sint
