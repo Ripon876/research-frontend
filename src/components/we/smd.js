@@ -10,8 +10,8 @@ export const cardData = [
 		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod',
 		route: '/our_vision'
 	},{
-		icon: 'icofont-laboratory',
-		title: 'Research Labs',
+		icon: 'icofont-institution',
+		title: 'Institutions',
 		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod',
 		route: '/research_labs'
 	},{
