@@ -1,0 +1,25 @@
+.signUpForm input::placeholder {
+	color: #21252982 !important;
+}
+.userEmail {
+	position: relative;
+}
+.userEmail button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+.verification_code {
+	border: 1px dashed #212529;
+	height: 35px !important;
+}
+.codeStatus {
+	font-size: 25px;
+}
+.icofont-tick-mark {
+	color: green;
+}
+.icofont-close {
+	color: red;
+}
