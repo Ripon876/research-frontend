@@ -6,6 +6,7 @@ import ResearchMyProblemPage from './pages/ResearchMyProblemPage';
 import PublishAnArticlePage from './pages/PublishAnArticlePage';
 import BeAResearcherPage from './pages/BeAResearcherPage';
 import ReqestHelpForResearchPage from './pages/ReqestHelpForResearchPage';
+import ApplyForProjectFundingPage from './pages/ApplyForProjectFundingPage';
 import LoginPage from './pages/LoginPage';
 import SignUpPage from './pages/SignUpPage';
 import ResearchPage from './pages/ResearchPage';
@@ -39,6 +40,7 @@ function App() {
       <Route path='/publication-request' element={<PublishAnArticlePage />} />
       <Route path='/be-a-researcher' element={<BeAResearcherPage />} />
       <Route path='/request-help-for-research' element={<ReqestHelpForResearchPage />} />
+      <Route path='/apply-for-project-funding' element={<ApplyForProjectFundingPage />} />
       <Route path='/signup' element={<SignUpPage />} />
       <Route path='/login' element={<LoginPage />} />
       <Route path='/research/:id' element={<ResearchPage />} />

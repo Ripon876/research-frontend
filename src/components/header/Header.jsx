@@ -47,6 +47,11 @@ function Header() {
                       Request to publish your research
                     </Link>
                   </li>
+                  <li>
+                    <Link to="/apply-for-project-funding">
+                     Apply for project funding
+                    </Link>
+                  </li>
                 </ul>
               </li>
               <li>
