@@ -8,3 +8,21 @@
 	transform: translate(-50%, -50%);
 	/*cursor: pointer;*/
 }
+.postFormContainer textarea {
+	resize: none;
+}
+.postFormContainer {
+	/*	position: absolute;
+	top: 45%;
+	transform: translateY(-50%);*/
+	margin-top: 185px;
+}
+
+@media (max-width: 768px) {
+.postFormContainer {
+	/*	position: absolute;
+	top: 45%;
+	transform: translateY(-50%);*/
+	margin-top: 0;
+}
+}

@@ -74,10 +74,10 @@ function Form({ category }) {
 	};
 
 	return (
-		<div>
-			<div className="container mt-5 pt-5">
+		<div className='h-100'>
+			<div className="container postFormContainer">
 				<h4 className="font-weight-bold my-4">Make a Post</h4>
-				<div className="form">
+				<div className="form pr-5">
 					<form>
 						<div className="form-outline">
 							<textarea

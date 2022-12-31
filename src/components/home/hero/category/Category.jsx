@@ -6,7 +6,7 @@ function Category() {
 	return (
 		<div className="container py-5">
 			<div className="row">
-				<div className="col-lg-7 mx-auto">
+				<div className="mx-auto">
 					<ul className="timeline">
 						{list?.map((item) => (
 							<li className="timeline-item bg-white rounded ml-3 p-4 shadow">

@@ -1,0 +1,10 @@
+.heroQuickLinks {
+    top: 45%;
+    transform: translateY(-50%);
+    /* display: grid;
+    grid-gap: 10px;*/
+}
+.heroQuickLinks div {
+    border-left: 4px solid #212529;
+    padding: 0px 15px;
+}
