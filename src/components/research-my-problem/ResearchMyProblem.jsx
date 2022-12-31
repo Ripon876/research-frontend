@@ -12,7 +12,10 @@ function ResearchMyProblem() {
   };
 
   const [formData, updateFormData] = useState(initialData);
-
+  const [codeBox, setCodeBox] = useState({
+    email: false,
+    number: false,
+  });
   const handleChange = (event) => {
     if (event === null) {
       updateFormData({
@@ -38,66 +41,130 @@ function ResearchMyProblem() {
     console.log(formData);
   };
 
+  const options = [
+    "Agriculture",
+    "Electronics",
+    "Engineering Design (CAD/Simulation)",
+    "Coding",
+    "Marketing and Advertising",
+    "Idea Gathering",
+    "Data collection & Data Analysis",
+    "PCB Design",
+    "Micro-processor and Controlling Unit",
+    "Medical Technology",
+    "Reverse Engineering",
+    "Autombile Engineering",
+    "other",
+  ];
+
+  const showCodeBox = (type) => {
+    setCodeBox({
+      ...codeBox,
+      [type]: true,
+    });
+  };
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <div>
       <div className="registration-form my-5">
-        <form style={{ maxWidth: "650px" }}>
+        <form
+          style={{ maxWidth: "650px" }}
+          className="researcheMyProblemForm"
+          onSubmit={handleFormSubmit}
+        >
           <div className="d-flex justify-content-center align-items-baseline mb-4">
             <h4>Request To Research Your Problem</h4>
           </div>
           <div className="form-group">
+            <label>Name</label>
             <input
               type="text"
-              className="form-control item"
               name="name"
-              placeholder="Full name"
-              onChange={handleChange}
+              className="form-control"
+              placeholder="Jhone Doe"
             />
           </div>
           <div className="form-group">
+            <label>Problem title</label>
             <input
               type="text"
-              className="form-control item"
-              name="email"
-              placeholder="Email"
-              onChange={handleChange}
+              name="problem_title"
+              className="form-control"
+              placeholder="title"
             />
           </div>
           <div className="form-group">
+            <label>Problem title</label>
+            <select className="select form-control" style={{ height: "45px" }}>
+              {options?.map((item) => (
+                <option value={item}>{item}</option>
+              ))}
+            </select>
+          </div>
+          <div className="form-group">
+            <label>Problem objctives (benefit)</label>
             <input
               type="text"
-              className="form-control item"
-              name="title"
-              placeholder="Title of Publication Article"
-              onChange={handleChange}
+              name="problem_title"
+              className="form-control"
+              placeholder="benefit"
             />
           </div>
           <div className="form-group">
+            <label>Location</label>
             <input
               type="text"
-              className="form-control item"
-              name="topic"
-              placeholder="Topic"
-              onChange={handleChange}
+              name="problem_title"
+              className="form-control"
+              placeholder="your location"
             />
           </div>
           <div className="form-group">
-            <input
-              type="text"
-              className="form-control item"
-              name="reason"
-              placeholder="Why do you want to research on this topic?"
-              onChange={handleChange}
-            />
-          </div>
-          <div className="form-group">
+            <label>Description</label>
             <textarea
               className="form-control"
-              placeholder="Description"
-              rows="7"
+              placeholder="description"
+              rows="5"
               name="description"
-              onChange={handleChange}
             ></textarea>
+          </div>
+          <div className="form-group">
+            <div>
+              <label>WhatsApp no</label>
+              <div className="userEmail">
+                <input
+                  type="email"
+                  name="phone_number"
+                  className="form-control"
+                  placeholder="+880 _ _ _ _ _"
+                />
+                <button
+                  className="btn"
+                  onClick={() => {
+                    showCodeBox("number");
+                  }}
+                >
+                  Verify
+                </button>
+              </div>
+            </div>
+            {codeBox.number && (
+              <div className="form-group mt-3 d-flex align-items-center">
+                <input
+                  type="text"
+                  name="whatsapp_verification_code"
+                  className="form-control w-50 verification_code"
+                  placeholder="enter verification code"
+                />
+                <div>
+                  <i class="icofont-tick-mark ml-3 codeStatus"></i>
+                  <i class="icofont-close codeStatus"></i>
+                </div>
+              </div>
+            )}
           </div>
           <div className="form-group">
             <button
