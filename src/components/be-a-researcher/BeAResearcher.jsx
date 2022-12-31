@@ -42,9 +42,25 @@ function BeAResearcher() {
   };
 
   const options = [
-    { value: "topic_1", label: "Topic 1" },
-    { value: "topic_2", label: "Topic 2" },
-    { value: "topic_3", label: "Topic 3" },
+    { value: "Agriculture", label: "Agriculture" },
+    { value: "Electronics", label: "Electronics" },
+    {
+      value: "Engineering Design (CAD/Simulation)",
+      label: "Engineering Design (CAD/Simulation)",
+    },
+    { value: "Coding", label: "Coding" },
+    { value: "Marketing and Advertising", label: "Marketing and Advertising" },
+    { value: "Marketing and Advertising", label: "Marketing and Advertising" },
+    { value: "Idea gathering", label: " Idea gathering" },
+    {
+      value: "Data collection & Data Analysis",
+      label: "Data collection & Data Analysis",
+    },
+    { value: "PCB design", label: "PCB design" },
+    { value: "Micro-processor and Controlling unit", label: "PCB design" },
+    { value: "Medical Technology", label: "Medical Technology" },
+    { value: "Reverse Engineering", label: "Reverse Engineering" },
+    { value: "Autombile Engineering", label: "Autombile Engineering" },
   ];
 
   const selectStyles = {
