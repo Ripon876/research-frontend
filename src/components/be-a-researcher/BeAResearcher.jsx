@@ -110,7 +110,7 @@ function BeAResearcher() {
               <div className="registration-form mb-5">
                 <form className="beAResearcherForm">
                   <div className="d-flex justify-content-center align-items-baseline mb-4">
-                    <h4>Request to be a Researcher</h4>
+                    <h4>Request to be a Researcher (:</h4>
                   </div>
                   <div className="form-group">
                     <label>Name</label>
