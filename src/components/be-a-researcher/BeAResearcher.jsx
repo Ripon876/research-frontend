@@ -201,6 +201,24 @@ function BeAResearcher() {
                     />
                   </div>
                   <div className="form-group">
+                    <label>Facebook ID</label>
+                    <input
+                      type="text"
+                      name="fb-id"
+                      className="form-control"
+                      placeholder="fb id"
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label>WhatsApp no</label>
+                    <input
+                      type="text"
+                      name="number"
+                      className="form-control"
+                      placeholder="number "
+                    />
+                  </div>
+                  <div className="form-group">
                     <button
                       type="button"
                       className="btn btn-block submit"
