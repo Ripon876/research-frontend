@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import CreatableSelect from "react-select/creatable";
 import "./BeAResearcher.css";
 
@@ -12,6 +12,10 @@ function BeAResearcher() {
     interestedOn: [],
   };
   const [formData, updateFormData] = useState(initialData);
+  const idFrontRef = useRef(null);
+  const idBackRef = useRef(null);
+
+
 
   const handleChange = (event) => {
     if (event === null) {
@@ -57,6 +61,14 @@ function BeAResearcher() {
     }),
   };
 
+  const uploadId = (side) => {
+
+// idFrontRef
+// idBackRef
+
+    
+  };
+
   return (
     <>
       <section className="inner-page">
@@ -64,47 +76,78 @@ function BeAResearcher() {
           <div className="row justify-content-center">
             <div className="col-md-8">
               <div className="registration-form mb-5">
-                <form>
+                <form className="beAResearcherForm">
                   <div className="d-flex justify-content-center align-items-baseline mb-4">
                     <h4>Request to be a Researcher</h4>
                   </div>
                   <div className="form-group">
+                    <label>Name</label>
                     <input
                       type="text"
-                      className="form-control item"
                       name="name"
-                      placeholder="Full name"
-                      onChange={handleChange}
+                      className="form-control"
+                      placeholder="Jhone Doe"
                     />
                   </div>
                   <div className="form-group">
+                    <label>Institution</label>
                     <input
                       type="text"
-                      className="form-control item"
-                      name="email"
-                      placeholder="Email"
-                      onChange={handleChange}
-                    />
-                  </div>
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      className="form-control item"
                       name="institution"
-                      placeholder="Institution"
-                      onChange={handleChange}
+                      className="form-control"
+                      placeholder="your institution"
                     />
                   </div>
                   <div className="form-group">
+                    <label>Institution ID No.</label>
                     <input
                       type="text"
-                      className="form-control item"
-                      name="department"
-                      placeholder="Department"
-                      onChange={handleChange}
+                      name="institution"
+                      className="form-control"
+                      placeholder="institution id"
                     />
                   </div>
                   <div className="form-group">
+                    <label>Department</label>
+                    <input
+                      type="text"
+                      name="department"
+                      className="form-control"
+                      placeholder="your department"
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label>Institution ID card</label>
+                    <div className="px-3 w-100 my-3 d-flex justify-content-center">
+                      <div className="w-50">
+                        <div
+                          className="idUpload"
+                          onClick={() => {
+                            uploadId("front");
+                          }}
+                        >
+                          Front Side
+                        </div>
+                        <input
+                          type="text"
+                          name="department"
+                          className="form-control d-none"
+                          placeholder="your department"
+                        />
+                      </div>
+                      <div className="w-50">
+                        <div className="idUpload">Front Side</div>
+                        <input
+                          type="text"
+                          name="department"
+                          className="form-control d-none"
+                          placeholder="your department"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="form-group">
+                    <label>Topics you are Interested on</label>
                     <CreatableSelect
                       isClearable
                       options={options}
@@ -112,15 +155,6 @@ function BeAResearcher() {
                       placeholder="Topic you are interested on"
                       onChange={handleChange}
                       isMulti
-                    />
-                  </div>
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      className="form-control item"
-                      name="institution_id"
-                      placeholder="Institution ID"
-                      onChange={handleChange}
                     />
                   </div>
                   <div className="form-group">
