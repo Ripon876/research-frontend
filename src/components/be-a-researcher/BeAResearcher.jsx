@@ -25,10 +25,12 @@ function BeAResearcher() {
     }
     if (Array.isArray(event)) {
       console.log(event);
-      updateFormData({
-        ...formData,
-        interestedOn: [...event],
-      });
+      if (formData.interestedOn.length !== 3) {
+        updateFormData({
+          ...formData,
+          interestedOn: [...event],
+        });
+      }
     } else {
       updateFormData({
         ...formData,
@@ -193,6 +195,7 @@ function BeAResearcher() {
                     <label>Topics you are Interested on</label>
                     <CreatableSelect
                       isClearable
+                      disabled
                       options={options}
                       styles={selectStyles}
                       placeholder="Topic you are interested on"
