@@ -15,8 +15,6 @@ function BeAResearcher() {
   const idFrontRef = useRef(null);
   const idBackRef = useRef(null);
 
-
-
   const handleChange = (event) => {
     if (event === null) {
       updateFormData({
@@ -62,11 +60,29 @@ function BeAResearcher() {
   };
 
   const uploadId = (side) => {
+    if (side === "front") {
+      idFrontRef.current.click();
+    } else {
+      idBackRef.current.click();
+    }
+  };
 
-// idFrontRef
-// idBackRef
+  const uploadIdImg = (e) => {
+    console.log(e);
+    let side = e.target.name;
 
-    
+    const reader = new FileReader();
+    reader.readAsDataURL(e.target.files[0]);
+    reader.onload = () => {
+      // reader.result
+      if (side === "front") {
+        idFrontRef.current.previousSibling.style.background =
+          "url(" + reader.result + ")";
+      } else {
+        idBackRef.current.previousSibling.style.background =
+          "url(" + reader.result + ")";
+      }
+    };
   };
 
   return (
@@ -118,7 +134,7 @@ function BeAResearcher() {
                   </div>
                   <div className="form-group">
                     <label>Institution ID card</label>
-                    <div className="px-3 w-100 my-3 d-flex justify-content-center">
+                    <div className="px-3 w-100 my-2 d-flex justify-content-center">
                       <div className="w-50">
                         <div
                           className="idUpload"
@@ -129,19 +145,30 @@ function BeAResearcher() {
                           Front Side
                         </div>
                         <input
-                          type="text"
-                          name="department"
-                          className="form-control d-none"
-                          placeholder="your department"
+                          type="file"
+                          ref={idFrontRef}
+                          className="d-none"
+                          accept=".png,.jpg,.jpeg"
+                          onChange={uploadIdImg}
+                          name="front"
                         />
                       </div>
                       <div className="w-50">
-                        <div className="idUpload">Front Side</div>
+                        <div
+                          className="idUpload"
+                          onClick={() => {
+                            uploadId("back");
+                          }}
+                        >
+                          Back Side
+                        </div>
                         <input
-                          type="text"
-                          name="department"
-                          className="form-control d-none"
-                          placeholder="your department"
+                          type="file"
+                          ref={idBackRef}
+                          className="d-none"
+                          accept=".png,.jpg,.jpeg"
+                          onChange={uploadIdImg}
+                          name="back"
                         />
                       </div>
                     </div>
