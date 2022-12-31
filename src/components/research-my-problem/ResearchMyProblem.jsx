@@ -110,7 +110,7 @@ function ResearchMyProblem() {
             />
           </div>
           <div className="form-group">
-            <label>Problem title</label>
+            <label>Problem Field</label>
             <select className="select form-control" style={{ height: "45px" }}>
               {options?.map((item) => (
                 <option value={item}>{item}</option>

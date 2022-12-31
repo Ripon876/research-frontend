@@ -77,7 +77,7 @@ function RequestHelpForResearch() {
 					onSubmit={handleFormSubmit}
 				>
 					<div className="d-flex justify-content-center align-items-baseline mb-4">
-						<h4>Request Help For Research</h4>
+						<h4>Request Help For Project</h4>
 					</div>
 					<div className="form-group">
 						<label>Name</label>

@@ -38,18 +38,18 @@ function Header() {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/request-help-for-research">
-                      Request Help For Research
-                    </Link>
-                  </li>
-                  <li>
                     <Link to="/publication-request">
                       Request to publish your research
                     </Link>
                   </li>
                   <li>
+                    <Link to="/request-help-for-research">
+                      Help in my project
+                    </Link>
+                  </li>
+                  <li>
                     <Link to="/apply-for-project-funding">
-                     Apply for project funding
+                      Apply for project funding
                     </Link>
                   </li>
                 </ul>

@@ -10,7 +10,7 @@ export const list = [
 	// },
 	{
 		title: "Apply for project funding",
-		route: "/project-funding",
+		route: "/apply-for-project-funding",
 	},
 	{
 		title: "Apply for investment",
@@ -18,11 +18,11 @@ export const list = [
 	},
 	{
 		title: "Help in my project",
-		route: "/get-help",
+		route: "/request-help-for-research",
 	},
 	{
 		title: "Research partner requirment",
-		route: "/",
+		route: "/researcher-partner-requirement",
 	},
 	{
 		title: "Blog (Publish  my work)",
