@@ -14,7 +14,7 @@ export const list = [
 	},
 	{
 		title: "Apply for investment",
-		route: "/invest",
+		route: "/apply-for-investment",
 	},
 	{
 		title: "Help in my project",

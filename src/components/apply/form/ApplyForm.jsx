@@ -43,22 +43,21 @@ function ApplyForm({ formTitle }) {
 
 
 	const options = [
-		{ value: "work_1", label: "Work 1" },
-		{ value: "work_3", label: "Work 2" },
-		{ value: "work_3", label: "Work 3" },
+		"Agriculture",
+		"Electronics",
+		"Engineering Design (CAD/Simulation)",
+		"Coding",
+		"Marketing and Advertising",
+		"Idea Gathering",
+		"Data collection & Data Analysis",
+		"PCB Design",
+		"Micro-processor and Controlling Unit",
+		"Medical Technology",
+		"Reverse Engineering",
+		"Autombile Engineering",
+		"other",
 	];
 
-	const selectStyles = {
-		control: (styles) => ({
-			...styles,
-			backgroundColor: "white",
-			borderRadius: "20px !important",
-			marginBottom: "25px !important",
-			padding: "2px 10px",
-			boxShadow: '4px 2px 4px 0px #25292d2e !important',
-			height: '45px'
-		}),
-	};
 
 	return (
 		<div className="registration-form">
@@ -68,59 +67,66 @@ function ApplyForm({ formTitle }) {
 					<h2 className="px-2"> '{formTitle}'</h2>
 				</div>
 				<div className="form-group">
+				<label>Name</label>
 					<input
 						type="text"
-						className="form-control item"
+						className="form-control"
 						name="name"
 						placeholder="Full name"
 						onChange={handleChange}
 					/>
 				</div>
 				<div className="form-group">
+				<label>Email</label>
 					<input
 						type="text"
-						className="form-control item"
+						className="form-control"
 						name="email"
-						placeholder="Email"
+						placeholder="email"
 						onChange={handleChange}
 					/>
 				</div>
 				<div className="form-group">
+				<label>Phone Number</label>
 					<input
 						type="text"
-						className="form-control item"
+						className="form-control"
 						name="phone_number"
-						placeholder="Phone Number"
+						placeholder="phone number"
 						onChange={handleChange}
 					/>
 				</div>
 				<div className="form-group">
+				<label>Educational Status</label>
 					<input
 						type="text"
-						className="form-control item"
+						className="form-control"
 						name="educational_status"
-						placeholder="Educational Status"
+						placeholder="educational status"
 						onChange={handleChange}
 					/>
 				</div>
 				<div className="form-group">
+				<label>Designation</label>
 					<input
 						type="text"
-						className="form-control item"
+						className="form-control"
 						name="designation"
-						placeholder="Designation"
+						placeholder="designation"
 						onChange={handleChange}
 					/>
 				</div>
 				<div className="form-group">
-					<CreatableSelect
-						isClearable
-						options={options}
-						styles={selectStyles}
-						placeholder='Work as'
-						onChange={handleChange}
-					/>
-				</div>
+						<label>Work Sector</label>
+						<select
+							className="select form-control"
+							style={{ height: "45px" }}
+						>
+							{options?.map((item) => (
+								<option value={item}>{item}</option>
+							))}
+						</select>
+					</div>
 				<div className="form-group">
 					<button
 						type="button"

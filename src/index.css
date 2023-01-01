@@ -1,21 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i");
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 body {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
   color: #444444;
 }
 
@@ -28,7 +28,12 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Raleway", sans-serif;
 }
 
@@ -41,20 +46,20 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px !important;
 }
 .subBtn:hover {
-    background: #000000 !important;
+  background: #000000 !important;
 }
 .subBtn:active {
-    background: #000000 !important;
-    box-shadow: 0 0 0 0.2rem rgb(33 37 41) !important;
+  background: #000000 !important;
+  box-shadow: 0 0 0 0.2rem rgb(33 37 41) !important;
 }
 .subBtn:focus {
-    background: #000000 !important;
-    box-shadow: 0 0 0 0.2rem rgb(33 37 41) !important;
+  background: #000000 !important;
+  box-shadow: 0 0 0 0.2rem rgb(33 37 41) !important;
 }
 
 .swal2-timer-progress-bar {
-    height: 0.3em !important;
-    background: rgb(52 58 64 / 62%) !important;
+  height: 0.3em !important;
+  background: rgb(52 58 64 / 62%) !important;
 }
 /*.swal2-error{
   border-color: #dc3545 !important;
@@ -75,11 +80,20 @@ h1, h2, h3, h4, h5, h6 {
 }*/
 
 [data-rmiz-modal-overlay="visible"] {
-    background-color: rgb(13 13 13 / 54%) !important;
+  background-color: rgb(13 13 13 / 54%) !important;
 }
 .cp {
   cursor: pointer !important;
 }
-body{
+body {
   overflow-x: hidden;
+}
+form label {
+  font-size: 17px;
+  color: #212529;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.form input::placeholder {
+  color: #21252982 !important;
 }

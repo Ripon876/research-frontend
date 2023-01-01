@@ -37,7 +37,7 @@ function Hero() {
 										</p>
 										<a
 											class="btn px-4 py-2 mt-2 rounded-pill"
-											href="/be-a-researcher"
+											href="/connect-my-institution"
 											style={{
 												background: "rgb(33, 37, 41)",
 												color: "white",
@@ -53,7 +53,7 @@ function Hero() {
 										</p>
 										<a
 											class="btn px-4 py-2 mt-2 rounded-pill"
-											href="/be-a-researcher"
+											href="/donate_us"
 											style={{
 												background: "rgb(33, 37, 41)",
 												color: "white",

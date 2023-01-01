@@ -52,6 +52,9 @@ function Header() {
                       Apply for project funding
                     </Link>
                   </li>
+                  <li>
+                    <Link to="/apply-for-investment">Apply for investment</Link>
+                  </li>
                 </ul>
               </li>
               <li>

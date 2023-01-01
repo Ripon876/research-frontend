@@ -1,5 +1,5 @@
 import OverviewCard from './OverviewCard';
-import {smd} from './smd';
+import {projects,researches} from './smd';
 import './OverView.css';
 
 function OverView() {
@@ -8,11 +8,20 @@ function OverView() {
 		<section id="why-us" className="why-us">
 		      <div className="container">
 		        <div className="row">
-		          <div className="col-lg-12 d-flex align-items-stretch">
+		          <div className="col-lg-12 mt-5">
 		            <div className="icon-boxes d-flex flex-column justify-content-center">
 		              <div className="row">
-		                {smd?.map((item) =>
-		                   <OverviewCard item={item} />
+		                {projects?.map((item,i) =>
+		                   <OverviewCard item={item} count={i} />
+		                )}
+		              </div>
+		            </div>
+		          </div> 
+		          <div className="col-lg-12 mt-5">
+		            <div className="icon-boxes d-flex flex-column justify-content-center mt-5">
+		              <div className="row">
+		                {researches?.map((item,i) =>
+		                   <OverviewCard item={item} count={i} />
 		                )}
 		              </div>
 		            </div>
