@@ -30,6 +30,17 @@ function Header() {
                 <Link to="/blogs">Blogs</Link>
               </li>
               <li className="drop-down">
+                <Link to="">Challenges</Link>
+                <ul>
+                  <li>
+                    <Link to="/challenges">Challenges</Link>
+                  </li>
+                  <li>
+                    <Link to="/top_challengers">Top Challengers</Link>
+                  </li>
+                </ul>
+              </li>
+              <li className="drop-down">
                 <Link to="">Research REQUEST</Link>
                 <ul>
                   <li>
@@ -57,6 +68,7 @@ function Header() {
                   </li>
                 </ul>
               </li>
+
               <li>
                 <Link
                   to="/be-a-researcher"
