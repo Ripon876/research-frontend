@@ -9,7 +9,7 @@ function Info() {
 			<div className="row mt-4">
 				<div className="col-md-4">
 					<div
-						className="pIC text-center"
+						className="m-auto pIC text-center"
 						style={{ width: "250px", height: "250px" }}
 					>
 						<img
