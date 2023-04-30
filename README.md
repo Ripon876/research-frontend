@@ -1,4 +1,6 @@
-> ###  Page  => Route
+[![Netlify Status](https://api.netlify.com/api/v1/badges/57698c87-f01a-4095-940e-22af0d53081f/deploy-status)](https://app.netlify.com/sites/researchpub/deploys)
+
+> ###  Page  => Routes
 1. Home  => '/'
 2. About us  => '/about_us'
 3. Donate us  => '/donate_us'
