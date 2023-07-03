@@ -1,27 +1,45 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/57698c87-f01a-4095-940e-22af0d53081f/deploy-status)](https://app.netlify.com/sites/researchpub/deploys)
 
-> ###  Page  => Routes
-1. Home  => '/'
-2. About us  => '/about_us'
-3. Donate us  => '/donate_us'
-4. Challenges  => '/challenges'
-5. Top Challengers  => '/top_challengers'
-6. Challenge Details  => '/challenge/id'
-7. Awards  => '/awards'
-8. Request to research my problem  => '/research-my-problem'
-9. Request to publish your research  => '/publication-request'
-10. Request to be a researcher => '/be-a-researcher'
-11. Apply for an internship => '/apply/internship'
-12. Apply for a job => '/apply/work'
-13. Sponsor our program => '/sponsor_our_program'
-14. Moderators => '/moderators'
-15. Our Team => '/our_team'
-16. Our Vision => '/our_vision'
-17. Research Labs => '/research_labs'
-18. Publication => '/publication'
-20. Research => '/research/id'
-21. Sign Up => '/signup'
-22. Login => '/login'
-23. Moderator Dashboard => '/dashboard/moderator'
-24. Researcher Dashboard => '/dashboard/researcher'
-25. Article => '/article/iddsfsd44'
+## ResearchPub
+
+ResearchPub is a website dedicated to researchers, providing a platform for publishing research papers, seeking funding for research projects, and participating in research challenges. It also showcases top researches and institutions to foster collaboration and knowledge sharing within the research community.
+
+## Features
+
+- Publish research papers and findings
+- Request funding for research projects
+- Explore and solve research challenges
+- Discover top researches and institutions
+- Engage in discussions and collaboration
+- User-friendly interface for easy navigation
+
+## Technologies Used
+-   React
+-   React Countup 
+-   React Helmet
+-   React Magnific Popup
+-   React Medium Image Zoom
+-   React Modal Video
+-   React Moment
+-   React Owl Carousel
+-   React Player
+-   Redux
+-   React Reveal
+-   React Router DOM 
+-   React Select
+-   React YouTube
+-   Redux
+-   SweetAlert2 
+-   Swiper
+-   Bootstrap
+-   Fslightbox React
+-   Medium Zoom
+-   Moment
+
+## Live Demo
+
+Check out the [ResearchPub](https://researchpub.netlify.app/) to see the application in action.
+
+## Proprietary Project - All Rights Reserved
+
+⚠️ This is a proprietary project, and all rights are reserved. Unauthorized use, modification, or distribution of this project or any of its components is strictly prohibited. No part of this project may be reproduced, distributed, or transmitted in any form or by any means without prior written permission from the project owner. If you are interested in using or contributing to this project, please contact at mdriponislam.dev@gmail.com for further information and permissions.
