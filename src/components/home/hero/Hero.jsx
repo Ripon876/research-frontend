@@ -15,10 +15,6 @@ function Hero() {
 							<div className="col-5 position-relative px-0">
 								<div className="position-absolute heroQuickLinks">
 									<div>
-										<p className="mb-0">
-											sdf sfdfds
-											fdsfdsfadfdsfsdafdsfdsfasdf
-										</p>
 										<a
 											class="btn px-4 py-2 mt-2 rounded-pill"
 											href="/be-a-researcher"
@@ -31,10 +27,6 @@ function Hero() {
 										</a>
 									</div>
 									<div className='mt-4'>
-										<p className="mb-0">
-											sdf sfdfds
-											fdsfdsfadfdsfsdafdsfdsfasdf
-										</p>
 										<a
 											class="btn px-4 py-2 mt-2 rounded-pill"
 											href="/connect-my-institution"
@@ -47,10 +39,6 @@ function Hero() {
 										</a>
 									</div>
 									<div className='mt-4'>
-										<p className="mb-0">
-											sdf sfdfds
-											fdsfdsfadfdsfsdafdsfdsfasdf
-										</p>
 										<a
 											class="btn px-4 py-2 mt-2 rounded-pill"
 											href="/donate_us"
